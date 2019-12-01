@@ -1,0 +1,9 @@
+* Three-dimensions of function text-mining project
+
+** First stage (pilot study)
+Zach has compiled the list of journals that we will search in (hopefully via Crossref) to get our corpus.
+I have sent the list of publishers and journals off to the university library, and they will get back to me about licensing agreements, etc.
+Zach has extracted the "function" phrases from a couple of papers.
+(The original plan was to go through 45 different papers from the nine different categories (one from each of the top five journals in a category), but we'll have to see how we go for time.)
+Eventually, I will fully automate the processing of full texts (extraction of function sentences, context, and other metadata), but for now I just want to quickly partially automate it, to save Zach the time of having to manually process papers. For starters, I will use grobid with xml.etree.ElementTree.
+    
