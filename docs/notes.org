@@ -1,9 +1,80 @@
-* Three-dimensions of function text-mining project
-
-** First stage (pilot study)
+Three-dimensions of function text-mining project
+* First stage (pilot study)
 Zach has compiled the list of journals that we will search in (hopefully via Crossref) to get our corpus.
 I have sent the list of publishers and journals off to the university library, and they will get back to me about licensing agreements, etc.
 Zach has extracted the "function" phrases from a couple of papers.
 (The original plan was to go through 45 different papers from the nine different categories (one from each of the top five journals in a category), but we'll have to see how we go for time.)
 Eventually, I will fully automate the processing of full texts (extraction of function sentences, context, and other metadata), but for now I just want to quickly partially automate it, to save Zach the time of having to manually process papers. For starters, I will use grobid with xml.etree.ElementTree.
-    
+* Issues that need resolving before starting "real" study
+  - [ ] What to do about noun phrases that include function (e.g. functional connectivity, functional biology)?
+  - [ ] What to do about sentences that contain multiple instances of function?
+  - [ ] What to do about inflected variants of function (e.g. functional, functions, dysfunction, subfunctionalisation, etc.)?
+  - [ ] How to address overlap between of context between different instances of function (e.g. where two sentences in a row use function, the sentence after (for the first) and the sentence before (for the second) will also contain function)?
+  - [ ] Is our current method, in which we attribute partial "subdiscipline" membership for any journal that falls within the top 30 journals of more than one subcategory, appropriate?
+  - [ ] Is keeping one sentence before and after the use of "function" the best method? Should we make it x words before and after? This would remove the issue with having multiple uses of function in a single sentence (but might exacerbate the interference between context of multiple uses of function).
+** 20191207 notes (meeting with Zach, Stefan, Josh, Paul)
+Discussion of pilot study classification, in which Zach/Josh/Stefan classified some instances of function usages. We discussed the various ambiguities and problems we countered. Paul was also present (although he hadn't classified any himself)
+   - explained will often be selected effects
+   - genomic conflict implies evolution (202)
+   - because biological advantage is a subset of causal role, there are two implications: (i) we'll tend to classify as causal role things that are implicitly biological advantages but not stated explicitly; and (ii) we'll classify as biological advantage things that are also causal roles (by giving precedence to biological advantage)
+   - when seleciton or evolution is used in conjunction with a explanation for why something exists or varies, etc. we say it is selected effects
+   - general: for selected effets, we'll often defer to phrases like "reproductive strageties", "sexual conflict", "sexual selection"
+   - causal role is not default -- we'll add another category for unspecified or insufficient context
+   - biological advantage needs an explicit, normative component (important that we don't infer a benefit if it is not explicitly stated)
+   - for noun-phrases where the head noun is not a trait-like thing, and/or we can replace function with activity or performance, then we classify as unspecified (but need to check if )
+   - another possibility is to turn a noun phrase of "x function" into "the function of x is..."
+   - Zach brought up the potential ambiguitiy in a phrase like liver function, which might be used in the sense of "the function of the liver is..." (e.g. the function of the liver is either x or y) or in the sense of "the liver is functioning"  (i.e. the liver is performing its function vs. it being dysfunctional)
+   - not worth recording positive/negative use of each function ascription (i.e. the difference between x had function y and x did not have function y).
+*** actionable items
+    - We need to add another "technical" definition (corresponding to "ambiguous", "undefined" or the like) for those functions ascriptions that contain insufficient evidence for classification
+    - Classify as causal role when there is a connection between function and at least one identifiable effect in at least one containing system (although we are probably not too committed to the containing system assumption) but without an explicitly normative component
+    - Classify as biological advantage when there is a causal role function that contains an explicitly normative component
+    - Classify as selected effects when either (i) function is explicitly used in an evolutionary sense or connected to language associated with evolutionary theories (e.g. natural selection, sexual selection, kin selection, genetic conflict, sexual conflict, reproductive strategies, frequency-dependence, etc.) or (ii) function is connected with etiological or explanatory language (i.e. usages that connect a trait's function with the reason it exists).
+*** still to address (will discuss with Monika on 20191209)
+    - noun phrases--can we find a rule of thumb for dealing with these?
+      + Rephrasing in a different form? E.g. x function as the function of x?
+      + One difference between a phrase like "ecological function" compared to "liver function" is that in "ecological function" function is paired with an adjective that cannot act as a trait. Likewise, if it were instead "ecosystem function", although ecosystem is a noun, it isn't something we consider as a having a trait. We can have other phrases like "functional connectivity" where function is in the adjectival form functional but connectivity is not something we can consider as a trait. So one rule-based way out of this is might be to classify it as "undefined" when function is used as an adjective in a noun phrase and likewise when the noun phrase refers to something that we don't consider as being a trait.
+      + If we have a sentence like "Liver function is affected by expression of gene A" then I think we can classify this as causal role because function is associated with a change in gene A expression. The sentence can be rewritten as "Expression of gene A affects the function of the liver", which implies that the function of the liver is dependent on gene A expression (i.e. gene A expression is a causal role function within system liver). Less obviously, it might also be rewritten as "Expression of gene A affects functioning of the liver", which could imply that healthy activity of the liver (i.e. not being in a dysfunctional state) depends on gene A. In this case, functioning of the liver depends on gene A expression (alternatively, gene A expression affects liver functioning). In this case, is gene A a causal role function in system liver? I think the answer is yes but acknowledge that this is a different case to liver function in the sense of "the function of the liver" (because there is a difference between the function-dysfunction distinction and the function1-function2 distinction). My reasoning is that if gene A  affects functioning(-as-opposed-to-dysfunctioning) of the liver, it must have a detectable effect in system liver and is therefore a causal role. This is something to discuss at the TMB meeting on 20191209.
+** 20191209 day agenda
+   - 9:00-10:30 Introduce conceptual framework for three dimensions of function to TMB; get feedback on technical definitions (insufficient evidence, causal role, biological advantage, selected effects)
+   - 10:30-11:30 TMB weekly meeting
+   - 11:30-14:00 Zach compiles list of difficult cases from a linguistic standpoint to present to Monika (especially the various ways that function can be used in noun phrases); Josh works on data/text mining code
+   - 14:00-15:00 Meet with Monika
+   - 15:00- Zach compiles list of dois by searching and exporting from WoS; Josh, using full list of dois, starts running text mining code on desktop
+TODOS for 20191209
+  - [ ] ask Zach to also keep a version of the JCR subdiscpline ranking list that includes all the different subdiscipline labels (not just keeping the ones that are in the top 30 of their subdiscipline)
+  - [ ] ask Zach to compile list of difficult cases from a linguistic standpoint to present to Monika (especially the various ways that function can be used in noun phrases)
+  - [ ] ask Zach to compile list of dois by searching and exporting from WoS
+TODOs for 20191210
+  - [ ] compile another small dataset for a pilot study (from which we'll calculate inter-rater reliability)
+** 20191209 (9:00 with TMB) agenda
+   - Quickly introduce project (including the two subprojects)
+   - Describe the three types of function we consider: causal role, biological advantage, selected effects
+   - Outline the conceptual framework
+   - Discuss Garson's 3 desiderata and how under his view selected effects gets a lot for free (leading him to be, in my view, far too generous to selected effects)
+   - Show how conceptual framework relates to Tinbergen's Qs and the proximate/ultimate distinction
+** 20191209 (14:00 with Monika) agenda
+*** classification
+    - how to deal with noun phrases? All three of us doing the classification (JR, ZW, SG) struggled with these. Zach will compile a list of tough cases for reference.
+    - make functional (adjective) its own category?
+    - what to do with usages like dysfunction, subfunctionalisation, etc.?
+*** misc
+    - inter-rater reliability--sample size for overlap of samples between ZW and SG (I think I'll get everyone involved to classify this subset)? I think we'll probably need to conduct another (small) pilot study to determine this since it will depend on variance in agreement. It would be good to run another quick pilot study with the new guidelines in any case to iron out any final problems.
+    - is our choice for common membership of biological subdisciplines (if the appear in the top 30 for a given subdiscipline) the best way around the issue of journals having overlapping subdisciplines (e.g. ecology and evolutionary biology)? I'm also considering a method whereby I use document similarity to just apportion papers within these journals to a single subdiscpline.
+    - should I extract from abstracts when full text is available? (Keeping in mind that I'm planning on excluding papers that only have abstracts available.)
+*** Zach's CPC project
+    - have a quick discussion of the methods that Zach will use in his CPC project analysis (collocation, frequency, etc.). Set up meeting between him and Monika for her to teach him how to use the software she uses.
+** 20191212 (14:00 meeting with Joel)
+   - classification of entire documents into subdiscplines using supervised or semi-supervised approaches (would apply to general science journals, general biology journals, and possibly journals with dual categories [note that in the latter case, I will want to classify between ALL the subdiscipline labels, not just those in the top 30]). The "labelled samples" would be full texts from journals that are members of a single subdiscipline (according to Incites). General science/biology could be classified into any subdiscipline while journals that are members of multiple subdisciplines could be classified into one of these subdisciplines.
+   - unsupervised or semi-supervised clustering, maybe using attention model, to see how well I can categorise labelled samples (compared to a supervised approach using BERT transfer-trained on function wsd)
+   - training/test set split and how this should relate to the inter-rater reliability set
+** Some thoughts about the rough number of samples we'll get
+*** Labelled
+    Very hard to estimate, but perhaps Zach will get around 5,000 classifications falling within the three technical categories (2 per minute, 300 minutes per day for 15 days (9000) with a decent chunk, but less than half, falling into "insufficient evidence"). 
+At this point, I'm not sure how much time Stefan will have (and some of these will be redundant for inter-rater reliability purposes), but I suppose we'll end up with 5,000-10,000 labelled samples in the three technical categories (and 10,000--20,000 labelled samples overall).
+*** Total
+    We'll have roughly 250k papers in the corpus of which half might have full texts (wild guess) with probably 20+ mentions of function per paper on average, giving something like 3 million+ individual usages.
+Of these, I suspect substantially fewer than half will fit into the 3 categories.
+Note that this is lower than my estimate for the labelled samples because our labelled samples will be evenly distributed across papers.
+(Some papers contain 100+ usages of noun phrases like "ecosystem function", "functional connectivity", etc., which would cause the proportion of "insufficient evidence" cases to be higher in the total sample.)
+
