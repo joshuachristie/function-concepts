@@ -35,6 +35,7 @@ Discussion of pilot study classification, in which Zach/Josh/Stefan classified s
       + Rephrasing in a different form? E.g. x function as the function of x?
       + One difference between a phrase like "ecological function" compared to "liver function" is that in "ecological function" function is paired with an adjective that cannot act as a trait. Likewise, if it were instead "ecosystem function", although ecosystem is a noun, it isn't something we consider as a having a trait. We can have other phrases like "functional connectivity" where function is in the adjectival form functional but connectivity is not something we can consider as a trait. So one rule-based way out of this is might be to classify it as "undefined" when function is used as an adjective in a noun phrase and likewise when the noun phrase refers to something that we don't consider as being a trait.
       + If we have a sentence like "Liver function is affected by expression of gene A" then I think we can classify this as causal role because function is associated with a change in gene A expression. The sentence can be rewritten as "Expression of gene A affects the function of the liver", which implies that the function of the liver is dependent on gene A expression (i.e. gene A expression is a causal role function within system liver). Less obviously, it might also be rewritten as "Expression of gene A affects functioning of the liver", which could imply that healthy activity of the liver (i.e. not being in a dysfunctional state) depends on gene A. In this case, functioning of the liver depends on gene A expression (alternatively, gene A expression affects liver functioning). In this case, is gene A a causal role function in system liver? I think the answer is yes but acknowledge that this is a different case to liver function in the sense of "the function of the liver" (because there is a difference between the function-dysfunction distinction and the function1-function2 distinction). My reasoning is that if gene A  affects functioning(-as-opposed-to-dysfunctioning) of the liver, it must have a detectable effect in system liver and is therefore a causal role. This is something to discuss at the TMB meeting on 20191209.
+    - *Note: I no longer believe the last paragraph to be a correct way of thinking* (see notes from meeting post three dimensions function presentation)
 ** 20191209 day agenda
    - 9:00-10:30 Introduce conceptual framework for three dimensions of function to TMB; get feedback on technical definitions (insufficient evidence, causal role, biological advantage, selected effects)
    - 10:30-11:30 TMB weekly meeting
@@ -47,23 +48,44 @@ TODOS for 20191209
   - [ ] ask Zach to compile list of dois by searching and exporting from WoS
 TODOs for 20191210
   - [ ] compile another small dataset for a pilot study (from which we'll calculate inter-rater reliability)
-** 20191209 (9:00 with TMB) agenda
+** 20191209 (9:00 with TMB)
+*** agenda
    - Quickly introduce project (including the two subprojects)
    - Describe the three types of function we consider: causal role, biological advantage, selected effects
    - Outline the conceptual framework
    - Discuss Garson's 3 desiderata and how under his view selected effects gets a lot for free (leading him to be, in my view, far too generous to selected effects)
    - Show how conceptual framework relates to Tinbergen's Qs and the proximate/ultimate distinction
-** 20191209 (14:00 with Monika) agenda
-*** classification
+*** notes from discussion
+   - well received I think
+   - noted that Tinbergen's Qs can map onto the same framework if you collapse his 3 and 4 into a single one. Paul pointed out that Huxley had apparently proposed this at some point (not sure of primarily literature, but apparently Tinbergen mentions this). This is quite nice as there is an easy mapping between the framework I proposed for function and Tinbergen/Huxley as well as proximate/ultimate (which should make it fairly palatable).
+** 20190209 meeting post three dimensions of function presentation (me, Paul, Stefan, Zach)
+   - we went through the "liver function" case again. In hindsight, my characterisation of it above was not accurate.
+     + If "liver function is affected by expression of gene A", then the only reframing that's accurate is "gene A affects functioning of the liver". One could claim that this shows a causal role of gene A, but in this case, the use of "liver function" is almost incidental, as function could easily be replaced with performance, activity, etc. Liver function, in this sense, refers to the liver as a containing system /not/ the liver as having a function in a larger containing system (e.g. the hepatic system). The reason we can't talk of the liver as having a function in this sentence is because there is no reference to its role in a larger containing system.
+   - We also had a quick discussion about "functioning" as implying a normative aspect. While I think this is reasonable, it's important that normativity here refers to the functional to dysfunctional continuum.
+     + I would argue that this is different to normativity in the sense of "gene A's function" has a positive/negative effect in the containing system (i.e. the tipping point from causal role to biological advantage).
+** 20191209 (14:00 with Monika)
+*** agenda
+**** classification
     - how to deal with noun phrases? All three of us doing the classification (JR, ZW, SG) struggled with these. Zach will compile a list of tough cases for reference.
     - make functional (adjective) its own category?
     - what to do with usages like dysfunction, subfunctionalisation, etc.?
-*** misc
+**** misc
     - inter-rater reliability--sample size for overlap of samples between ZW and SG (I think I'll get everyone involved to classify this subset)? I think we'll probably need to conduct another (small) pilot study to determine this since it will depend on variance in agreement. It would be good to run another quick pilot study with the new guidelines in any case to iron out any final problems.
     - is our choice for common membership of biological subdisciplines (if the appear in the top 30 for a given subdiscipline) the best way around the issue of journals having overlapping subdisciplines (e.g. ecology and evolutionary biology)? I'm also considering a method whereby I use document similarity to just apportion papers within these journals to a single subdiscpline.
     - should I extract from abstracts when full text is available? (Keeping in mind that I'm planning on excluding papers that only have abstracts available.)
-*** Zach's CPC project
+**** Zach's CPC project
     - have a quick discussion of the methods that Zach will use in his CPC project analysis (collocation, frequency, etc.). Set up meeting between him and Monika for her to teach him how to use the software she uses.
+*** meeting
+    - unfortunately we weren't able to resolve this, as it is a tricker problem than I had perhaps realised
+    - Monika made the point that we should clearly separate semantics and construction (i.e. we aren't so concerned about whether function is used in a noun phrase but rather its meaning in the noun phrase)
+    - we will need to use a form of unpacking, whereby we rearrange sentences, substitute function for another word (e.g. activity, performance), etc. so as to get at the core meaning
+*** actions
+    - add adjective to noun and verb. Also record the specific form (I can pull the latter out automatically)
+I think we just start with the additional categories below and refine as we find examples that don't fit
+    - out of scope cases that ascribe function to entites at the organismal level or higher (e.g. organisms, groups, ecosystems) or cases that define the containing system as higher than the organism (e.g. groups, ecosystems)
+    - cases that use function in a narrow, technical sense
+    - cases that use function as synonymous with activity or performance (in which case it is a characteristic of the containing system not the trait)
+    - others?
 ** 20191212 (14:00 meeting with Joel)
    - classification of entire documents into subdiscplines using supervised or semi-supervised approaches (would apply to general science journals, general biology journals, and possibly journals with dual categories [note that in the latter case, I will want to classify between ALL the subdiscipline labels, not just those in the top 30]). The "labelled samples" would be full texts from journals that are members of a single subdiscipline (according to Incites). General science/biology could be classified into any subdiscipline while journals that are members of multiple subdisciplines could be classified into one of these subdisciplines.
    - unsupervised or semi-supervised clustering, maybe using attention model, to see how well I can categorise labelled samples (compared to a supervised approach using BERT transfer-trained on function wsd)
@@ -77,4 +99,3 @@ At this point, I'm not sure how much time Stefan will have (and some of these wi
 Of these, I suspect substantially fewer than half will fit into the 3 categories.
 Note that this is lower than my estimate for the labelled samples because our labelled samples will be evenly distributed across papers.
 (Some papers contain 100+ usages of noun phrases like "ecosystem function", "functional connectivity", etc., which would cause the proportion of "insufficient evidence" cases to be higher in the total sample.)
-
