@@ -86,9 +86,12 @@ I think we just start with the additional categories below and refine as we find
     - cases that use function in a narrow, technical sense
     - cases that use function as synonymous with activity or performance (in which case it is a characteristic of the containing system not the trait)
     - others?
+** 20191210
+Zach and I went through some ways of how we might classify function when used as 
 ** 20191212 (14:00 meeting with Joel)
    - classification of entire documents into subdiscplines using supervised or semi-supervised approaches (would apply to general science journals, general biology journals, and possibly journals with dual categories [note that in the latter case, I will want to classify between ALL the subdiscipline labels, not just those in the top 30]). The "labelled samples" would be full texts from journals that are members of a single subdiscipline (according to Incites). General science/biology could be classified into any subdiscipline while journals that are members of multiple subdisciplines could be classified into one of these subdisciplines.
    - unsupervised or semi-supervised clustering, maybe using attention model, to see how well I can categorise labelled samples (compared to a supervised approach using BERT transfer-trained on function wsd)
+   - Can I combine wordnet synsets (e.g. serve, officiate) to create a custom dictionary without issues? Should be fine but just want to check as I'm planning on first training BERT on wordnet then again on my "function dictionary"
    - training/test set split and how this should relate to the inter-rater reliability set
 ** Some thoughts about the rough number of samples we'll get
 *** Labelled
@@ -99,3 +102,8 @@ At this point, I'm not sure how much time Stefan will have (and some of these wi
 Of these, I suspect substantially fewer than half will fit into the 3 categories.
 Note that this is lower than my estimate for the labelled samples because our labelled samples will be evenly distributed across papers.
 (Some papers contain 100+ usages of noun phrases like "ecosystem function", "functional connectivity", etc., which would cause the proportion of "insufficient evidence" cases to be higher in the total sample.)
+** useful packages
+   - https://github.com/allenai/scispacy (tokenisation optimised for scientific papers)
+   - https://arxiv.org/pdf/1903.10676.pdf (scibert -- transfer learning on general scientific papers)
+   - https://github.com/dmis-lab/biobert (biobert -- transfer learning on biomedical papers)
+   - https://arxiv.org/abs/1908.07245 (glossbert -- transfer learning for wsd on SemCor3.0)

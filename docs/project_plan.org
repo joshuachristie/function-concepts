@@ -1,0 +1,68 @@
+#+TITLE: Three-dimensions of function
+
+* Rough outline
+Our goal is to understand how biologists use the word "function".
+We are interested in a few things, including how researchers use "function", how this differs among subfields of biology, and how well use of function corresponds to the main philosophical views on biological function (we are also interested in how this has changed over time, how it is used in different sections of the text, etc.).
+* Definitions of function
+Function is used in a variety of different ways, which makes this a particularly difficult word sense disambiguation problem.
+We are of course primarily interested in the use of function in a manner consistent with philosophical or biological conceptions of function (as opposed to colloquial use).
+Our starting point is the definitions of function in WordNet 3.1, which are:
+
+Noun
+1. S: (n) function, mathematical function, single-valued function, map, mapping ((mathematics) a mathematical relation such that each element of a given set (the domain of the function) is associated with an element of another set (the range of the function))
+
+2. S: (n) function, purpose, role, use (what something is used for) "the function of an auger is to bore holes"; "ballet is beautiful but what use is it?"
+
+3. S: (n) function, office, part, role (the actions and activities assigned to or required or expected of a person or group) "the function of a teacher"; "the government must do its part"; "play its role"
+
+4. S: (n) function (a relation such that one thing is dependent on another) "height is a function of age"; "price is a function of supply and demand"
+
+5. S: (n) function (a formal or official social gathering or ceremony) "it was a black-tie function"
+
+6. S: (n) affair, occasion, social occasion, function, social function (a vaguely specified social event) "the party was quite an affair"; "an occasion arranged to honor the president"; "a seemingly endless round of social functions"
+
+7. S: (n) routine, subroutine, subprogram, procedure, function (a set sequence of steps, part of larger computer program)
+
+Verb
+8. S: (v) function, work, operate, go, run (perform as expected when applied) "The washing machine won't go unless it's plugged in"; "Does this old car still run well?"; "This old radio doesn't work anymore"
+
+9. S: (v) serve, function (serve a purpose, role, or function) "The tree stump serves as a table"; "The female students served as a control group"; "This table would serve very well"; "His freedom served him well"; "The table functions as a desk"
+
+10. S: (v) officiate, function (perform duties attached to a particular office or place or function) "His wife officiated as his private secretary"
+
+If we are just focusing on semantics, and combine a couple of categories, then we can trim this a bit to get:
+
+1. S: (n) function, mathematical function, single-valued function, map, mapping ((mathematics) a mathematical relation such that each element of a given set (the domain of the function) is associated with an element of another set (the range of the function))
+
+2 (3, 9, 10). S: (n, v) function, purpose, role, use
+
+4. S: (n) function (a relation such that one thing is dependent on another) "height is a function of age"; "price is a function of supply and demand"
+
+5 (6). S: (n) function (a social gathering)
+
+7. S: (n) routine, subroutine, subprogram, procedure, function (a set sequence of steps, part of larger computer program)
+
+8. S: (v) function, work, operate, go, run (perform as expected when applied) "The washing machine won't go unless it's plugged in"; "Does this old car still run well?"; "This old radio doesn't work anymore"
+
+To these, we add several technical definitions:
+
+S: (n) *Causal role function* (The role played by a component within a biological system) "The function of the gene is to produce an RNA transcript"
+
+S: (v) *Causal role function* (perform a role within a biological system) "The gene functions to produce an RNA transcript"
+
+S: (n) *Biological advantage function* (A role played by a component within a biological system that positively affects fitness) "The function of the allele is to produce an RNA transcript, which produces a protein that acts to improve metabolic capacity"
+
+S: (v) *Biological advantage function* (perform a role within a biological system that positively affects fitness) "The allele functions to produce an RNA transcript, which produces a protein that acts to improve metabolic capacity"
+
+S: (n) *Selected effects function* (A role played by a component within a biological system that contributed to historical selection for said component) "The function of zebra stripes is to deter biting insects"
+
+S: (v) *Selected effects function* (perform a role within a biological system that contributed to historical selection for said component) "The zebra's stripes function to deter biting insects"
+
+S: (predicate nominative?, predicate adjective?) *Technical use of function* (use of function that is highly technical and cannot easily be unpacked) "functional connectivity", "functional biology", "subfunctionalization", "neofunctionalization", etc.
+
+S: (n: gerund) functioning (performing as expected when applied) "Functioning is important for a gene"
+
+S: () functioning (performing as expected when applied) "Functioning is important for a gene"
+
+
+What to do about dysfunction/dysfunctional?
