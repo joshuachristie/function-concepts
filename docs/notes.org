@@ -63,6 +63,7 @@ TODOs for 20191210
      + If "liver function is affected by expression of gene A", then the only reframing that's accurate is "gene A affects functioning of the liver". One could claim that this shows a causal role of gene A, but in this case, the use of "liver function" is almost incidental, as function could easily be replaced with performance, activity, etc. Liver function, in this sense, refers to the liver as a containing system /not/ the liver as having a function in a larger containing system (e.g. the hepatic system). The reason we can't talk of the liver as having a function in this sentence is because there is no reference to its role in a larger containing system.
    - We also had a quick discussion about "functioning" as implying a normative aspect. While I think this is reasonable, it's important that normativity here refers to the functional to dysfunctional continuum.
      + I would argue that this is different to normativity in the sense of "gene A's function" has a positive/negative effect in the containing system (i.e. the tipping point from causal role to biological advantage).
+     + 20191212 note on the last point: these are clearly different notions of normativity. One is the functioning <-> dysfunction continuum, which relates to function in the sense of "perform as expected when applied"; the other is the CR <--> BR continuum, which relates to function in the sense of "does the effect convey an explicitly-identified advantage to the system"
 ** 20191209 (14:00 with Monika)
 *** agenda
 **** classification
@@ -88,7 +89,7 @@ I think we just start with the additional categories below and refine as we find
     - others?
 ** 20191210
 Zach and I went through some ways of how we might classify function when used as 
-** 20191212 (14:00 meeting with Joel)
+** 20191211 (14:00 meeting with Joel)
 *** agenda
    - classification of entire documents into subdiscplines using supervised or semi-supervised approaches (would apply to general science journals, general biology journals, and possibly journals with dual categories [note that in the latter case, I will want to classify between ALL the subdiscipline labels, not just those in the top 30]). The "labelled samples" would be full texts from journals that are members of a single subdiscipline (according to Incites). General science/biology could be classified into any subdiscipline while journals that are members of multiple subdisciplines could be classified into one of these subdisciplines.
    - unsupervised or semi-supervised clustering, maybe using attention model, to see how well I can categorise labelled samples (compared to a supervised approach using BERT transfer-trained on function wsd)
@@ -114,3 +115,42 @@ Note that this is lower than my estimate for the labelled samples because our la
    - https://arxiv.org/pdf/1903.10676.pdf (scibert -- transfer learning on general scientific papers)
    - https://github.com/dmis-lab/biobert (biobert -- transfer learning on biomedical papers)
    - https://arxiv.org/abs/1908.07245 (glossbert -- transfer learning for wsd on SemCor3.0)
+** 20191212 (unpacking functional)
+*** general structure of "functional" clauses
+    - functional <concrete noun> (e.g. "functional trait", "functional gene"--these are still fairly abstract, but in theory they refer to something physical). Functional can be used here to modify a  "component" of the system. I don't think we'll encounter it in this form so often though (more likely to be of the form "the <concrete noun> was functional"
+    - functional <abstract noun> (e.g. "functional effects", "functional importance"). Functional here isn't directly modifying a noun that can refer to a component (we can't talk of the trait "effects" having the function to do x in y")
+*** draft approach
+    1. Identify the noun that functional modifies
+    2. Assume that the noun is the component of the system
+       2.1. Rearrange the sentence into the form "The function of <noun> is to do..."
+       2.2. Does it make any sense whatsoever (it won't if the noun is abstract)? If not, go to 3.
+       2.3. If yes, can we identify the effect and system?
+       2.4. If no, unspecified. If yes, candidate for CR, BA, SE.
+    3. Is the use of functional technical? If yes, classify as technical use of function; if not go to 4.
+    4. (Assuming functional is now abstract.) Can we identify a concrete noun that functional <abstract noun> refers to?
+       4.1. If no, unspecified. If yes, rearrange the sentence into the form "The function of <concrete noun> is to do..." (for the moment effectively just treating the <abstract noun> as irrelevant)
+       4.2. Can we identify the effect and system?
+       4.3. If no, unspecified. If yes, candidate for CR, BA, SE.
+
+How does functional as functioning fit into here? It's clearly possible to have a phrase like "the functional gene" meaning "the gene that is functioning".
+*** revised approach
+    1. Is functional used in a technical sense? If yes, *technical use of function*. If not, go to 2.
+    2. Identify the noun that functional modifies. Go to 3.
+    3. Assume that the noun is the component of the system
+       3.1. Rearrange the sentence into the form "The function of <noun> is to..."
+       3.2. Does it make sense (i.e. is <noun> sufficiently concrete)? If so, go to 3.3; if not, go to 4.
+       3.3. If yes, can we identify the effect and system?
+       3.4. If no, either incompletely specified, used to mean functioning/activity, or an abstract noun; go to 4. If yes, either *CR*, *BA*, or *SE*.
+    4. Can we identify a "concrete" noun that functional <abstract noun> refers to? If yes, go to 4.1; if no, go to 5.
+       4.1. Rearrange the sentence into the form "The function of <concrete noun> is to..." (note, this implies that the abstract noun is unimportant...are there cases where this is violated?)
+       4.2. Can we identify the effect and system?
+       4.3. If no, (either go to 5). If yes, either *CR*, *BA*, or *SE*.
+    5. Is function being used in the sense of functioning or is it unspecified? (Need to write protocol for distinguishing this from the standard noun phrase case).
+
+This will need to be refined. I need to integrate into it the distinction between incompletely specified and function in the sense of functioning. I should also perhaps distinguish between the different ways of being incompletly specified (the two I can think of right now are (i) not having an identifiable effect; (ii) can't manipulate into canonical form)
+
+*** questions for Paul
+    - dysfunction (I think we just call this function in the sense of working, activity, performance, etc.
+    - Differentiating CR and BA (what reaches the threshold for normative language?) How much do we want to restrict BA to fitness effects (i.e. normative judgements on system "organism" relating to reproductive output)? Relevant here is the distinction between criteria for biological advantage as a document level classification (this is how biologists are generally talking about function in this paper) vs. a sentence level classification.
+    - Is it okay if the system is implied (which means in practice we ignore it)?
+    - Okay to restrict containing systems to organisms or smaller (thereby excluding ecology)?

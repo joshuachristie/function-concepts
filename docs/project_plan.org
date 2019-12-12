@@ -2,7 +2,7 @@
 
 * Rough outline
 Our goal is to understand how biologists use the word "function".
-We are interested in a few things, including how researchers use "function", how this differs among subfields of biology, and how well use of function corresponds to the main philosophical views on biological function (we are also interested in how this has changed over time, how it is used in different sections of the text, etc.).
+We are interested in a few things, including how researchers use "function", how this differs among subfields of biology, and how well use of function corresponds to the main philosophical views on biological function (we are also interested in how this has changed over time, how it is used in different sections of the text, how collocates differ, etc.).
 * Definitions of function
 Function is used in a variety of different ways, which makes this a particularly difficult word sense disambiguation problem.
 We are of course primarily interested in the use of function in a manner consistent with philosophical or biological conceptions of function (as opposed to colloquial use).
@@ -60,9 +60,12 @@ S: (v) *Selected effects function* (perform a role within a biological system th
 
 S: (predicate nominative?, predicate adjective?) *Technical use of function* (use of function that is highly technical and cannot easily be unpacked) "functional connectivity", "functional biology", "subfunctionalization", "neofunctionalization", etc.
 
+In some cases, we simply don't have enough information to udnerstand the sense in which function is being used. We will classify these as *incompletely specified*.
+
+Some alternative syntactical forms
+
 S: (n: gerund) functioning (performing as expected when applied) "Functioning is important for a gene"
 
-S: () functioning (performing as expected when applied) "Functioning is important for a gene"
+S: (n: present participle) functioning (performing as expected) "The gene is functioning"
 
-
-What to do about dysfunction/dysfunctional?
+What to do about dysfunction/dysfunctional? Relation to not functioning, not functional, etc. Probably just lump this into the semantics of "work, operate, go".
