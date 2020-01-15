@@ -162,3 +162,45 @@ This will need to be refined. I need to integrate into it the distinction betwee
       + also have to consider functionality, functionally, etc.
     - Fine to restrict to biological usage (i.e. containing system as organism or lower; component as lower than organism)
     - Fine if containing system is implied
+** random notes
+   - for the conceptual angle, I nee dto think about Wouter's distinction between traits and items/behaviours and how this relates to our talk of characters and character states in the programmatic paper.
+   - It's important to highlight the limitations of requiring everything to exist in a single sentence. A document-level classification would no doubt lead to different results (e.g. there might be many CR mentions but a single use of BA, which might make the document-level classification one of BA. Likewise, a BA mention might occur elsewhere in the paper, unattached to the word function, in which case we won't pick it up. We'll just have to mention this as a limitation.
+** check publishers for fulltext access via get_full_texts.R
+*** Wiley                                                           :WORKING:
+*** Elsevier                                                        :WORKING:
+*** Springer Nature
+**** Nature                                    :BROKEN:curlpdfYES:curlxmlYES:
+**** Nature research journals
+**** Nature published (but not branded) journals
+*** Oxford University Press
+*** American Association for the Advancement of Science
+*** Annual Reviews
+*** Springer
+Royal Society
+Cold Spring Harbor Lab Press
+American Soc Microbiology
+Public Library Science
+Taylor & Francis Inc
+American Physiological Society
+American Society of Plant Biologists
+Frontiers Media SA
+CSIRO Publishing
+BMC
+Royal Society of Chemistry
+eLife Sciences Publications ltd.
+National Academy of Sciences
+University Chicago Press
+Cambridge University Press
+BMJ Publishing Group
+Wolters Kluwer
+Microbiology Society
+Rockefeller University Press
+Human Kinetics Publishers
+Canadian Science Publsihing, NRC Research Press
+American Chemical Society
+Crop Science Society of America
+Institute of Malacology
+Brill
+American Psychological Association
+
+
