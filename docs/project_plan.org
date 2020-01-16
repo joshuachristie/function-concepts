@@ -64,7 +64,7 @@ n [adj, adv], v. *Function as biological role*
 (Note that although the /specific/ complex system is not identified explicitly (i.e. we don't know the specific pathway being affected), this is function as biological role because it explicates /how/ the siRNA is used in a complex biological system.)
 
 n [adj, adv], v. *Function as biological advantage*[fn:1]
-  - n [adj, adv]: An item's effect in a system that (either directly or indirectly)[fn:2] gives a biological advantage to the Darwinian individual in which the system is contained
+  - n [adj, adv]: An item's effect in a system that (either directly or indirectly)[fn:2] gives a biological advantage (or disadvantage)[fn:bio_disadv] to the Darwinian individual in which the system is contained.
     + (n) "The /function/ of the genetic sequence is to produce an siRNA transcript, which in turn acts to degrade mRNA, providing protection for /C. elegans/ against viral infections.
     + (adj) "The /functional/ effect of the genetic sequence is to produce an siRNA transcript, which in turn acts to degrade mRNA, providing protection for /C. elegans/ against viral infections."
     + (adv) "The /functionally/ relevant effect of the genetic sequence is to produce an siRNA transcript, which in turn acts to degrade mRNA, providing protection for /C. elegans/ against viral infections.
@@ -88,20 +88,40 @@ n [adj, adv], v. *Function as producing (or not producing) a biological activity
     + (n: present participle) "A /functioning/ liver is important", "The liver is /functioning/ as expected"
     + (adj) "A /functional/ liver is important", "A /non-functional/ liver is associated with excessive alcohol intake"
     + (adv) "A /functionally/ useful liver is important", "A pseudogene that is not transcribed is /functionally/ redundant"
-  - v: (For an item) to produce an effect, or to perform its biological role, in accordance with expectations
+  - v: (For an item) to produce a biological activity in accordance with expectations
     + (v) "The liver /functions/ without issues", "The liver /functions/ improperly.
 
 n [adj, adv], v. *Function as performing (or not performing) its biological role*[fn:3]
   - n [adj, adv]: An item that is performing its biological role in accordance with expectations
-    + (n) "Liver /function/ is important for *human* health", "Liver /dysfunction/ is associated with excessive alcohol intake and harms *human* health"
-    + (n: gerund) "/Functioning/ is important in order for the liver to aid *human* health"
-    + (n: present participle) "A /functioning/ liver is important for *human* health", "A liver is /functioning/ as expected in the *hepatic system*"
-    + (adj) "A /functional/ liver is important for *human* health", "A /non-functional/ liver is associated with excessive alcohol intake and impairs the *hepatic system*"
-    + (adv) "A /functionally/ useful liver is important for *human* health", "A pseudogene in the *mTOR pathway* that is not transcribed is /functionally/ redundant"
-  - v: (For an item) to produce an effect, or to perform its biological role, in accordance with expectations
-    + (v) "In healthy *patients*, the liver /functions/ without issues", "In unhealthy *patients*, the liver /functions/ improperly.
+    + (n) "Liver /function/ is important for the hepatic system", "Liver /dysfunction/ is associated with excessive alcohol intake in humans"
+    + (n: gerund) "/Functioning/ is important in order for the liver to play a role in the hepatic system"
+    + (n: present participle) "A /functioning/ liver is important for the hepatic system", "A liver is /functioning/ as expected in the hepatic system"
+    + (adj) "A /functional/ liver is important for the hepatic system", "A /non-functional/ liver is associated with excessive alcohol intake in humans"
+    + (adv) "A /functionally/ useful liver is important for the hepatic system"
+  - v: (For an item) to perform its biological role in accordance with expectations
+    + (v) "The liver /functions/ in most humans", "In some humans, the liver /functions/ improperly.
 
-(The difference between these two senses of function as perform/work is whether a complex system is identified, which is also the difference between activity and role. The system whose capacity is being affected in function as performing its biological role is indicated in bold.)
+(The difference between these two senses of function as perform/work is whether a complex system is identified, which is also the difference between activity and role.)
+
+n [adj, adv], v. *Function as producing (or not producing) a biological advantage*
+  - n [adj, adv]: An item that is producing a biological advantage in accordance with expectations
+    + (n) "Liver /function/ is important for human health[fn:human_health]", "Liver /dysfunction/ is associated with excessive alcohol intake and harms human health"
+    + (n: gerund) "/Functioning/ is important in order for the liver to aid human health"
+    + (n: present participle) "A /functioning/ liver improves the efficiency of the hepatic system[fn:efficiency]", "For human health, the liver needs to be /functioning/ as expected in the hepatic system"
+    + (adj) "A /functional/ liver is important for human health", "A /non-functional/ liver is associated with excessive alcohol intake and impairs the hepatic system"
+    + (adv) "A /functionally/ useful liver is important for human health"
+  - v: (For an item) to produce a biological advantage in accordance with expectations
+    + (v) "In healthy patients, the liver /functions/ without issues", "In unhealthy patients, the liver /functions/ improperly.
+
+n [adj, adv], v. *Function as performing its selected effect*
+  - n [adj, adv]: An item that is performing its selected effect
+    + (n)
+    + (n: gerund)
+    + (n: present participle)
+    + (adj)
+    + (adv)
+  - v: (For an item) to perform its selected effect
+    + (v)
 
 *Technical use*
   - Use of function that is highly technical and cannot easily be unpacked
@@ -127,21 +147,26 @@ This gives the following list of categories:
   4. *function as selected effect*
   5. *function as producing biological activity*
   6. *function as performing biological role*
-  7. *technical*
-  8. *invalid attribution*
-  9. *unidentifiable item*
-  10. *unidentifiable meaning: effect specified*
-  11. *unidentifiable meaning: effect unspecified*
-  12. *mathematics*
-  13. *non-biological role or purpose*
-  14. *performing non-biological role or purpose*
-  15. *relational*
-  16. *social event*
-  17. *programming*
+  7. *function as producing biological advantage*
+  8. *function as performing selected effect*
+  9. *technical*
+  10. *invalid attribution*
+  11. *unidentifiable item*
+  12. *unidentifiable meaning: effect specified*
+  13. *unidentifiable meaning: effect unspecified*
+  14. *mathematics*
+  15. *non-biological role or purpose*
+  16. *performing non-biological role or purpose*
+  17. *relational*
+  18. *social event*
+  19. *programming*
 
 [fn:1] Although this is phrased in terms of an advantage (or, alternatively in Garson's 2016 view, explicitly in terms of fitness-contribution), in practice this will refer to normative judgements that could also refer to biological disadvantage (since the advantage is often relative to a counterfactual, it is also possible to talk of a disadvantage relative to a counterfactual---the important point is that this usage of function is relating the effect of a biological role (either directly or indirectly) to an organismal-level effect that (either directly or indirectly) affects organism fitness.
 [fn:2] Directly or indirect has two meanings, namely: (i) indirect or direct fitness benefits to the individual (e.g. inclusive fitness) and (ii) the biological advantage function phenotype can directly affect fitness (e.g. zebra stripes) or indirectly affect fitness (e.g. a gene that improves metabolic capacity will affect multiple organismal phenotypes; while the net effect could be to improve organismal fitness, the function effect does this indirectly through "higher level" phenotypes).
+[fn:bio_disadv] Since "biological advantage" considers how a trait contributes to the capacity of a complex system, where the capacity of the system gives a biological (ultimately fitness) advantage, it is inherently a counterfactual notion (i.e. comparing how something compares against a real or imagined alternative). A biological disadvantage therefore simply switches which item has the biological advantage, which at our grain of analysis is effectively equivalent (what we are trying to understand with "biological advantage" is when biologists are using function to refer to an item affecting the performance of an organism, which is the case both for "advantage" and "disadvantage" ascriptions).
 [fn:3] This sense of function captures a number of terms associated with not performing as expected (non-functional, dysfunction, malfunction, loss of function, etc.).
+[fn:human_health] Here I'm making the judgement that "health" is a normative statement about how well a human is performing, which means it falls under producing biological advantage.
+[fn:efficiency] This one is more subtle than the human health case, but one could argue that because the liver "working as expected" improves the efficiency of the hepatic system, this implicitly benefits an organism with a functioning liver relative to a counterfactual organism with a less-efficiently-functioning liver. This is a good example for why we need to come up with a comprehensive list of examples that we decide by consensus meet the threshold for normative language. We can then use these examples to arbitrate future cases.
 
 * Operational definition/classification scheme for function
 ** General comments on "unpacking" function
@@ -187,6 +212,8 @@ If the substitution does not alter the sentence's semantics, then we will classi
 If it does alter meaning, or is ambiguous or difficult to parse, then we will classify as *incompletely specified*.
 In the example above, "liver function is affected by gene A expression" becomes "how well the liver works is affected by gene A expression", which seems unambiguous and semantically equivalent and so we would classify as *produce/perform*.
 
+*** TODO add produce/perform biological advantage/selected effect
+
 To summarise, in order to disambiguate function in the sense of *produce/perform*, we will cast into the unpacked form: /x/ functions to do /y/ ..., where /x/ is the item referred to by function (note that for some variations of function, this might require some preprocessing in order to cast into this form).
 If /x/ does not have an identifiable role, this is an indicator that function is being used in the sense of *produce/perform*.
 For these cases, if we substitute "/x/ function" with "how well /x/ performs" (or an analogous substitution, depending on the particular syntatic construction/variant of function) with no loss of meaning, then classify as *function as producing biological activity* or *function as performing biological role* (depending on whether a system /z/ is specified).
@@ -197,15 +224,15 @@ For these cases, if we substitute "/x/ function" with "how well /x/ performs" (o
        - 2.1. Is function (or a variant) being used in a standalone form[fn:4] (e.g. a simple noun as in "The function of gene A is ...", or a verb as in "Gene A functions to ..."). If yes, go to step 2.2; if no, go to step 3.
        - 2.2. Manipulate sentence into unpacked form "/x/ functions to do /y/ ...". If /x/ cannot be identified, classify as *unidentifiable item* and EXIT. If /x/ is a sufficiently concrete noun[fn:5] (e.g. gene, liver) and /y/ (/x's/ effect) can be identified, go to step 4. If /x/ is a concrete noun but /y/ cannot be identified, go to step 5. If /x/ is an abstract noun, go to step 3.6.
     3. Detailed unpacking of function (or variant)[fn:6]
-       - 3.1. Is function being modified by another part of speech (e.g. another noun as in "protein function" or an adjective as in "transcriptional function")? If yes, go to step 3.2; if no (function is modifying another part of speech), go to step 3.4.
+       - 3.1. Is function being modified by another part of speech (e.g. another noun as in "protein function" or an adjective as in "transcriptional function")? If yes, go to step 3.2; if no (it modifies another part of speech such as in "functional spores"), go to step 3.4.
        - 3.2. Is the part of speech that modifies function sufficiently concrete? If yes (e.g. "transcriptional function"), go to step 3.3; if no (e.g. "important function"), treat function as a simple noun and go to step 2.2.
        - 3.3. Is the part of speech that modifies function a noun and the best candidate for /x/ (e.g. "protein function", which could be unpacked as "The protein functions to...")? If yes, go to step 3.7 (noting /x/). If no, is the part of speech that modifies function a candidate for /y/ (e.g. "transcriptional function of the gene", which could be unpacked as "The gene functions to transcribe...")? If yes, go to step 3.6 (noting /y/). If no, treat function as a simple noun and go to step 2.2.[fn:7]
        - 3.4. Identify the noun/adjective/adverb that the variant of function modifies and rearrange into the form "<modified noun> functions to ..."; go to step 3.5.
-       - 3.5. Is the <modified noun> sufficiently concrete (e.g. gene, liver) or is it abstract or an adjective/adverb (e.g. effects, important)? If abstract, go to step 3.6; if concrete, go to step 4.
+       - 3.5. Is the <modified noun> sufficiently concrete (e.g. gene, liver) or is it abstract or an adjective/adverb (e.g. effects, important)? If abstract, go to step 3.6; if concrete, go to step 4 *BUT WHAT IF IT IS PRODUCE/PERFORM?*.
        - 3.6. Can you identify a sufficiently concrete noun (candidate for /x/) that the <function variant + modified part of speech> clause modifies (e.g. in "The gene is functionally important", the abverb "functionally" modifies the adjective "important" and "functionally important" modifies the concrete noun "gene)? If no, classify as *unidentifiable item* and EXIT; if yes, go to step 3.7 (noting /x/ and treating <function variant + abstract modified part of speech> as a simple verb (e.g. unpacking "The gene is functionally important" as "The gene functions to...")).
        - 3.7. Manipulate sentence into unpacked form "/x/ functions to do /y/ in /z/..." and go to step 3.8.
        - 3.8. Is the variant of function being used directly evaluative (e.g. /dysfunctional/, /non-functional/, /loss of function/, /malfunction/, etc.)? If yes, go to step 5; if no, go to step 4.
-    4. Candidates for biological activity/role/advantage/selected effect
+    4. Candidates for biological activity/role/advantage/selected effect (STILL BROKEN, invalid attribution will be removed)
        - 4.1. Is the concrete noun that function modifies a component of a Darwinian individual or a subcomponent (a component of a system that is itself a component of a Darwinian individual)? If yes (e.g. gene, liver), go to step 4.2; if no (e.g. tree, ecosystem), classify as *invalid attribution* and EXIT.
        - 4.2. Can it be unpacked into the following form: /x/ functions to do /y/ such that doing /y/ in the past caused /x/ to be selected for or maintained in a population (relative to an actual or counterfactual historical alternative or set of alternatives to /x/)? If yes, classify as *function as selected effect* and EXIT; if no go to 4.3.
        - 4.3. Can it be unpacked into the following form: /x/ functions to do /y/ in /z/, where /x/ is a component of a complex system /z/, /z/ is a system found in a Darwinian individual /i/, and /x's/ performance of /y/ in /z/ is advantageous for /i/ (relative to an explicitly-identified or implied alternative to /x/)? If yes, classify as *function as biological advantage* and EXIT; if no, go to step 4.4.
@@ -214,7 +241,7 @@ For these cases, if we substitute "/x/ function" with "how well /x/ performs" (o
     5. Candidates for function as performing activity/role
        - 5.1. Confirm that /y/ cannot be identified in the unpacked form (if it can, either you have made a mistake or there is a mistake with the flowchart). Assuming /y/ cannot be identified, go to step 5.2.
        - 5.2. Substitute "/x/ function" with "how well /x/ performs" (or an analogous substitution, depending on the particular syntatic construction/variant of function) into the /raw sentence/ (not the unpacked sentence). If there is loss of meaning or ambiguity, classify as *unidentifiable meaning: effect missing*; if there is no loss of meaning and no ambiguity, go to step 5.3.
-       - 5.3. Can you identify /z/ (complex containing system) in the unpacked sentence? If yes, classify as *function as performing biological role*; if no, classify as *function as producing biological activity*. EXIT.
+       - 5.3. INSERT FLOW FOR PRODUCE/PERFORM (Old text: Can you identify /z/ (complex containing system) in the unpacked sentence? If yes, classify as *function as performing biological role*; if no, classify as *function as producing biological activity*. EXIT.)
 
 [fn:4] By "standalone form", I mean that function is not directly modifying another part of speech (e.g. "functional effects") nor directly being modified by another part of speech (e.g. "protein function")
 [fn:5] In practice, "sufficiently concrete" means that the noun is a candidate for a item/trait/character. Consult Monika to make this consistent with linguistics terminology.
