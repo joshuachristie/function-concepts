@@ -123,16 +123,14 @@ n [adj, adv], v. *Function as performing (or not performing) its selected effect
   - v: (For an item) to perform the biological role for which it was selected
     + (v) "Zebra stripes function to reduce attacks from biting flies"
 
+*Ecological function*
+  - For each of the above 8 cases, there are ecological equivalents.
+  - For biological function, /x/ is a component of a Darwinian individual /i/, and /z/ (if present) is an /i/ or a complex system within an /i/.
+  - For ecological function, /x/ is an /i/, or an assemblage of interacting /i/ s (group, population, species, ecosystem, etc.), and /z/ (if present) is an assemblage of interacting /i/ s
+
 *Technical use*
   - Use of function that is highly technical and cannot easily be unpacked
     + "functional connectivity", "functional biology", "subfunctionalization", "neofunctionalization", etc.
-
-We also need to consider a special case that I will term *invalid attribution*.
-Sometimes, a use of function can be unpacked into a valid candidate for further classification as biological function, but the item to which the function is being attributed is not a valid candidate for a trait having a biological function. 
-Consider the following sentence: "Plant species A functions to increase productivity within the ecosystem". 
-This has a form consistent with biological role, aside from the fact that a plant species is not a component of a Darwinian individual. 
-In these cases (i.e. biological roles being attributed to invalid items), we will classify these as *invalid attribution*.
-I suspect this will almost always involve *function as biological activity* ("the function of a deer is..."), *function as biological role* ("the function of a deer in a herd is to..."), or *function as producing/performing biological activity/role* ("ecosystem functioning is important for...").
 
 Finally, in some cases, we simply don't have enough information to understand the sense in which function is being used even after unpacking. 
 There are several configurations that can lead to this situation.
@@ -145,22 +143,29 @@ This gives the following list of categories:
   2. *function as biological role*
   3. *function as biological advantage*
   4. *function as selected effect*
-  5. *function as producing biological activity*
-  6. *function as performing biological role*
-  7. *function as producing biological advantage*
-  8. *function as performing selected effect*
-  9. *technical*
-  10. *invalid attribution*
-  11. *unidentifiable item*
-  12. *unidentifiable meaning: effect specified*
-  13. *unidentifiable meaning: effect unspecified*
-  14. *mathematics*
-  15. *non-biological role or purpose*
-  16. *performing non-biological role or purpose*
-  17. *relational*
-  18. *social event*
-  19. *programming*
-
+  5. *function as ecological activity*
+  6. *function as ecological role*
+  7. *function as ecological advantage*
+  8. *function as ecological selected effect*
+  9. *function as producing biological activity*
+  10. *function as performing biological role*
+  11. *function as producing biological advantage*
+  12. *function as performing selected effect*
+  13. *function as producing ecological activity*
+  14. *function as producing ecological role*
+  15. *function as producing ecological advantage*
+  16. *function as producing ecological selected effect*
+  17. *technical*
+  18. *unidentifiable item*
+  19. *unidentifiable meaning: effect specified*
+  20. *unidentifiable meaning: effect unspecified*
+  21. *mathematics*
+  22. *non-biological role or purpose*
+  23. *performing non-biological role or purpose*
+  24. *relational*
+  25. *social event*
+  26. *programming*
+      
 [fn:1] Although this is phrased in terms of an advantage (or, alternatively in Garson's 2016 view, explicitly in terms of fitness-contribution), in practice this will refer to normative judgements that could also refer to biological disadvantage (since the advantage is often relative to a counterfactual, it is also possible to talk of a disadvantage relative to a counterfactual---the important point is that this usage of function is relating the effect of a biological role (either directly or indirectly) to an organismal-level effect that (either directly or indirectly) affects organism fitness.
 [fn:2] Directly or indirect has two meanings, namely: (i) indirect or direct fitness benefits to the individual (e.g. inclusive fitness) and (ii) the biological advantage function phenotype can directly affect fitness (e.g. zebra stripes) or indirectly affect fitness (e.g. a gene that improves metabolic capacity will affect multiple organismal phenotypes; while the net effect could be to improve organismal fitness, the function effect does this indirectly through "higher level" phenotypes).
 [fn:bio_disadv] Since "biological advantage" considers how a trait contributes to the capacity of a complex system, where the capacity of the system gives a biological (ultimately fitness) advantage, it is inherently a counterfactual notion (i.e. comparing how something compares against a real or imagined alternative). A biological disadvantage therefore simply switches which item has the biological advantage, which at our grain of analysis is effectively equivalent (what we are trying to understand with "biological advantage" is when biologists are using function to refer to an item affecting the performance of an organism, which is the case both for "advantage" and "disadvantage" ascriptions).
@@ -220,7 +225,9 @@ To summarise, in order to disambiguate function in the sense of *produce/perform
 If /x/ does not have an identifiable role, this is an indicator that function is being used in the sense of *produce/perform*.
 For these cases, if we substitute "/x/ function" with "how well /x/ performs" (or an analogous substitution, depending on the particular syntatic construction/variant of function) with no loss of meaning, then classify as *produce/perform*.
 
-The difference between *function as producing biological activity* and *function as performing biological role* is whether a system /z/ is specified. The difference between *function as performing biological role* and *function as producing biological advantage* is whether there is an specified connection between performing the biological role and a normative aspect of the organism's performance. *Function as performing selected effect* is distinguished by its focus on an item performing a biological role that has been shaped by selection.
+The difference between *function as producing biological activity* and *function as performing biological role* is whether a system /z/ is specified. The difference between *function as performing biological role* and *function as producing biological advantage* is whether there is a specified connection between performing the biological role and a normative aspect of the organism's performance. *Function as performing selected effect* is distinguished by its focus on an item performing a biological role that has been shaped by selection.
+
+The ecological function equivalents to the biological function equivalents differ with regard to the types of items specified for /x/ and /z/, as explained earlier and in the flowchart below.
 
 ** Flowchart/workflow for unpacking and disambiguating function sentences
     1. Non-biological senses of function
@@ -233,29 +240,28 @@ The difference between *function as producing biological activity* and *function
        - 3.2. Is the part of speech that modifies function sufficiently concrete? If yes (e.g. "transcriptional function"), go to step 3.3; if no (e.g. "important function"), treat function as a simple noun and go to step 2.2.
        - 3.3. Is the part of speech that modifies function a noun and the best candidate for /x/ (e.g. "protein function", which could be unpacked as "The protein functions to...")? If yes, go to step 3.7 (noting /x/). If no, is the part of speech that modifies function a candidate for /y/ (e.g. "transcriptional function of the gene", which could be unpacked as "The gene functions to transcribe...")? If yes, go to step 3.6 (noting /y/). If no, treat function as a simple noun and go to step 2.2. (If you can answer yes to the first two questions directly, go to 3.7 noting /x/ and /y/.)[fn:7]
        - 3.4. Identify the noun/adjective/adverb that the variant of function modifies and rearrange into the form "<modified noun> functions to ..."; go to step 3.5.
-       - 3.5. Is the <modified noun> sufficiently concrete (e.g. gene, liver) or is it abstract or an adjective/adverb (e.g. effects, important)? If abstract, go to step 3.6; if concrete, go to step 4.
+       - 3.5. Is the <modified noun> sufficiently concrete (e.g. gene, liver) or is it abstract or an adjective/adverb (e.g. effects, important)? If abstract, go to step 3.6; if concrete, go to step 3.7
        - 3.6. Can you identify a sufficiently concrete noun (candidate for /x/) that the <function variant + modified part of speech> clause modifies (e.g. in "The gene is functionally important", the abverb "functionally" modifies the adjective "important" and "functionally important" modifies the concrete noun "gene)? If no, classify as *unidentifiable item* and EXIT; if yes, go to step 3.7 (noting /x/ and treating <function variant + abstract modified part of speech> as a simple verb (e.g. unpacking "The gene is functionally important" as "The gene functions to...")).
        - 3.7. Manipulate sentence into unpacked form "/x/ functions to do /y/ in /z/..." and go to step 3.8.
        - 3.8. Can /y/ be identified in the unpacked form? Is the variant of function being used directly evaluative (e.g. /dysfunctional/, /non-functional/, /loss of function/, /malfunction/, etc.)? If you can answer yes to either question, go to step 5; if no, go to step 4.
-    4. Candidates for biological activity/role/advantage/selected effect (STILL BROKEN, invalid attribution will be removed)
-       - 4.1. Is the concrete noun that function modifies a component of a Darwinian individual or a subcomponent (a component of a system that is itself a component of a Darwinian individual)? If yes (e.g. gene, liver), go to step 4.2; if no (e.g. tree, ecosystem), classify as *invalid attribution* and EXIT.
-       - 4.2. Can it be unpacked into the following form: /x/ functions to do /y/ such that doing /y/ in the past caused /x/ to be selected for or maintained in a population (relative to an actual or counterfactual historical alternative or set of alternatives to /x/)? If yes, classify as *function as selected effect* and EXIT; if no go to 4.3.
-       - 4.3. Can it be unpacked into the following form: /x/ functions to do /y/ in /z/, where /x/ is a component of a complex system /z/, /z/ is a system found in a Darwinian individual /i/, and /x's/ performance of /y/ in /z/ is advantageous for /i/ (relative to an explicitly-identified or implied alternative to /x/)? If yes, classify as *function as biological advantage* and EXIT; if no, go to step 4.4.
-       - 4.4. Can it be unpacked into the following form: /x/ functions to do /y/ in /z/, where /x/ is a component of a complex system /z/, and /z/ is a system found in a Darwinian individual /i/? If yes, classify as *function as biological role* and EXIT; if no, go to step 4.5.
-       - 4.5. Can it be unpacked into the following form: /x/ functions to do /y/, where /x/ is a component (or subcomponent) of a Darwinian individual /i/"? If yes, classify as *function as biological activity* and EXIT; if no, classify as *unidentifiable meaning: effect present* and EXIT.
+    4. Candidates for biological activity/role/advantage/selected effect
+       - 4.1. Can it be unpacked into the following form: /x/ functions to do /y/ such that doing /y/ in the past caused /x/ to be selected for or maintained in a population (relative to an actual or counterfactual historical alternative or set of alternatives to /x/)? If yes and /x/ is a component of a Darwinian individual /i/, classify as *function as selected effect* and EXIT; if yes and /x/ is an /i/ or an assemblage of interacting /i/ s (group, population, species, ecosystem, etc.), classify as *function as ecological selected effect* and EXIT; if no go to 4.2.
+       - 4.2. Can it be unpacked into the following form: /x/ functions to do /y/ in /z/, where /x/ is a component of a complex system /z/, /z/ is a Darwinian individual /i/ or a complex system within /i/, and /x's/ performance of /y/ in /z/ is advantageous for /i/ (relative to an explicitly-identified or implied alternative to /x/)? If yes, classify as *function as biological advantage* and EXIT. Can it be unpacked into the following form: /x/ functions to do /y/ in /z/, where /x/ is a component of a complex system /z/[fn:ecol], /z/ is an assemblage of interacting /i/ s (group, population, species, ecosystem, etc.), and /x/'s performance of /y/ is advantageous for /z/[fn:ecol2] (relative to an explicitly-identified or implied alternative to /x/)? If yes classify as *function as ecological advantage* and EXIT. If no, go to step 4.3.
+       - 4.3. Can it be unpacked into the following form: /x/ functions to do /y/ in /z/, where /x/ is a component of a complex system /z/, and /z/ is a Darwinian individual /i/ or a complex system within /i/? If yes, classify as *function as biological role* and EXIT. Can it be unpacked into the following form: /x/ functions to do /y/ in /z/, where /x/ is a component of a complex system /z/, and /z/ is an assemblage of interacting /i/ s (group, population, species, ecosystem, etc.)? If yes, classify as *function as ecological role* and EXIT. If no, go to step 4.4.
+       - 4.4. Can it be unpacked into the following form: /x/ functions to do /y/, where /x/ is a component (or subcomponent) of a Darwinian individual /i/"? If yes, classify as *function as biological activity* and EXIT. Can it be unpacked into the following form: /x/ functions to do /y/, where /x/ is a Darwinian individual /i/ or an assemblage of interacting /i/ s (group, population, species, ecosystem, etc.)? If yes, classify as *function as ecological activity* and EXIT. If no, classify as *unidentifiable meaning: effect specified* and EXIT.
     5. Candidates for function as performing or producing activity/role/advantage/selected effects[fn:perform]
        - 5.1. Confirm that /y/ cannot be identified in the unpacked form (if it can, either you have made a mistake or there is a mistake with the flowchart). Assuming /y/ cannot be identified, go to step 5.2.
-       - 5.2. Substitute "/x/ function" with "how well /x/ performs" (or an analogous substitution, depending on the particular syntatic construction/variant of function) into the /raw sentence/ (not the unpacked sentence). If there is loss of meaning or ambiguity, classify as *unidentifiable meaning: effect missing*; if there is no loss of meaning and no ambiguity, go to step 5.3.
-       - 5.3. Does the sentences's language indicate that the biological role has been shaped by selection? If so, classify as *function as performing selected effect* and EXIT. If not, go to step 5.4.
-       - 5.4. Can you identify /z/ (complex containing system) in the unpacked sentence? If yes, go to step 5.5; if not, classify as *function as producing biological activity*[fn:produce_activity] and EXIT.
-       - 5.5. Is the performance of the biological role associated with how well the complex system (or organism containing the complex system) performs (e.g "Liver functioning affects /human health/")? If yes, classify as *function as performing biological advantage*; if no (e.g. "Liver functioning is important for the hepatic system"), classify as *function as producing biological role*. EXIT.
-
-       - add ecological function workflow also
+       - 5.2. Substitute "/x/ function" with "how well /x/ performs" (or an analogous substitution, depending on the particular syntatic construction/variant of function) into the /raw sentence/ (not the unpacked sentence). If there is loss of meaning or ambiguity, classify as *unidentifiable meaning: effect unspecified*; if there is no loss of meaning and no ambiguity, go to step 5.3.
+       - 5.3. Does the sentences's language indicate that the biological role has been shaped by selection? If so, and /x/ is a component of a Darwinian individual /i/, classify as *function as performing selected effect* and EXIT. If so, and /x/ is an /i/ or an interacting assemblage of /i/ s, classify as *function as performing ecological selected effect* and EXIT. If not, go to step 5.4.
+       - 5.4. Can you identify /z/ (complex containing system) in the unpacked sentence? If yes, go to step 5.5; if not, and /x/ is a component of a Darwinian individual /i/, classify as *function as producing biological activity*[fn:produce_activity] and EXIT. If not and /x/ is a Darwinian individual /i/ or an interacting assemblage of /i/ s, classify as *function as producing ecological activity* and EXIT.
+       - 5.5. Is the performance of the biological role associated with how well the complex system (or organism containing the complex system) performs (e.g "Liver functioning affects /human health/")? If yes, and if /z/ is a Darwinian individual /i/ or a complex system within /i/, classify as *function as performing biological advantage*. If yes, and if /z/ is an interacting assemblage of /i/ s (group, population, species, ecosystem, etc.), classify as *function as performing ecological advantage*. If no (e.g. "Liver functioning is important for the hepatic system"), and /z/ is an /i/ or a complex system within /i/ , classify as *function as producing biological role*. If no, and /z/ is an an interacting assemblage of /i/ s (group, population, species, ecosystem, etc.), classify as *function as producing ecological role*. EXIT.
 
 [fn:4] By "standalone form", I mean that function is not directly modifying another part of speech (e.g. "functional effects") nor directly being modified by another part of speech (e.g. "protein function")
 [fn:5] In practice, "sufficiently concrete" means that the noun is a candidate for a item/trait/character. Consult Monika to make this consistent with linguistics terminology.
 [fn:4or5] I now differentiate between concrete nouns that have /y/ specified/non-specified to direct between activity/role/adv/se and produce/perform (resolves the "functional spore" case). But note that these cases could be a bit ambiguous when it comes to identifying /y/. For example, if we had something like "Gene A's expression affects liver function, namely how efficiently it breaks down metabolites, in the hepatic system." Given the current workflow, "liver" is /x/, "breakdown metabolites" is /y/, "hepatic system" is /z/ and so this is *function as biological role*. But if it were instead "Gene A's expression affects liver function in the hepatic system", "liver" is /x/, /y/ is missing, "hepatic system" is /z/ and so this is *function as performing biological role*. But arguably the semantics of the two sentences are the same (at least intuitively to me it seems like the first case is also *function as performing biological role*). The current workflow effectively says that function as activity/role/adv/se trumps function as performing/producing, which may be fine but it may not. For the moment, I'm going to leave this unresolved, but try to make a note of any cases in which determining /y/ is ambiguous.
 [fn:6] Function should be either being used as an adjective ("the gene is functional"), adjective phrase ("the gene is of functional importance"), nominative phrase ("the functional gene" or "protein function"), adverb ("the gene is functionally important") or adverbal phrase ("the functionally-important gene". Need to check with Monika to make sure that these options are linguistically accurate and to make sure that we phrase this in a formally-correct manner. For our purposes though, this basically applies to anything outside of the simple noun and verb cases.
 [fn:7] Zach, can you write some detailed notes about what sort of examples we get through here? Aside from examples of the two cases, I'm especially interested in any cases that answer no because I'm not sure if I'm redirecting them correctly.
+[fn:ecol] Should we stipulate that /x/ must be a Darwinian individual or higher level or organisation, or would it be fine to classify as performing an ecological function if a trait of an individual contributed to the functioning of a group, ecosystem, etc.?
+[fn:ecol2] The analogy gets hard to follow here as biological advantage explicitly refers to the advantage to the individual (even if /z/ is a subsystem of the individual) whereas there is no such external reference point for ecological advantage (so I've just substituted the complex system /z/).
 [fn:perform] I still need to formalise some of these steps
 [fn:produce_activity] In order to be classified as such, it is sufficient for /x/ to be a candidate for a trait, which means that something as simple as "liver function" is technically sufficient. However, because of the criterion in step 5.2 that there not be loss of meaning or ambiguity after the substitution, in practice the sentence will need to be quite a bit more complex (as otherwise there is no way to establish that the substitution retains equivalent meaning).
