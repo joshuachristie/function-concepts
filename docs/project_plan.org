@@ -45,83 +45,89 @@ To separate colloquial use from technical use, I will redefine these as *non-bio
 
 To the colloquial definitions above, we add the technical definitions, which map onto the scheme in Wouters (2003):
 
-n [adj, adv], v. *Function as biological activity*
+n [adj, adv[fn:adv], v [adv]. *Function as biological activity*
   - n [adj, adv]: What an item does or is capable of doing (where the item is a component or subcomponent of a Darwinian individual)
     + (n) "The /function/ of the genetic sequence is to produce an siRNA transcript"
     + (adj) "The /functional/ effect of the genetic sequence is to produce an siRNA transcript"
     + (adv) "The /functionally/ relevant effect of the genetic sequence is to produce an siRNA transcript"
-  - v: (For an item) to do something or to be capable of doing something (where the item is a component or subcomponent of a Darwinian individual)
+  - v [adv]: (For an item) to do something or to be capable of doing something (where the item is a component or subcomponent of a Darwinian individual)
     + (v) "The genetic sequence /functions/ to produce an siRNA transcript"
+    + (adv) "The genetic sequence /functionally/ produces[fn:adv_v] an siRNA transcript"
 
-n [adj, adv], v. *Function as biological role*
+n [adj, adv], v [adv]. *Function as biological role*
   - n [adj, adv]: A role played by a component that contributes to the capacity of a complex biological system contained within a Darwinian individual
     + (n) "The /function/ of the genetic sequence is to produce an siRNA transcript, which in turn acts to degrade mRNA"
     + (adj) "The /functional/ effect of the genetic sequence is to produce an siRNA transcript, which in turn acts to degrade mRNA"
     + (adv) "The /functionally/ relevant effect of the genetic sequence is to produce an siRNA transcript, which in turn acts to degrade mRNA"
-  - v: (For an item) to perform a role that contributes to the capacity of a complex biological system contained within a Darwinian individual
+  - v [adv]: (For an item) to perform a role that contributes to the capacity of a complex biological system contained within a Darwinian individual
     + (v) "The genetic sequence /functions/ to produce an siRNA transcript, which in turn acts to degrade mRNA"
+    + (adv) "The genetic sequence /functionally/ produces an siRNA transcript, which in turn acts to degrade mRNA"
 
 (Note that although the /specific/ complex system is not identified explicitly (i.e. we don't know the specific pathway being affected), this is function as biological role because it explicates /how/ the siRNA is used in a complex biological system.)
 
-n [adj, adv], v. *Function as biological advantage*
+n [adj, adv], v [adv]. *Function as biological advantage*
   - n [adj, adv]: An item's effect in a system that (either directly or indirectly)[fn:dir_indir] gives a biological advantage (or disadvantage)[fn:bio_disadv] to the Darwinian individual in which the system is contained.
     + (n) "The /function/ of the genetic sequence is to produce an siRNA transcript, which in turn acts to degrade mRNA, providing protection for /C. elegans/ against viral infections.
     + (adj) "The /functional/ effect of the genetic sequence is to produce an siRNA transcript, which in turn acts to degrade mRNA, providing protection for /C. elegans/ against viral infections."
     + (adv) "The /functionally/ relevant effect of the genetic sequence is to produce an siRNA transcript, which in turn acts to degrade mRNA, providing protection for /C. elegans/ against viral infections.
-  - v: (For an item) to affect a system in a way that (either directly or indirectly)[fn:dir_indir] benefits the Darwinian individual in which the system is contained
+  - v [adv]: (For an item) to affect a system in a way that (either directly or indirectly)[fn:dir_indir] benefits the Darwinian individual in which the system is contained
     + (v) "The genetic sequence /functions/ to produce an siRNA transcript, which in turn acts to degrade mRNA, providing protection for /C. elegans/ against viral infections.
+    + (adv) "The genetic sequence /functionally/ produces an siRNA transcript, which in turn acts to degrade mRNA, providing protection for /C. elegans/ against viral infections.
 
-n [adj, adv], v. *Function as selected effect*
+n [adj, adv], v [adv]. *Function as selected effect*
   - n [adj, adv]: An item's effect that contributed to historical selection for, or maintenance of, the item in Darwinian individuals
     + (n) "The /function/ of the genetic sequence is to produce an siRNA transcript because protecting against viral infections was selected for in /C. elegans/ populations."
     + (adj) "The /functional/ effect of the genetic sequence is to produce an siRNA transcript because protecting against viral infections was selected for in /C. elegans/ populations."
     + (adv) "The /functionally/ relevant effect of the genetic sequence is to produce an siRNA transcript because protecting against viral infections was was selected for in /C. elegans/ populations."
-  - v: (For an item) to have contributed to historical selection for, or maintenance of, the item in Darwinian individuals
+  - v [adv]: (For an item) to have contributed to historical selection for, or maintenance of, the item in Darwinian individuals
     + (v) "The genetic sequence /functions/ to produce an siRNA transcript because protecting against viral infections was selected for in /C. elegans/ populations."
+    + (adv) "The genetic sequence /functionally/ produces an siRNA transcript because protecting against viral infections was selected for in /C. elegans/ populations."
 
-(Note, since the adverbal form (/functionally/---any others?) seems to modify an adjective or nominal phrase rather than a verb, I've lumped its definition with noun/adjective.)
-
-n [adj, adv], v. *Function as producing (or not producing) a biological activity*[fn:activity]
+n [adj, adv], v [adv]. *Function as producing (or not producing) a biological activity*[fn:activity]
   - n [adj, adv]: An item that is producing a biological activity in accordance with expectations
     + (n) "Liver /function/ is important", "Liver /dysfunction/ is associated with excessive alcohol intake"
     + (n: gerund) "/Functioning/ is important for the liver"
     + (n: present participle) "A /functioning/ liver is important", "The liver is /functioning/ as expected"
     + (adj) "A /functional/ liver is important", "A /non-functional/ liver is associated with excessive alcohol intake"
     + (adv) "A /functionally/ useful liver is important", "A pseudogene that is not transcribed is /functionally/ redundant"
-  - v: (For an item) to produce a biological activity in accordance with expectations
+  - v [adv]: (For an item) to produce a biological activity in accordance with expectations
     + (v) "The liver /functions/ without issues", "The liver /functions/ improperly.
+    + (adv) "The liver operates /functionally/", "The liver does not operate /functionally/ .
 
-n [adj, adv], v. *Function as performing (or not performing) its biological role*
+n [adj, adv], v [adv]. *Function as performing (or not performing) its biological role*
   - n [adj, adv]: An item that is performing its biological role in accordance with expectations[fn:perform_role]
     + (n) "Liver /function/ is important for the hepatic system", "Liver /dysfunction/ is associated with excessive alcohol intake in humans"
     + (n: gerund) "/Functioning/ is important in order for the liver to play a role in the hepatic system"
     + (n: present participle) "A /functioning/ liver is important for the hepatic system", "A liver is /functioning/ as expected in the hepatic system"
     + (adj) "A /functional/ liver is important for the hepatic system", "A /non-functional/ liver is associated with excessive alcohol intake in humans"
     + (adv) "A /functionally/ useful liver is important for the hepatic system"
-  - v: (For an item) to perform its biological role in accordance with expectations
+  - v [adv]: (For an item) to perform its biological role in accordance with expectations
     + (v) "The liver /functions/ in most humans", "In some humans, the liver /functions/ improperly.
+    + (adv) "The liver operates /functionally/ in most humans", "In some humans, the liver is /functionally/ impaired.
 
 (The difference between these two senses of function as perform/work is whether a complex system is identified, which is also the difference between activity and role.)
 
-n [adj, adv], v. *Function as producing (or not producing) a biological advantage*
+n [adj, adv], v [adv]. *Function as producing (or not producing) a biological advantage*
   - n [adj, adv]: An item that is performing its biological role, producing a biological advantage in accordance with expectations[fn:produce_adv]
     + (n) "Liver /function/ is important for human health[fn:human_health]", "Liver /dysfunction/ is associated with excessive alcohol intake and liver disease[fn:disease]"
     + (n: gerund) "/Functioning/ is important in order for the liver to aid human health"
     + (n: present participle) "A /functioning/ liver improves the efficiency of the hepatic system[fn:efficiency]", "For human health, the liver needs to be /functioning/ as expected in the hepatic system"
     + (adj) "A /functional/ liver is important for human health", "A /non-functional/ liver is associated with excessive alcohol intake and impairs the hepatic system"
     + (adv) "A /functionally/ useful liver is important for human health"
-  - v: (For an item) to perform its biological role, producing a biological advantage in accordance with expectations
+  - v [adv]: (For an item) to perform its biological role, producing a biological advantage in accordance with expectations
     + (v) "In healthy patients, the liver /functions/ without issues", "In unhealthy patients, the liver /functions/ improperly.
+    + (adv) "In healthy patients, the liver operates /functionally/", "In unhealthy patients, the liver is /functionally/ broken.
 
-n [adj, adv], v. *Function as performing (or not performing) its selected effect*
+n [adj, adv], v [adv]. *Function as performing (or not performing) its selected effect*
   - n [adj, adv]: An item that is performing the biological role for which it was selected
     + (n) "Zebra stripe /function/ helps reduce attacks from biting flies"
     + (n: gerund) "/Functioning/ is important in order for zebra stripes to reduce attacks from biting flies"
     + (n: present participle) "/Functioning/ zebra stripes can reduce attacks from biting flies"
     + (adj) "/Functional/ zebra stripes can reduce attacks from biting flies"
     + (adv) "/Functionally/ useful zebra stripes can reduce attacks from biting flies"
-  - v: (For an item) to perform the biological role for which it was selected
-    + (v) Zebra stripes /function/ if they reduce attacks from biting flies"
+  - v [adv]: (For an item) to perform the biological role for which it was selected
+    + (v) "Zebra stripes /function/ if they reduce attacks from biting flies"
+    + (adv) "Zebra stripes perform /functionally/ if they reduce attacks from biting flies"
 
 *Ecological function*
   - For each of the above 8 cases, there are ecological equivalents.
@@ -166,6 +172,8 @@ This gives the following list of categories:
   25. *social event*
   26. *programming*
 
+[fn:adv] I have yet to encounter a scenario in which an adverbal form of function---functionally is the only one that I can think of---modifies a verb (e.g. something like "the gene is functionally transcribed"). Instead it typically modifies an adjective (e.g. "functionally important"). But for completeness I have added modification of a verb as a possibility.
+[fn:adv_v] Pretty good example of why we don't encounter this form, as it is a torturous construction.
 [fn:dir_indir] Directly or indirect has two meanings, namely: (i) indirect or direct fitness benefits to the individual (e.g. inclusive fitness) and (ii) the phenotype might directly affect fitness (e.g. zebra stripes) or it might indirectly affect fitness by contributing to a phenotype (e.g. a gene involved in pigment production contributes to a mimicry phenotype). For (i), the system /z/ needs to be either the organism or a system of the organism; however, the advantage to the organism could be gained via interactions beyond the organism (e.g. a gene for altruism will affect a complex system within an organism, but the fitness advantage to the organism is realised through interactions of the focal organism and its social partners).
 [fn:bio_disadv] Since "biological advantage" considers how a trait contributes to the capacity of a complex system, where the capacity of the system gives a biological (ultimately fitness) advantage, it is inherently a counterfactual notion (i.e. comparing how something compares against a probable or imagined alternative). A biological disadvantage therefore simply switches which item has the biological advantage, which at our grain of analysis is effectively equivalent (what we are trying to understand with "biological advantage" is when biologists are using function to refer to an item affecting the performance of an organism, which is the case both for "advantage" and "disadvantage" ascriptions).
 [fn:activity] This sense of function captures a number of terms associated with not performing as expected (non-functional, dysfunction, malfunction, loss of function, etc.).
@@ -174,7 +182,6 @@ This gives the following list of categories:
 [fn:human_health] Here I'm making the judgement that "health" is a normative statement about how well a human is performing (with a binary classification of "disease" for everything below a threshold and "health" for everything above that threshold). Implicitly, the counterfactual here is a human with a non-functioning liver. This is subtly different to the way that the counterfactual comparison works for the case of function as biological advantage. In this latter case, the counterfactual comparison is that of our trait of interest and a (real or imagined) competing trait (e.g. zebras with stripes vs. zebras with no stripes). In the case of "health", or more generally function as producing a biological advantage, the counterfactual comparison is that of a functioning version of our trait of interest (e.g. liver) and a non-functioning version of our trait of interest.
 [fn:disease] This is the flip-side of "health". The expectation is that if the biological role is performed properly, then "health" will result; if the biological role is not performed properly (i.e. the mechanism is dysfunctional), then "disease" results.
 [fn:efficiency] This one is more subtle than the human health case, but one could argue that because the liver "working as expected" improves the efficiency of the hepatic system, this implicitly benefits an organism with a functioning liver relative to a counterfactual organism with a less-efficiently-functioning liver. This is a good example for why we need to come up with a comprehensive list of examples that we decide by consensus meet the threshold for normative language. We can then use these examples to arbitrate future cases.
-
 
 * Operational definition/classification scheme for function
 ** General comments on "unpacking" function
@@ -273,3 +280,10 @@ The ecological function equivalents to the biological function equivalents diffe
   - Examples of function as performing selected effects and close-but-rejected cases to aid ruling on the evolutionary/etiological language requirement
   - List of the sort of language/terms that have been used to rule on the normative language requirement of biological advantage
   - List of the sort of language/terms that have been used to rule on the evolutionary/etiological language requirement of selected effects
+* 20200205 notes from meeting with Monika
+  - can test for a nominal phrase by substituting with a pronoun (it, this, etc.)
+  - nominal phrase construction is premodifier(s)-head-postmodifier(s)
+  - can use branching to divide nominal phrase into smaller nominal phrases
+  - we should add another decision tree to step 3 where we cast a sentence into a nominal phrase or rearrange nominal phrase if necessary (e.g. for recasting, "uterine glands are functional" to "functional uterine glands" where "glands" is head, "uterine" is "modifier" of glands, and "functional" modifies the nominal phrase "uterine glands"; for rearranging, "protein functional evolution" into "functional protein evolution")
+  - we essentially have 3 layers--syntactical, in which we try to get around the varieties of syntatic structures by unpacking into a standard form, general semantic for things like separating "abstract" and "concrete" nounts, and discipline-specific semanatic, in which after unpacking into a standard form we still need to interpret the authors' intentions.
+  - I will need to be more explicit about some of the syntatical structures (aside from the stuff discussed in this meeting, I also need to incorporate the stuff on functioning as gerund, present participle, functional, functionally, etc. into the flowchart)
