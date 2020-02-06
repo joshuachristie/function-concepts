@@ -280,10 +280,37 @@ The ecological function equivalents to the biological function equivalents diffe
   - Examples of function as performing selected effects and close-but-rejected cases to aid ruling on the evolutionary/etiological language requirement
   - List of the sort of language/terms that have been used to rule on the normative language requirement of biological advantage
   - List of the sort of language/terms that have been used to rule on the evolutionary/etiological language requirement of selected effects
-* 20200205 notes from meeting with Monika
+* notes on syntatical structure
+** 20200205 notes from meeting with Monika
   - can test for a nominal phrase by substituting with a pronoun (it, this, etc.)
   - nominal phrase construction is premodifier(s)-head-postmodifier(s)
   - can use branching to divide nominal phrase into smaller nominal phrases
   - we should add another decision tree to step 3 where we cast a sentence into a nominal phrase or rearrange nominal phrase if necessary (e.g. for recasting, "uterine glands are functional" to "functional uterine glands" where "glands" is head, "uterine" is "modifier" of glands, and "functional" modifies the nominal phrase "uterine glands"; for rearranging, "protein functional evolution" into "functional protein evolution")
   - we essentially have 3 layers--syntactical, in which we try to get around the varieties of syntatic structures by unpacking into a standard form, general semantic for things like separating "abstract" and "concrete" nounts, and discipline-specific semanatic, in which after unpacking into a standard form we still need to interpret the authors' intentions.
   - I will need to be more explicit about some of the syntatical structures (aside from the stuff discussed in this meeting, I also need to incorporate the stuff on functioning as gerund, present participle, functional, functionally, etc. into the flowchart)
+** 20200205 notes from linguistic passages sent by Monika
+  - the head of a nominal, adjective, or adverb phrase is the element that can replace the entire phrase without affecting sentence structure (e.g. "/New books on linguistics/ are very expensive"--"/Books/ are very expensive"; doesn't hold for verb phrases or prepositional phrases, as replacing the most important constituent here will not retain the structure, e.g. "John darted /from the room/"--"John darted /from/. Also for a verb phrase it is semantic considerations that determine which is the most importatn constituent (in a verb phrase, all elements are verbs); in a preposition phrase it is obviously the preposition that's the most important constituent)
+    + preposition phrases are obviously important for us, as illustrated in a phrase like "the function of uterine glands", in which case the prepositional phrase /of uterine glands/, /of/ is said to govern the other constituent /uterine glands/.
+    + in nominal, adjective, adverb, verb phrases, the relation between dominant member and other constituents is /subordination/
+  - elements other than the head in a nominal phrase are /modifiers/ (/premodifiers/ if they precede the head; /postmodifiers/ if they follow the head). You can have multiple pre/post modifiers. If a premodifier is interuppted by the head, then it is a /discontinuous modifier/
+  - another element of a nominal phrase is the /determiner/, whihc determines whether the referent of the noun phrase is definite or indefinite, whether one or more referents are intended, etc. (e.g. /The/ book that I need, /My/ best suit, /Every/ boy in my class, etc.). It's very rare for a determiner to not be realised in a noun phrase and it's rarely possible to leave it out without destroying structure; modifiers, however, can be left out (the latter is why one can replace a noun phrase by the head noun, although I guess this implies that you leave in the determiner when doing the substitution)
+  - modifiers can be /descriptive/, which describes the referent of the noun phrase in terms of a particular quality (e.g. that /tall/ boy) or /classifying/, which denotes or creates a subclass of the head (e.g. a /polar/ bear, a /criminal/ court). descriptive modifiers can themselves be intensified (e.g. that /very/ tall boy), but classifying modifiers cannot
+  - noun phrases typically realise functions as subject, direct object, indirect object, benefactive object, subject attribute, and object attribute.
+  - prepositional phrase may postmodify a noun phrase (is it equivalent to say that a noun phrase may premodify a prepositional phrase?)
+  - adverb can act as premodifier in adjective phrase (e.g. functionally important)
+  - adjective can be used attributably (e.g. the functional gene) or used as a predicatively (e.g. the gene is functional) as either subject or object attribute
+  - (not from the notes but important) nouns can be used attributatively (known as attributative noun, noun premodifier, noun adjunct, or converted adjective). An example is "protein function". I think it should always be the case that in a string of nouns like the first will be attributative while the last will be the head of the noun phrase
+** thoughts related to syntactical unpacking of function
+*** noun phrases 
+I'll first consider when the base form "function" is used.
+*Case 1*: function is the subject of the sentence or the head noun of a noun phrase that acts as the subject.
+Examples: "The function of the gene is to ...", "The function is to...", "The important function of the gene is...", "Protein function is important for..."
+These are straightforward cases, which match the "standalone form" that I had previously described them as (this terminology needs to be changed)
+*Case 2*: 
+
+
+in the base form "function", which case it 
+
+
+
+a variant of function may also appear in the predicate (linked to a subject by a copula such as "is")
