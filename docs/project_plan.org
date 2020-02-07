@@ -289,10 +289,10 @@ The ecological function equivalents to the biological function equivalents diffe
   - we essentially have 3 layers--syntactical, in which we try to get around the varieties of syntatic structures by unpacking into a standard form, general semantic for things like separating "abstract" and "concrete" nounts, and discipline-specific semanatic, in which after unpacking into a standard form we still need to interpret the authors' intentions.
   - I will need to be more explicit about some of the syntatical structures (aside from the stuff discussed in this meeting, I also need to incorporate the stuff on functioning as gerund, present participle, functional, functionally, etc. into the flowchart)
 ** 20200205 notes from linguistic passages sent by Monika
-  - the head of a nominal, adjective, or adverb phrase is the element that can replace the entire phrase without affecting sentence structure (e.g. "/New books on linguistics/ are very expensive"--"/Books/ are very expensive"; doesn't hold for verb phrases or prepositional phrases, as replacing the most important constituent here will not retain the structure, e.g. "John darted /from the room/"--"John darted /from/. Also for a verb phrase it is semantic considerations that determine which is the most importatn constituent (in a verb phrase, all elements are verbs); in a preposition phrase it is obviously the preposition that's the most important constituent)
+  - the head of a nominal, adjective, or adverb phrase is the element that can replace the entire phrase without affecting sentence structure (e.g. "/New books on linguistics/ are very expensive"--"/Books/ are very expensive"; doesn't hold for verb phrases or prepositional phrases, as replacing the most important constituent here will not retain the structure, e.g. "John darted /from the room/"--"John darted /from/. Also for a verb phrase it is semantic considerations that determine which is the most important constituent (in a verb phrase, all elements are verbs); in a preposition phrase it is obviously the preposition that's the most important constituent)
     + preposition phrases are obviously important for us, as illustrated in a phrase like "the function of uterine glands", in which case the prepositional phrase /of uterine glands/, /of/ is said to govern the other constituent /uterine glands/.
     + in nominal, adjective, adverb, verb phrases, the relation between dominant member and other constituents is /subordination/
-  - elements other than the head in a nominal phrase are /modifiers/ (/premodifiers/ if they precede the head; /postmodifiers/ if they follow the head). You can have multiple pre/post modifiers. If a premodifier is interuppted by the head, then it is a /discontinuous modifier/
+  - elements other than the head in a nominal phrase are /modifiers/ (/premodifiers/ if they precede the head; /postmodifiers/ if they follow the head). You can have multiple pre/post modifiers. If a premodifier is interrupted by the head, then it is a /discontinuous modifier/
   - another element of a nominal phrase is the /determiner/, whihc determines whether the referent of the noun phrase is definite or indefinite, whether one or more referents are intended, etc. (e.g. /The/ book that I need, /My/ best suit, /Every/ boy in my class, etc.). It's very rare for a determiner to not be realised in a noun phrase and it's rarely possible to leave it out without destroying structure; modifiers, however, can be left out (the latter is why one can replace a noun phrase by the head noun, although I guess this implies that you leave in the determiner when doing the substitution)
   - modifiers can be /descriptive/, which describes the referent of the noun phrase in terms of a particular quality (e.g. that /tall/ boy) or /classifying/, which denotes or creates a subclass of the head (e.g. a /polar/ bear, a /criminal/ court). descriptive modifiers can themselves be intensified (e.g. that /very/ tall boy), but classifying modifiers cannot
   - noun phrases typically realise functions as subject, direct object, indirect object, benefactive object, subject attribute, and object attribute.
@@ -301,16 +301,42 @@ The ecological function equivalents to the biological function equivalents diffe
   - adjective can be used attributably (e.g. the functional gene) or used as a predicatively (e.g. the gene is functional) as either subject or object attribute
   - (not from the notes but important) nouns can be used attributatively (known as attributative noun, noun premodifier, noun adjunct, or converted adjective). An example is "protein function". I think it should always be the case that in a string of nouns like the first will be attributative while the last will be the head of the noun phrase
 ** thoughts related to syntactical unpacking of function
+I need to make two broad modifications to the scheme:
+1. Rearranging noun phrases to simplify unpacking of function (e.g. protein functional evolution is best written as functional protein evolution
+2. Solidifying the syntactical unpacking and improving the vague language (modifies used incorrectly, etc.)
 *** noun phrases 
-I'll first consider when the base form "function" is used.
-*Case 1*: function is the subject of the sentence or the head noun of a noun phrase that acts as the subject.
-Examples: "The function of the gene is to ...", "The function is to...", "The important function of the gene is...", "Protein function is important for..."
-These are straightforward cases, which match the "standalone form" that I had previously described them as (this terminology needs to be changed)
-*Case 2*: 
+I'll first consider when the base noun form "function" is used.
+*Case 1*: function is either (i) the subject of the sentence or the head noun of a noun phrase that acts as the subject or (ii) used as a verb
+Examples (noun): "The function of the gene is to ...", "The function is to...", "The important function of the gene is...", "Protein function is important for..."
+Example (verb): "The gene functions to...",
+These are straightforward cases, which match the "standalone form" that I had previously described them as (this terminology needs to be changed but the general principle remains unchanged).
+For a case like "protein function" our candidate for /x/ is the attributative noun (protein)
+In a case like "important function", in which we have a noun phrase in which function is the head noun and the modifiers are not a candidate for /x/, we can probably reliably throw away the modifiers (this is basically what I was trying to get at in a much more vague way). Contrast this to "attentional function" in which (although depends on context) "attentional" might be viewed as a candidate for /x/ ("attention") and we wouldn't throw it away.
+In a case like "The important function of the gene is...", we have a prepositional phrase, in the preposition "of" /governs/ a modifier, which in this case is the noun phrase "the gene" of which the head is "gene". Together, this preposition phrase is a /postdependent/ (wikipedia adpositional phrase) of the noun phrase "important function" of which the head is "function". So in this case, the candidate for /x/ is the head noun of the noun phrase modifier of the prepositional phrase. We can throw away "important" (as it is an abstract modifier), leaving "the gene functions to do...".
+Reread notes sent by Monika to see whether noun phrase can include a prepositional phrase
+*Case 2*: function (used as a noun) is a pre- or post-modifier in a noun phrase that acts as the subject. (*is this even possible?*)
+Possible example?: "working memory function" as part of "evidence of an involvement in working memory function by assuming". Could head be "memory"? Tricky one, but "function" also works as head. If we changed "working memory function" to "working protein function" then it seems clearer that function is the head.
+*Case 3*: adjective (functional) used in an attributive manner as part of a noun phrase (i.e. function is acting as a premodifier). Note that for adjectives, we should probably state that they either work in a descriptive or classifying manner---I think you can make a case for both (e.g. "the functional gene" where functional /describes/ the gene or "the functional gene" where functional /classifies/ gene into category /functional/ (where the other category is non-functional)...arguably though functional could split the categories into "this is its function" and "this isn't its function"...actually functional must be descriptive as it can be intensified
+but if we have functional in the sense of "this is its function" then it couldn't be intensified so this could be one way of telling them apart
 
+Example: "The functional gene..." (premodifier, subject attribute, concrete head), currently unpacked as "the gene functions to..." (3.4->3.5->3.7)
+Example: "The functional role..." (premodifier, subject attribute, abstract head), currently classified as unidentifiable item (3.4->3.5->3.6->unidentifiable item)
+*Case 4* adjective (functional) used in a predicative manner as lone adjective
+Example: "The gene is functional..." (also subject attribute)
+The cases 3 and 4, seems like we could just recast the sentence in the attributative form (semantically, seems like "the gene is functional" is equivalent to "the functional gene")
+*Case 5* adjective (functional) used in a predicative manner as premodifier (so part of noun phrase)
+Example: "The gene is a functional component..."
+This is definitely different. These are cases that will tend to head down the 5 path (function as performing...)---if this is repeatable, maybe we can take a shortcut there?
 
-in the base form "function", which case it 
+*Case 6* (functioning) Can be part of multipart verbs (e.g. "The gene is functioning" where "is" is the auxiliary verb and "functioning" the present participle), function as an adjective that describes a noun ("the functioning gene"), or function as a noun (gerund form) ("functioning is important for a gene").
+- Seems like if it's part of a multipart verb, perhaps it could often be directly unpacked as "functions"? (I think we can still get "the gene is functioning" in the sense of "the gene is working"? by the 3.7 case being answered no)
+- if used as an adjective, seems like it's equivalent to functional?
+- if used as a noun, seems like we could just replace it with the noun form "function"? For example, for "ecosystem functioning"->"ecosystem function"->noun phrase with function as head and concrete attributative noun->"ecosystem functions to..."
 
+*Case 7* (functionally) 
 
+need to include the example of "the function is important" where "is" is a linking verb connecting function with important (want to treat this the same as "the important function"
+similarly "the gene's function is important" we'd want in the form "the important function of the gene" or "the gene's important function"
+just thinking about the order in which to process things...
 
 a variant of function may also appear in the predicate (linked to a subject by a copula such as "is")
