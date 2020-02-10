@@ -318,7 +318,7 @@ A prepositional phrase can act either as an adjective or an adverb.
 *Case 2*: function (used as a noun) is a pre- or post-modifier in a noun phrase that acts as the subject. (*is this even possible?*)
 Possible example?: "working memory function" as part of "evidence of an involvement in working memory function by assuming". Could head be "memory"? Tricky one, but "function" also works as head. If we changed "working memory function" to "working protein function" then it seems clearer that function is the head.
 *Case 3*: adjective (functional) used in an attributive manner as part of a noun phrase (i.e. function is acting as a premodifier). Note that for adjectives, we should probably state that they either work in a descriptive or classifying manner---I think you can make a case for both (e.g. "the functional gene" where functional /describes/ the gene or "the functional gene" where functional /classifies/ gene into category /functional/ (where the other category is non-functional)...arguably though functional could split the categories into "this is its function" and "this isn't its function"...actually functional must be descriptive as it can be intensified
-but if we have functional in the sense of "this is its function" then it couldn't be intensified so this could be one way of telling them apart perhaps?
+but if we have functional in the sense of "this is its function" then it couldn't be intensified so this could be one way of telling them apart perhaps? (not sure, I think for now we just say that they're used in a descriptive sense)
 
 Example: "The functional gene..." (premodifier, subject attribute, concrete head), currently unpacked as "the gene functions to..." (3.4->3.5->3.7)
 Example: "The functional role..." (premodifier, subject attribute, abstract head), currently classified as unidentifiable item (3.4->3.5->3.6->unidentifiable item)
@@ -328,6 +328,7 @@ The cases 3 and 4, seems like we could just recast the sentence in the attributa
 *Case 5* adjective (functional) used in a predicative manner as premodifier (so part of noun phrase)
 Example: "The gene is a functional component..."
 This is definitely different. These are cases that will tend to head down the 5 path (function as performing...)---if this is repeatable, maybe we can take a shortcut there?
+
 
 *Case 6* (functioning) Can be part of multipart verbs (e.g. "The gene is functioning" where "is" is the auxiliary verb and "functioning" the present participle), function as an adjective that describes a noun ("the functioning gene"), or function as a noun (gerund form) ("functioning is important for a gene").
 - Seems like if it's part of a multipart verb, perhaps it could often be directly unpacked as "functions"? (I think we can still get "the gene is functioning" in the sense of "the gene is working" by the 3.7 case being answered no)
@@ -353,11 +354,24 @@ EDIT/ADDEDNUM: Seems like this is a good way of identifying abstract nouns (but 
 
 *Case 8* (functionality) noun.
 Examples: "...determine the functionality (ultimate value) of the plant's strategy...", "...which determine the functionality of these strategies...", "The hypothesis emphasized the eco-physiological functionality of shifts in allocation...", "The direct (proximate) mechanism of changes in shoot:root allocation is not as closely linked to the (ultimate) functionality."
-this seems to be adjective (functional) -> noun (by adding ity)
+this seems to be adjective (functional) -> noun (by adding ity). In all these examples, substituting "function" seems the best option. It is also consistent with my treatment of the gerund form "functioning".
 
+* summary of syntactical unpacking
 I'm going to assume that Case 2 is impossible.
-In many instances, Case 1 can be directly unpacked. When function si the head noun of a noun phrase that acts as the subject, it requires a little unpacking.
+
+** summary of conversion
+
+In many instances, *Case 1* can be directly unpacked. When function is the head noun of a noun phrase that acts as the subject, it requires a little unpacking.
 If the premodifier of function is a concrete candidate for /x/ (e.g. "protein function is important..."), then unpack as "<concrete_premodifier> functions to...".
 If the premodifier of function is abstract (or otherwise not a candidate for /x/; e.g. "The important function of the protein is...", then throw away the premodifier and treat it as if function itself were the subject.
 
-I will now try to identify other cases that can be unpacked with the fewest modifications.
+*Case 6*, functioning as gerund (noun) and *Case 8*, functionality (noun).
+These can be converted into the noun "function"
+
+*Case 3*, functional as premodifier of noun phrase used as subject
+If concrete, unpack as "<concrete noun> functions to"
+If abstract and related to activity, importance, role, etc. (e.g. "functional role"), throw away abstract head noun and try to unpack as "function"
+*Case 4* functional used in a predicative manner as lone adjective (as subject attribute).
+If the subject is concrete, recast as "functional <subject>"; if the subject is abstract and related to activity, importance, role, etc. (e.g. "the role is functional"), try to unpack by replacing the abstract subject with "function" (i.e. "the role is functional for the gene..." -> "the function for the gene..."
+
+*Case 5* (look at cases where head is abstract and when concrete)
