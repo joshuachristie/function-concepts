@@ -305,19 +305,20 @@ I need to make two broad modifications to the scheme:
 1. Rearranging noun phrases to simplify unpacking of function (e.g. protein functional evolution is best written as functional protein evolution
 2. Solidifying the syntactical unpacking and improving the vague language (modifies used incorrectly, etc.)
 *** noun phrases 
-I'll first consider when the base noun form "function" is used.
-*Case 1*: function is either (i) the subject of the sentence or the head noun of a noun phrase that acts as the subject or (ii) used as a verb
+*Case 1*: function is either (i) the subject of the sentence or the head noun of a noun phrase that acts as the subject (ii) used as a verb or (iii) follows the form "subject <transitive verb> (a) function" where possible transitive verbs are things like "has", "exhibits", "demonstrates", "contains", etc.
 Examples (noun): "The function of the gene is to ...", "The function is to...", "The important function of the gene is...", "Protein function is important for..."
 Example (verb): "The gene functions to...",
+Example (transitive verb): "The gene has a function..."
 These are straightforward cases, which match the "standalone form" that I had previously described them as (this terminology needs to be changed but the general principle remains unchanged).
 For a case like "protein function" our candidate for /x/ is the attributative noun (protein)
 In a case like "important function", in which we have a noun phrase in which function is the head noun and the modifiers are not a candidate for /x/, we can probably reliably throw away the modifiers (this is basically what I was trying to get at in a much more vague way). Contrast this to "attentional function" in which (although depends on context) "attentional" might be viewed as a candidate for /x/ ("attention") and we wouldn't throw it away.
 In a case like "The important function of the gene is...", we have a prepositional phrase, in the preposition "of" /governs/ a modifier, which in this case is the noun phrase "the gene" of which the head is "gene". Together, this preposition phrase is a /postdependent/ (wikipedia adpositional phrase) of the noun phrase "important function" of which the head is "function". So in this case, the candidate for /x/ is the head noun of the noun phrase modifier of the prepositional phrase. We can throw away "important" (as it is an abstract modifier), leaving "the gene functions to do...".
-Reread notes sent by Monika to see whether noun phrase can include a prepositional phrase
+Reread notes sent by Monika to see whether noun phrase can include a prepositional phrase (I'm just going to keep them separate here).
+A prepositional phrase can act either as an adjective or an adverb.
 *Case 2*: function (used as a noun) is a pre- or post-modifier in a noun phrase that acts as the subject. (*is this even possible?*)
 Possible example?: "working memory function" as part of "evidence of an involvement in working memory function by assuming". Could head be "memory"? Tricky one, but "function" also works as head. If we changed "working memory function" to "working protein function" then it seems clearer that function is the head.
 *Case 3*: adjective (functional) used in an attributive manner as part of a noun phrase (i.e. function is acting as a premodifier). Note that for adjectives, we should probably state that they either work in a descriptive or classifying manner---I think you can make a case for both (e.g. "the functional gene" where functional /describes/ the gene or "the functional gene" where functional /classifies/ gene into category /functional/ (where the other category is non-functional)...arguably though functional could split the categories into "this is its function" and "this isn't its function"...actually functional must be descriptive as it can be intensified
-but if we have functional in the sense of "this is its function" then it couldn't be intensified so this could be one way of telling them apart
+but if we have functional in the sense of "this is its function" then it couldn't be intensified so this could be one way of telling them apart perhaps?
 
 Example: "The functional gene..." (premodifier, subject attribute, concrete head), currently unpacked as "the gene functions to..." (3.4->3.5->3.7)
 Example: "The functional role..." (premodifier, subject attribute, abstract head), currently classified as unidentifiable item (3.4->3.5->3.6->unidentifiable item)
@@ -329,14 +330,34 @@ Example: "The gene is a functional component..."
 This is definitely different. These are cases that will tend to head down the 5 path (function as performing...)---if this is repeatable, maybe we can take a shortcut there?
 
 *Case 6* (functioning) Can be part of multipart verbs (e.g. "The gene is functioning" where "is" is the auxiliary verb and "functioning" the present participle), function as an adjective that describes a noun ("the functioning gene"), or function as a noun (gerund form) ("functioning is important for a gene").
-- Seems like if it's part of a multipart verb, perhaps it could often be directly unpacked as "functions"? (I think we can still get "the gene is functioning" in the sense of "the gene is working"? by the 3.7 case being answered no)
-- if used as an adjective, seems like it's equivalent to functional?
-- if used as a noun, seems like we could just replace it with the noun form "function"? For example, for "ecosystem functioning"->"ecosystem function"->noun phrase with function as head and concrete attributative noun->"ecosystem functions to..."
+- Seems like if it's part of a multipart verb, perhaps it could often be directly unpacked as "functions"? (I think we can still get "the gene is functioning" in the sense of "the gene is working" by the 3.7 case being answered no)
+- if used as an adjective, seems like it's equivalent to functional? (so we could first unpack into a noun phrase (e.g. "the gene is functioning" -> "the functioning gene") then to a common form -> "the functional gene"
+  although functioning can be used in a noun phrase as a premodifier ("the functioning gene") I don't think it can be used (or at least not so easily) if the head is abstract, e.g. "the functioning role"
+- if used as a noun, seems like we could just replace it with the noun form "function"? For example, for "ecosystem functioning"->"ecosystem function"->noun phrase with function as head and concrete attributative noun->"ecosystem functions to..." (or if we go down path 5, then "how well the ecosystem works", which is how it is generally being used)
 
-*Case 7* (functionally) 
+*Case 7* (functionally) Can modify an adjective (most common), such as "the gene is functionally important" or modify a verb, such as "the gene was functionally characterised". Can modify other things but not sure that we'll see them often enough to justify handling them.
+- if used to modify an adjective, it will be the premodifier of an adjective phrase (e.g. "functionally important"). I suspect it's often being used here as a subject complement (e.g. "the gene is functionally important"), in which case we could rework the subject complement so that it's the premodifier of a noun phrase ("the gene is functionally important" -> "the functionally important gene")
+- an example (that I've actually seen) of functionally modifying a verb is "functionally characterised". You could also imagine something like "the gene was functionally transcribed" or "the liver works functionally" (though this latter one is a bit redundant). In these cases, we have a verb phrase in which functionally is the premodifier. Can we just convert it to functions? So "the gene was functionally characterised" could be unpacked into "the gene functions to..." because characterised is not a candidate for /y/ and "the gene was functionally transcribed" would be unpacked to "the gene functions to transcribe...". So I guess the rule is that if we have a verb phrase that's a subject complement in which functionally is the premodifier and the head verb is not a possible biological effect (candidate for a function), then we replace "functionally" with "functions"; if we have the same situation but in which the head verb is a possible biological effect, then we replace with "functions to <head verb>".
+
+
 
 need to include the example of "the function is important" where "is" is a linking verb connecting function with important (want to treat this the same as "the important function"
 similarly "the gene's function is important" we'd want in the form "the important function of the gene" or "the gene's important function"
 just thinking about the order in which to process things...
 
 a variant of function may also appear in the predicate (linked to a subject by a copula such as "is")
+
+I've used nonfunctional, dysfunctional, etc. as a shortcut to 5 (work/perform). I think the details behind my intuition were that non, dys, mal,  etc. speak of a grading or intensifying notion, but to the extreme point of zero (the key is that all could probably be replaced by "less functional" while retaining meaning). This might relate to the notion mentioned above of whether one can intensify "functional" (indicates work/perform). If functional is used to mean "the function of", then I don't think (or at least this is a hypothesis) you can intensify it and retain semantic meaning. I'm not sure how consistent this will prove to be though. I also think that I should remove nonfunctional, dysfunctional, etc. as a trigger to 5; rather, I can add it to the description as a possible indicator.
+
+EDIT/ADDEDNUM: Seems like this is a good way of identifying abstract nouns (but these are easy to identify in any case), but in a handful of examples where "functional" was used as biological activity/role/adv, etc., one came up as being able to be intensified "Such O2 leakage may be functional for the plant as it can help in detoxifying Fe 3ϩ forms and inducing nitrification" ("O2 leakage functions to detoxify Fe forms in the plant (which helps the plant)" -> function as biological advantage). But it makes sense to write "Such O2 leakage may be very functional for the plant", so this is a good counter example. As a note, I wonder how much of this has to do with functional in this example being used as a biological advantage ("functional for the plant" implies a graded notion of how well it helps the plant. Couple points: (i) I think the fact that it is functional /for the plant/ is a good pointer to biological advantage (although without the /y/ it would be unspecified); (ii) because functional is associated with plant by a prepositional phrase, I do wonder whether we are parsing this sentence correctly. functional for the plant implies that the function should belong to the plant (but I guess that makes sense, given as the (iii) could we possibly get partial functions out of these descriptions by trying to intensify the function ascription (if it is used in the sense of "this is its function"))?
+
+*Case 8* (functionality) noun.
+Examples: "...determine the functionality (ultimate value) of the plant's strategy...", "...which determine the functionality of these strategies...", "The hypothesis emphasized the eco-physiological functionality of shifts in allocation...", "The direct (proximate) mechanism of changes in shoot:root allocation is not as closely linked to the (ultimate) functionality."
+this seems to be adjective (functional) -> noun (by adding ity)
+
+I'm going to assume that Case 2 is impossible.
+In many instances, Case 1 can be directly unpacked. When function si the head noun of a noun phrase that acts as the subject, it requires a little unpacking.
+If the premodifier of function is a concrete candidate for /x/ (e.g. "protein function is important..."), then unpack as "<concrete_premodifier> functions to...".
+If the premodifier of function is abstract (or otherwise not a candidate for /x/; e.g. "The important function of the protein is...", then throw away the premodifier and treat it as if function itself were the subject.
+
+I will now try to identify other cases that can be unpacked with the fewest modifications.
