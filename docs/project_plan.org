@@ -304,7 +304,7 @@ The ecological function equivalents to the biological function equivalents diffe
 I need to make two broad modifications to the scheme:
 1. Rearranging noun phrases to simplify unpacking of function (e.g. protein functional evolution is best written as functional protein evolution
 2. Solidifying the syntactical unpacking and improving the vague language (modifies used incorrectly, etc.)
-*** noun phrases 
+
 *Case 1*: function is either (i) the subject of the sentence or the head noun of a noun phrase that acts as the subject (ii) used as a verb or (iii) follows the form "subject <transitive verb> (a) function" where possible transitive verbs are things like "has", "exhibits", "demonstrates", "contains", etc.
 Examples (noun): "The function of the gene is to ...", "The function is to...", "The important function of the gene is...", "Protein function is important for..."
 Example (verb): "The gene functions to...",
@@ -326,9 +326,15 @@ Example: "The functional role..." (premodifier, subject attribute, abstract head
 Example: "The gene is functional..." (also subject attribute)
 The cases 3 and 4, seems like we could just recast the sentence in the attributative form (semantically, seems like "the gene is functional" is equivalent to "the functional gene")
 *Case 5* adjective (functional) used in a predicative manner as premodifier (so part of noun phrase)
-Example: "The gene is a functional component..."
-This is definitely different. These are cases that will tend to head down the 5 path (function as performing...)---if this is repeatable, maybe we can take a shortcut there?
 
+Let's look at the example of "The gene is a functional component..."
+In the former, the subject "gene" is connected to the subject complement "functional component" by the copula "is", implying an unpacking of "the functional gene..." (because component refers to gene). Functional is a premodifier in a noun phrase with a concrete head but because it's a subject complement it's a stand-in for gene.
+
+Now let's consider the example, "The gene has a functional role...". Now functional is a premodifier in a noun phrase with an abstract head. Although not a subject complement, the noun phrase is linked by the transitive verb form of have (has) that indicates possession, again associated the noun phrase with the subject. Since the head is abstract, we can throw it away and we can unpack as "the functional gene...".
+
+Take a real-world example like "However, a major limitation of these technologies is that proteins are often irreversibly modified to a complete stoichiometry that could overestimate the functional impact of low-abundant PTM sites."
+
+Noun phrase "functional impact" used in predicative form. It's being postmodified by the prepositional phrase "of low-abundant PTM sites" of which the head is PTM (post-translational modification) sites. First we want to unpack this part of the sentence. Start with "functional impact", throw away abstract head to get "functional" (*maybe we convert these cases to noun function?*). It's being postmodified by the head PTM sites, so we get "functional PTM sites" (or if we convert to a noun, "function of PTM sites"). PTM sites is concrete, so (either way) we unpack as "PTM sites function to...". We ask "what do PTM sites do?" to which we cannot answer, so /y/ is missing. 
 
 *Case 6* (functioning) Can be part of multipart verbs (e.g. "The gene is functioning" where "is" is the auxiliary verb and "functioning" the present participle), function as an adjective that describes a noun ("the functioning gene"), or function as a noun (gerund form) ("functioning is important for a gene").
 - Seems like if it's part of a multipart verb, perhaps it could often be directly unpacked as "functions"? (I think we can still get "the gene is functioning" in the sense of "the gene is working" by the 3.7 case being answered no)
@@ -339,8 +345,6 @@ This is definitely different. These are cases that will tend to head down the 5 
 *Case 7* (functionally) Can modify an adjective (most common), such as "the gene is functionally important" or modify a verb, such as "the gene was functionally characterised". Can modify other things but not sure that we'll see them often enough to justify handling them.
 - if used to modify an adjective, it will be the premodifier of an adjective phrase (e.g. "functionally important"). I suspect it's often being used here as a subject complement (e.g. "the gene is functionally important"), in which case we could rework the subject complement so that it's the premodifier of a noun phrase ("the gene is functionally important" -> "the functionally important gene")
 - an example (that I've actually seen) of functionally modifying a verb is "functionally characterised". You could also imagine something like "the gene was functionally transcribed" or "the liver works functionally" (though this latter one is a bit redundant). In these cases, we have a verb phrase in which functionally is the premodifier. Can we just convert it to functions? So "the gene was functionally characterised" could be unpacked into "the gene functions to..." because characterised is not a candidate for /y/ and "the gene was functionally transcribed" would be unpacked to "the gene functions to transcribe...". So I guess the rule is that if we have a verb phrase that's a subject complement in which functionally is the premodifier and the head verb is not a possible biological effect (candidate for a function), then we replace "functionally" with "functions"; if we have the same situation but in which the head verb is a possible biological effect, then we replace with "functions to <head verb>".
-
-
 
 need to include the example of "the function is important" where "is" is a linking verb connecting function with important (want to treat this the same as "the important function"
 similarly "the gene's function is important" we'd want in the form "the important function of the gene" or "the gene's important function"
@@ -361,17 +365,61 @@ I'm going to assume that Case 2 is impossible.
 
 ** summary of conversion
 
-In many instances, *Case 1* can be directly unpacked. When function is the head noun of a noun phrase that acts as the subject, it requires a little unpacking.
+In many instances, *Case 1* can be directly unpacked. When function is the head noun of a noun phrase (whether subject or even predicate I think), it requires a little unpacking.
 If the premodifier of function is a concrete candidate for /x/ (e.g. "protein function is important..."), then unpack as "<concrete_premodifier> functions to...".
 If the premodifier of function is abstract (or otherwise not a candidate for /x/; e.g. "The important function of the protein is...", then throw away the premodifier and treat it as if function itself were the subject.
 
+
 *Case 6*, functioning as gerund (noun) and *Case 8*, functionality (noun).
-These can be converted into the noun "function"
+These can be converted into the noun "function" after which it can be unpacked.
 
-*Case 3*, functional as premodifier of noun phrase used as subject
-If concrete, unpack as "<concrete noun> functions to"
-If abstract and related to activity, importance, role, etc. (e.g. "functional role"), throw away abstract head noun and try to unpack as "function"
-*Case 4* functional used in a predicative manner as lone adjective (as subject attribute).
+*Case 6*, functioning as present participle used as a verb, can be converted to the verb "functions" after which it can be unpacked
+*Case 6*, functioning as present participle used as an adjective, can be converted to the adjective "functional" after which it can go through the process highlighted below
+
+*Case 3-5*, functional as premodifier of noun phrase used as subject (3), functional used in a predicative manner as lone adjective (4), functional used in a predicative manner as a premodifier (5)
 If the subject is concrete, recast as "functional <subject>"; if the subject is abstract and related to activity, importance, role, etc. (e.g. "the role is functional"), try to unpack by replacing the abstract subject with "function" (i.e. "the role is functional for the gene..." -> "the function for the gene..."
+Using the above process, *5* can be manipulated into *4*, which can be manipulated into *3*, which can be unpacked.
 
-*Case 5* (look at cases where head is abstract and when concrete)
+*Case 7* functionally as modifying an adjective (premodifier of an adjective phrase). The adjective phrase presumably will generally be a subject/object complement, in which can the adjective phrase can be converted to the adjective "functional" and processed as highlighted above.
+*Case 7* functionally as modifying a verb. If used as a sub
+** unpacking order
+Using the example of "However, a major limitation of these technologies is that proteins are often irreversibly modified to a complete stoichiometry that could overestimate the functional impact of low-abundant PTM sites."
+1. Identify, extract, and decompose the subordinate clause of which function is a part (adverb clause, adjective clause, noun clause, etc.).
+ - "that could overestimate the functional impact of low-abundant PTM sites", which modifies the noun "stoichiometry" and is therefore an adjective phrase.
+Subject = "that" a relative pronoun. 
+Verb phrase = "could overestimate" (can is a modal verb)
+Predicate "could overestimate the functional impact of low-abundant PTM sites"
+2. Starting from function, process each part of speech working outwards
+   - After the verb, we have a noun phrase "the functional impact" which has a postdependent prepositional phrase "of low-abundant PTM sites"
+   - First we process the noun phrase as "function" (abstract head, replace with function) giving us "function of low-abundant PTM sites"
+   - Next we process the prepositional phrase (now a postdependent of the noun "function"). Since it is a postdependent of function as a head noun, we can unpack directly as "PTM sites function to..."
+   - Now we try to identify /y/. We can ask "what do PTM sites do?", which in this case can't be identified. More generally, /y/ will only be identifiable if /x/ (PTM sites here) is the subject of the subordinate phrase (I'm pretty sure). Even more generally, I think /y/ might only be identifiable if function is used as a subject or subject complement of the subordinate phrase.
+
+To test the latter hypothesis, let's try the following sentence, "However, the signaling cues and enzymes regulating individual sites are often not known and their functional roles remain uncharacterized."
+1. 
+   - "their functional roles remain uncharacterized" is an adjective phrase that modifies the compound subject "signaling cues and enzymes".
+   - the subject of the subordinate phrase is "their", which refers to the compound subject of the entire sentence "signaling cues and enzymes".
+   - "functional roles" is a noun phrase, which is a postmodifier of the subject 'signaling cues and enzymes', and it can be processed to become "function" (abstract head) (or alternatively you could process it to "functional", which as a postmodifier of the subject would be reworked to "functional signaling cues and enzymes"). Regardless, we've identified /x/ and can begin to unpack as "signaling cues and enzymes function to...".
+   - Now we try to identify /y/ by asking "what do 'signaling cues and enzymes' do?" and getting the answer "regulate individual sites" where "regulate" is a transitive verb taking the object "individual sites".
+   - We have "signaling cues and enzymes function to regulate individual sites...". Can we identify /z/? We can ask, "in what system are individual sites being regulated?" We can't identify that here so we say *function as biological activity*.
+
+So at least for this example, it does hold that when function is the subject of the subordinate phrase you do (or at least can) identify /y/. 
+
+Just a note that /y/ needs to be a /transitive verb/---it is a verb that must take an object. To say something like "/x/ functions to do /y/..." we need /y/ to be a verb (e.g. transcribe) and it needs to act upon an object (e.g. DNA). I'm not sure that we need to require that the object be explicitly stated---e.g. in "the polymerase functions to transcribe..." it is implicit that it is transcribing RNA or DNA. Although maybe we consider it a new form of unspecified if it isn't? Might need to look at some examples because I guess the sentence would be pretty vague without the transitive verb object?
+** steps to rework flowchart
+Steps 2 and 3 need a redo.
+I can split it into two components: (i) dissecting sentence structure; (ii) getting to a 3.7 equivalent in which I can split off into step 4 or 5.
+Basically I want something like the following:
+1. Identify, extract, and decompose the subordinate clause containing the instance of function (i.e. label subject, verb, predicate if present). Identify the subject of the independent clause or sentence (will often also be the subject of the subordinate phrase via a relative pronoun)
+2. Identify /x/ and /y/
+   - Is function the subject (or part of a noun phrase that is the subject)? If function itself is the subject (or head of noun phrase), then look at its modifiers, complements or dependents for /x/. For /y/, look to the transitive verb of the subordinate clause and its object
+   - If function is the verb, then the subject of the subordinate phrase is /x/ and the (e.g. "the gene that functions as a regulator" -> "that functions as a regulator" (adjective phrase with subject "the gene", verb "functions", "as a regulator" as an adverb phrase that modifies the verb functions)
+   - If function is the predicate, then the subject of the subordinate phrase is /x/ but you shouldn't be able to identify /y/. It is important to differentiate function used as a subject complement (e.g. "
+
+(what about the example "the gene that has a function", subphrase is "that has a function" and so function is in the predicative form; however has indicates a state of identity/possession/essence and so I think we should treat it as a linking verb linking the subject to its subject complement (clearly "a gene having a function" is part of its essence, as opposed to "a boy having an icecream".
+3. 
+4. Starting from function, or the clause it is part of, process each part of speech working outwards. (First modifiers of phrase containing function then complements/dependents (function might have complements/dependents or it might be a complement/dependent itself))
+
+Step 3.1 definitely needs to be redone as it contains vague, linguistically incorrect instructions.
+
+make a note about treating any verb that indicates essence/identity as a linking verb and its object as a subject complement.
