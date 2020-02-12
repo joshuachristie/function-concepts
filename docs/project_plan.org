@@ -406,20 +406,25 @@ To test the latter hypothesis, let's try the following sentence, "However, the s
 So at least for this example, it does hold that when function is the subject of the subordinate phrase you do (or at least can) identify /y/. 
 
 Just a note that /y/ needs to be a /transitive verb/---it is a verb that must take an object. To say something like "/x/ functions to do /y/..." we need /y/ to be a verb (e.g. transcribe) and it needs to act upon an object (e.g. DNA). I'm not sure that we need to require that the object be explicitly stated---e.g. in "the polymerase functions to transcribe..." it is implicit that it is transcribing RNA or DNA. Although maybe we consider it a new form of unspecified if it isn't? Might need to look at some examples because I guess the sentence would be pretty vague without the transitive verb object?
+
+** process to unpack function as subject, verb, or predicate of the clause
+Starting from function, or the clause it is part of, process each part of speech working outwards. (First modifiers of phrase containing function then complements/dependents (function might have complements/dependents or it might be a complement/dependent itself))
+*** function as subject (or part of noun phrase that acts as the subject)
+These ones are straightforward to unpack. To find /x/, look at its modifiers, complements or dependents for a concrete biological "item".
+We'll interpret linking verbs (for subject complements) as anything that indicates essence/identity of the subject (e.g. for "the gene has a function", the verb "has" is perhaps not a typical linking verb but clearly "a gene having a function" is part of its essence (as opposed to possession like "a boy having an icecream").
+For /y/, look to the transitive verb of the subordinate clause and its object (or if not present here, look to the transitive action verb of the sentence---e.g. for the example above of "However, the signaling cues and enzymes regulating individual sites are often not known and their functional roles remain uncharacterized." it is the sentence that contains information about "what does /x/ (signaling cues and enzymes) do?").
+*** function as verb
+For /x/, look to the subject of the clause (if subordinate clause, the subject might be a relative pronoun that refers to the sentence/independent clause subject).
+For /y/, look to other verbs associated with "function", or the adverb phrase (or prepositional phrase acting as an adverb) that modifies "function" (e.g. "the promotor functions and regulates the gene..." [verb associated with functions, as both functions and regulates describe the subject], "the promotor that functions as a regulator of the gene" [adverb phrase that modifies function], "the promotor that functions to regulate the gene" [prepositional phrase acting as an adverb]---in all these cases, we can identify /y/ as "regulate the gene"). Note that sometimes you won't find anything, e.g. "the promotor functions to regulate" (transitive verb object missing), or "the promotor functions as an important regulatory component" (transitive verb object is abstract), "the promotor functions" (no candidate for /y/)
+*** function as predicate (of an action verb)
+In this case, you shouldn't be able to identify /y/ because the action is not being directed towards the predicate.
+So this will head down function in the sense of work/perform.
+To identify the item (/x/), look to what function modifies or is associated with.
 ** steps to rework flowchart
+*I'm now requiring /y/ to be a transitive verb and for its object to be explicitly identified. If not, and it isn't of the perform/work type, then it will go to unidentifiable meaning: effect unspecified. Zach, can you find any examples of this where this is clearly too restrictive a condition?*
 Steps 2 and 3 need a redo.
-I can split it into two components: (i) dissecting sentence structure; (ii) getting to a 3.7 equivalent in which I can split off into step 4 or 5.
+
 Basically I want something like the following:
 1. Identify, extract, and decompose the subordinate clause containing the instance of function (i.e. label subject, verb, predicate if present). Identify the subject of the independent clause or sentence (will often also be the subject of the subordinate phrase via a relative pronoun)
-2. Identify /x/ and /y/
-   - Is function the subject (or part of a noun phrase that is the subject)? If function itself is the subject (or head of noun phrase), then look at its modifiers, complements or dependents for /x/. For /y/, look to the transitive verb of the subordinate clause and its object
-   - If function is the verb, then the subject of the subordinate phrase is /x/ and the (e.g. "the gene that functions as a regulator" -> "that functions as a regulator" (adjective phrase with subject "the gene", verb "functions", "as a regulator" as an adverb phrase that modifies the verb functions)
-   - If function is the predicate, then the subject of the subordinate phrase is /x/ but you shouldn't be able to identify /y/. It is important to differentiate function used as a subject complement (e.g. "
-
-(what about the example "the gene that has a function", subphrase is "that has a function" and so function is in the predicative form; however has indicates a state of identity/possession/essence and so I think we should treat it as a linking verb linking the subject to its subject complement (clearly "a gene having a function" is part of its essence, as opposed to "a boy having an icecream".
-3. 
-4. Starting from function, or the clause it is part of, process each part of speech working outwards. (First modifiers of phrase containing function then complements/dependents (function might have complements/dependents or it might be a complement/dependent itself))
-
-Step 3.1 definitely needs to be redone as it contains vague, linguistically incorrect instructions.
-
-make a note about treating any verb that indicates essence/identity as a linking verb and its object as a subject complement.
+2. Identify /x/ and /y/ (using schema above)
+3. Go through paths 4 or 5, identifying the specific outcome
