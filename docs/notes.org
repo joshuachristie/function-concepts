@@ -210,7 +210,9 @@ Zach finished up his CPC project and due to uncertainty around covid (and me hav
   - [ ] Search on Web of Science for "function*", restricting to the journals identified above. These papers will define the corpus. Download metadata for corpus.
 ** 20200805 meeting with Stefan
 We went through some examples to identify some issues with the handbook.
-  - 2.1 needs to be a little clearer with 'amod' -- function needs to be an amod of a noun (its head) rather than having an amod of itself.
-  - 2.2 right now it requires that the noun be an 'nsubj' but clearly this won't always be the case. If function is a head noun used in the predicate for example (I think this was what caused some confusion about how to answer 2.1)
-  - 2.5 example 13 (tab 2) has a case where it seems completely arbitrary as to which nmod path you follow from function---need to figure out an order of precedence here.
-  - 3 it's not clear how to deal with y when function is a noun but isn't an nsubj. Oftentimes (always?) this will mean that there is no y (e.g. if function is a 'dobj') but the guidelines need to be clearer.
+  - [X] 2.1 needs to be a little clearer with 'amod' -- function needs to be an amod of a noun (its head) rather than having an amod of itself.
+  - [X] 2.2 right now it requires that the noun be an 'nsubj' but clearly this won't always be the case. If function is a head noun used in the predicate for example (I think this was what caused some confusion about how to answer 2.1)
+  - [ ] 2.5 example 13 (tab 2) has a case where it seems completely arbitrary as to which nmod path you follow from function---need to figure out an order of precedence here.
+    + after playing around with this, I think it's a parsing error. I don't think both paths should be `nmod` out of "roles" -- that is not to say that it is not possible however.
+  - [X] 3 it's not clear how to deal with y when function is a noun but isn't an nsubj. Oftentimes (always?) this will mean that there is no y (e.g. if function is a 'dobj') but the guidelines need to be clearer.
+    + I have added a switch that if function is a dobj then y can't be identified. I think the best approach is to see whether this always holds up when we test it with examples.
