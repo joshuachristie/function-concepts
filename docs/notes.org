@@ -1,17 +1,4 @@
-Three-dimensions of function text-mining project
-* First stage (pilot study)
-Zach has compiled the list of journals that we will search in (hopefully via Crossref) to get our corpus.
-I have sent the list of publishers and journals off to the university library, and they will get back to me about licensing agreements, etc.
-Zach has extracted the "function" phrases from a couple of papers.
-(The original plan was to go through 45 different papers from the nine different categories (one from each of the top five journals in a category), but we'll have to see how we go for time.)
-Eventually, I will fully automate the processing of full texts (extraction of function sentences, context, and other metadata), but for now I just want to quickly partially automate it, to save Zach the time of having to manually process papers. For starters, I will use grobid with xml.etree.ElementTree.
-* Issues that need resolving before starting "real" study
-  - [ ] What to do about noun phrases that include function (e.g. functional connectivity, functional biology)?
-  - [ ] What to do about sentences that contain multiple instances of function?
-  - [ ] What to do about inflected variants of function (e.g. functional, functions, dysfunction, subfunctionalisation, etc.)?
-  - [ ] How to address overlap between of context between different instances of function (e.g. where two sentences in a row use function, the sentence after (for the first) and the sentence before (for the second) will also contain function)?
-  - [ ] Is our current method, in which we attribute partial "subdiscipline" membership for any journal that falls within the top 30 journals of more than one subcategory, appropriate?
-  - [ ] Is keeping one sentence before and after the use of "function" the best method? Should we make it x words before and after? This would remove the issue with having multiple uses of function in a single sentence (but might exacerbate the interference between context of multiple uses of function).
+Concepts of function project
 * notes, meetings, etc.
 ** 20191207 notes (meeting with Zach, Stefan, Josh, Paul)
 Discussion of pilot study classification, in which Zach/Josh/Stefan classified some instances of function usages. We discussed the various ambiguities and problems we countered. Paul was also present (although he hadn't classified any himself)
@@ -236,9 +223,10 @@ I think it's acceptable to conflate all/some, seeing as science is largely about
     - [ ] write the introduction
 *** TODO stefan
     - [ ] write up a draft on the first simple example (biological role)
+    - [ ] write up a second simple example to demonstrate function as performing
     - [ ] find a good example for the dysfunction/malfunction and write up a synopsis
       for each example, write some bullet points of how you traverse the flowchart (with short justification for each step). For the performing as cases, then finish with a discussion of their normative basis.
 *** next step (in 2 weeks)
 Stefan can turn the word flowchart into a diagrammatic one for a figure for the paper
-Stefan can work on the third example
+Stefan can work on the fourth example
 Josh will start writing the discussion/conclusion
