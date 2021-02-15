@@ -222,3 +222,23 @@ just a quick note that we'll need to implement a basic logic system for semantic
 Best to keep it simple, e.g. term (aristotelian) logic would suffice (all /x/ are /y/, some /x/ are /y/, all /x/ are not /y/, some /x/ are not /y/). 
 In practice this will have little effect. It's mainly necessary for being explicit about negation.
 I think it's acceptable to conflate all/some, seeing as science is largely about running "ideally designed" experiments such that one can generalise and claim that a demonstration of some /x/ being /y/ implies that, generally speaking, /x/s are /y/s.
+** 20200909 meeting with Stefan
+2.1 functionality of the gene as example is wrong because arrow goes wrong way (here functionality is the head so I think this should be 2.2)
+- logic system (possibly, might be, etc.) as well as negation and all/some
+** 20201125 meeting with Stefan
+[25/11/2020 00:49] Joshua Christie
+- Just some minutes for the record. We discussed how we want to keep the paper as simple as possible due to time constraints. This means using few examples and using simple examples (i.e. not convoluted text). Where possible we should focus on medical ones, given the topic of the paper. I thought that we might simplify section 5 (performing function...) because a lot of the subcategories are either meaningless (performing function as biological activity doesn't even make sense since there's no normative basis for saying that a trait "ought to" perform a biological activity). We could try to just centre it around performing a functional effect (where the functional effect has a normative basis). I thought it perhaps best to completely sidestep the issues with "drawing a line" between cases of biological advantage and selected effect by not providing any examples (and just noting how one might go about tackling this problem in the discussion). Instead Stefan could just start off with a simple biological activity/role and then we could go into two examples of performing function (one using a word that marks normativity like "dysfunction" or "malfunction" and another using a different type of normativity indicator). In general, I think the introduction and concluding sections should focus more on the functional--dysfunctional continuum as ultimately this is the one major addition we're making to Wouter's 2003 scheme. We can save time/space by mostly deferring to previous work for the function as activity/role/advantage/SE and focus more on the performing as ... bit (ultimately we're also contributing to Wouter's scheme by providing a formal framework for analysing sentences).
+​[25/11/2020 00:54] Joshua Christie
+- Something additional that we didn't discuss but it would be interesting for you to keep an eye on: do we get cases of "performing function as ..." where there's no normative basis? This might not make sense from a philosophical point of view but it doesn't mean that biologists don't use it. Or we might encounter cases where the normative basis is present but rather weak (e.g. we expect that some region of DNA is expressed because we've seen DNA with similar structure being expressed in other organisms. To my mind there's no philosophical grounding for this but I'm pretty sure it happens. It's one of the criteria that ENCODE used in their infamous 2012 nature paper on functional genomic elements. https://www.nature.com/articles/nature11247. Might be worth reading through this and seeing whether you find some interesting examples
+** 20210212 meeting with Stefan
+*** TODO josh
+    - [ ] simplify the flowchart
+    - [ ] write the introduction
+*** TODO stefan
+    - [ ] write up a draft on the first simple example (biological role)
+    - [ ] find a good example for the dysfunction/malfunction and write up a synopsis
+      for each example, write some bullet points of how you traverse the flowchart (with short justification for each step). For the performing as cases, then finish with a discussion of their normative basis.
+*** next step (in 2 weeks)
+Stefan can turn the word flowchart into a diagrammatic one for a figure for the paper
+Stefan can work on the third example
+Josh will start writing the discussion/conclusion
