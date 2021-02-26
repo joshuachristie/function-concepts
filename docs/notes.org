@@ -230,3 +230,15 @@ I think it's acceptable to conflate all/some, seeing as science is largely about
 Stefan can turn the word flowchart into a diagrammatic one for a figure for the paper
 Stefan can work on the fourth example
 Josh will start writing the discussion/conclusion
+** 20210226 meeting with Stefan
+Next meeting 05/03/2021
+*** TODO Stefan [0/4]
+    - [ ] Upload  ipynb file to google drive folder
+    - [ ] change first example (drosophila) to one from ENCODE
+    - [ ] flesh out the performing biological role (CRF release) and dysfunction examples
+    - [ ] find two examples of "other normativity"
+*** TODO Josh [0/3]
+    - [ ] set up github repo so that Stefan can also use it
+    - [ ] finish draft of introduction
+    - [ ] redo flow chart (remove the distinction between the different "performing function as"
+
