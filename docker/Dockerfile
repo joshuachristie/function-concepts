@@ -1,7 +1,5 @@
 FROM jupyter/minimal-notebook:latest
 
-COPY function-concepts.ipynb /home/jovyan/work/
-COPY process_sentence.py /home/jovyan/work/
 RUN conda config --append channels conda-forge && \
     conda install --yes -c conda-forge spacy
 RUN pip3 install scispacy && \
