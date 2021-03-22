@@ -1,4 +1,3 @@
-
 \documentclass{article}
 \usepackage{graphicx}
 \usepackage{threeparttable}
@@ -14,28 +13,89 @@
 
 Several philosophical accounts of disease are constructed at least partly around an objective biological criterion. Under these accounts, we can define disease as the failure of physiological parts or processes to perform their proper function or an ``impairment of normal functioning''. Determining whether a phenotype—such as obesity—is a disease or determining the level of functioning at which some aspect of physiology—such as response to insulin—becomes pathological throws considerable weight on the concept of biological function. However, there are a number of philosophical theories of function, each of which defines function differently. It is not clear which theory—or combination of theories—we should use to explicate the medical conception of function. One reason for this is that we have no systematic way to determine how biologists and medical practitioners conceive of, or write about, function in their respective disciplines. To further complicate matters, natural language is replete with ambiguities, and scientific manuscripts often use technical terms imprecisely. Without a descriptive understanding of how different conceptions of function are used in biology and medicine, we have little hope of bringing insights on biological function to bear on disputes about function and malfunction in medicine. Here we develop a systematic method for analysing biological function by outlining a classification scheme that combines syntactic and semantic analysis in a dependency-grammar framework.
 
-
 \section{Introduction}
 \label{sec:introduction}
 
 Much of philosophy of medicine is concerned with defining issues surrounding the concept of disease.
 Philosophical approaches to categorising disease can be broadly divided into two camps: a constructivist view that prioritises social value judgements and a naturalist view that prioritises biological theory.
-The former contends that disease should be primarily based on whether or not society disvalues the condition in question, whereas the latter holds that our categorisation of disease should be primarily based on whether ``something has gone wrong'' in a biological system.
+The former contends that disease should be primarily based on whether society disvalues the condition in question, whereas the latter holds that our categorisation of disease should be primarily based on whether ``something has gone wrong'' in a biological system.
 But what does it mean for ``something to go wrong'' with a biological system according to the naturalist view?
 
 Before determining what it means for ``something to go wrong'', one requires a normative framework that can be used to determine what a biological component (trait) ought to do.
 To ground their normative claims in biology, many naturalist accounts defer to the notion of function.
-If a trait's function is what it ought to do, then it is a reasonable proposition that dysfunction of the trait leads to disease.
-But herein lies a several problems.
-There are multiple philosophical theories of function, each differing in their claims to normativity (and some with arguably no normative claims whatsoever).
-Furthermore, the word function is used in a variety of ways by practitioners---biologists, medical researchers, and physicians---and it is rarely clear which concept of function is being used in any given circumstance or how well real-world usage maps onto philosphical conceptions.
-One cannot easily make progress on a theory without first setting a solid foundation.
-If we hope to use experimental philosophy to understand a naturalistic account of disease and dysfunction, we must first clarify how the concept of function is used in practice.
+If a trait's function is what the trait ought to do, then a dysfunctional trait no longer does what the trait ought to do.
+We call this dysfunctional state ``disease''.
+But herein lies several problems.
+Function is a word with multiple senses in both its colloquial and discipline-specific uses.
+There are many philosophical theories of biological function, each differing in their claims to normativity (and some with arguably no normative claims whatsoever).
+It is often unclear which concept of function is being employed in real-world usage by biologists, medical researchers, and physicians, nor is it clear how well real-world usage maps onto philosphical conceptions of function.
+% One cannot easily make progress on a theory without first setting a solid foundation.
+
+Experimental philosophy relies, in large part, on extracting meaning from natural language.
+If we hope to use experimental philosophy to understand a naturalistic account of disease and dysfunction, we must first clarify how the concept of function (and dysfunction) is used in natural language.
+%It is thus crucial that philosophers have methods for identifying which sense of function is used in natural language.
+One must solve two broad problems in order to consistently disambiguate real-world usage of biological function (or any word that refers to multiple concepts).
+First, one must develop a classification scheme comprising a set of categories, each of which defines a sense (or concept) of function.
+The categories within the set should be exhaustive, covering all possible real-world uses of function.
+Furthermore, the categories should either be exclusive (i.e. each use of function has one and only one sense) or there should be explicit rules for how one is to deal with membership in overlapping categories (e.g. a hierarchy of definitions or allowing of multiple senses for a single usage). 
+Second, one must develop a system that can consistently assign a piece of natural language on biological function (sentence, paragraph, etc.) into its correct category.
+
+The problem of developing a classification scheme will typically employ some form of conceptual analysis (and/or leverage earlier conceptual analysis).
+We cannot, however, simply paste together existing concepts of biological function.
+For one, this will not necessarily generate a set of function concepts that are exhaustive or exclusive.\footnote{For an example with respect to exclusivity, consider that some philosophical concepts of function have closely overlapping features. Say we have two overlapping concepts, such as the causal role and organisational theories of function. We must make some hard decisions when deciding how to incorporate these concepts into a coherent classification scheme. We could choose one category and remove the other, allow both but give one hierarchical precedence over the other when ambiguities arise, allow a single usage to be assigned to both categories, or create a general category that encompasses both concepts. (Here we have chosen the latter approach.)}
+Moreover, real-world usage of function does not always align with philosophical concepts of function.
+A classification scheme for experimental philosophy will thus necessarily be an amalgamation of philosophical conceptual analysis and discipline-specific usage.
+
+A study has recently attempted this for biological function in the context of de novo gene emergence (cite elife).
+The authors chose six categories for their classification scheme: Evolutionary Implications, Physiological Implications, Interactions, Capacities, Expression, and Vague.
+The authors started broadly with the two most well-known philosophical concepts of function: causal role and selected effects.
+From this base, they iterated through a small dataset of 42 examples (from 20 abstracts), adding categories and refining the scheme as they encountered new usages that did not fit into the existing scheme.
+They achieve an exhaustive scheme by implementing a catch-all category of Vague for usage unable to be categorised in one of the other five categories.
+They did not require that these categories be mutually exclusive, instead allowing a single usage to have membership in multiple categories.
+To categorise each usage of function using the scheme, the authors started by independently reading a paper's title and abstract.
+Next they used a list of definitions to assign at least one meaning of function to the example, which were supplemented by a few general coding rules to guide application of the definitions.
+One of the most striking fundings from this study was the difficulty of obtaining agreement between the different raters: in only 12\% of cases did all four raters independently assign an example the same category!
+Even after conferring with one another and employing a consensus-based approach, the raters were only able to assign 62\% of cases to a single category.
+Despite having a comprehensive and well-reasoned classification scheme in hand, these authors were not able to consistently categorise real-world usages of function into a single category.\footnote{We had a simlar experience in the course of developing our scheme. Early-on, we used an approach similar to Keeling et. al. (2019) in which we would individually rate sentences, and if there was a disagreement, we would try to categorise the example using a consensus-based approach. (The purpose of this was to identify a set of gold-standard examples that we could use to test the performance of our scheme on.) We frequently disagreed about how to classify certain examples, both independently and through trying to establish consensus.}
+This is clearly an immensely difficult problem to solve, and there are likely a number of factors that contributed to the difficulty in unambiguously assigning usages of function to a single concept.
+We suspect, however, that the most important factor lies in the different ways that individual investigators analyse natural language in order to meaning.
+Without detailed step-by-step instructions, the semantic mapping from natural language to a definition of function is bound to be inconsistent among different investigators.
+
+In this manuscript, we ask a similar question but adopt a different methodology.
+First, our classification scheme contains different categories, partly because our focus is on biology in general, rather than specifically on de novo gene emergence, and partly due to individual preferences.\footnote{The Keeling et. al. study was published mid-way through this study, but after we had already developed our categories, and thus differences in the classification schemes reflect the diversity expected when research groups independently tackle similar questions but with different perspectives and focus.}
+Second, we have a different approach with regard to the overlapping of categories.
+While Keeling et. al. (2019), allowed a single usage of function to have multiple senses, our usages of function have a single sense (i.e. our sense categories are mutually exclusive).
+Third, and most importantly, we have developed an explicit framework that utilises syntactic and semantic elements to guide investigators in analysing natural language of the sentences that contain usages of function.
+
+Function has many derivatives (e.g. functional) and can be used in different parts of speech (noun, verb, etc.), which significantly complicates analysis of natural language.
+If we focus just on the forms of function when used as a noun, we have the singular ``function'' (``the function of the heart''), and the plural ``functions'' (``the heart has many functions''), and the derivative ``functionality'' (``the functionality of the heart'').
+Grammatical relations also vary.
+In ``the function of the heart'' and ``the functionality of the heart'', function is the subject, whereas for ``the heart has many functions'', function is the direct object.
+Aside from its use as a noun, ``functions'' (and ``function'') can also be used as a verb (``the heart functions to pump blood'').
+We also encounter cases such as the gerund form ``functioning'', which is the -ing form of the verb ``function'' that acts as a noun (``functioning is important for hearts'')!
+And to complicate matters even further, ``functioning'' might be a present participle instead of a gerund, in which case it either acts as an adjective (``the functioning heart'') or to form verb tense (``the heart was functioning''). Suffice it to say, when dealing with real-world sentences, the sheer variety of syntactical forms present a challenge for semantic interpretation of function.
+Thus, the first component of our approach is to simplify these diverse syntactic constructions into common forms.
+For example, a simple common form would be ``The function of \emph{x} is to \emph{y}'', where \emph{x} is a biological item (e.g. ``heart'') and \emph{y} indicates what the biological item does (e.g. ``pump blood'').
 
 
 
 
+To simplify comparison of syntactically-diverse constructions, we will use word conversion to convert from derivations of "function" to its root form function (specifically morphological derivation and inflection). We will use morphological derivation to convert between parts of speech (e.g. adjective -> noun) and inflection to convert between number, tense and aspect (e.g. the plural functions to function). The key consideration during conversion is that we maintain (and convert if necessary) the dependencies between "function" and other parts of the sentence. What I will describe here is a method for converting these derivations of the word function to its base form (the verb or noun "function"), while at the same time, keeping track of and converting the form (where necessary) of the dependencies of "function". The idea is to rework the sentence such that semantic relations can be cast into a standard form.
 
+
+
+\section{advice for best practices}
+\label{sec:advice-best-pract}
+
+should also mention that the elife paper has poor inter-observer agreement even though it overfits its definitions by testing on the ``train set''.
+
+add some stuff on automation here
+
+\section{limitations and further considerations}
+\label{sec:limitations}
+
+- for simplicity ignored functions above the level of the individual (e.g. ecological functions)
+- limit it to the sentence or to elsewhere in the document? First will make it easier to automate but latter might be more in-line with philosophical practices.
 
 \section{Introduction-old-draft}
 \label{sec:introduction-1}
@@ -164,53 +224,53 @@ note the connection with adaptation
 
 
 
-\section{Relations between the functions}
-\label{sec:relat-betw-diff}
+% \section{Relations between the functions}
+% \label{sec:relat-betw-diff}
 
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width=\linewidth]{venn_function.pdf}
-  \caption[\textbf{Relationship between causal role, biological advantage, and selected effects functions.}
-]{Biological advantage functions (BA) are the subset of causal role functions (CR) that affect organism fitness in the present time ($t$). For a function to become a selected effect function (SE) at a future time ($t'$), it must have been a biological advantage function. Not all current biological advantage functions, however, will become selected effects functions.
-}
-\label{fig:venn}
-\end{figure}
+% \begin{figure}[ht]
+%   \centering
+%   \includegraphics[width=\linewidth]{venn_function.pdf}
+%   \caption[\textbf{Relationship between causal role, biological advantage, and selected effects functions.}
+% ]{Biological advantage functions (BA) are the subset of causal role functions (CR) that affect organism fitness in the present time ($t$). For a function to become a selected effect function (SE) at a future time ($t'$), it must have been a biological advantage function. Not all current biological advantage functions, however, will become selected effects functions.
+% }
+% \label{fig:venn}
+% \end{figure}
 
-\section{Function pluralism: asking the four questions}
-\label{sec:funct-plur-asking}
+% \section{Function pluralism: asking the four questions}
+% \label{sec:funct-plur-asking}
 
 
-\begin{table}
-\centering
-\begin{threeparttable}
-\caption{Combining ``type'' notions of function to classify traits (note that this does not include the dimension of dysfunction)}
+% \begin{table}
+% \centering
+% \begin{threeparttable}
+% \caption{Combining ``type'' notions of function to classify traits (note that this does not include the dimension of dysfunction)}
 
-\begin{tabular}{cccccc}
-  \multicolumn{3}{c}{Function categories}&
-  \multicolumn{1}{c}{}&
-\multicolumn{2}{c}{Biological description}\cr
-\cline{1-3}
-\cline{5-6}
-CR & BA & SE && Classification& Examples \\
-\hline
+% \begin{tabular}{cccccc}
+%   \multicolumn{3}{c}{Function categories}&
+%   \multicolumn{1}{c}{}&
+% \multicolumn{2}{c}{Biological description}\cr
+% \cline{1-3}
+% \cline{5-6}
+% CR & BA & SE && Classification& Examples \\
+% \hline
 
-\checkmark & \checkmark & \checkmark && Paradigmatic function & Heart pumping blood \\
-\checkmark & \checkmark & $\times$ && Exaptation & Feathers for flying \\
-\checkmark & $\times$ & \checkmark && Mismatch & Fat/sugar and obesity \\
-\checkmark & $\times$ & $\times$ && Nearly-neutral traits & biochemicaly-active junk DNA \\
-$\times$ & $\times$ & \checkmark && Vestigial & Human appendix,flightless bird wings, pseudogenes \\
-$\times$ & $\times$ & $\times$ && Spandrels/byproduct/parasitic DNA\tnote{1} & Transposable elements \\
+% \checkmark & \checkmark & \checkmark && Paradigmatic function & Heart pumping blood \\
+% \checkmark & \checkmark & $\times$ && Exaptation & Feathers for flying \\
+% \checkmark & $\times$ & \checkmark && Mismatch & Fat/sugar and obesity \\
+% \checkmark & $\times$ & $\times$ && Nearly-neutral traits & biochemicaly-active junk DNA \\
+% $\times$ & $\times$ & \checkmark && Vestigial & Human appendix,flightless bird wings, pseudogenes \\
+% $\times$ & $\times$ & $\times$ && Spandrels/byproduct/parasitic DNA\tnote{1} & Transposable elements \\
 
-\hline
+% \hline
 
-\end{tabular}
-\begin{tablenotes}
-\item[1] Anything that was ``selected of'' rather than ``selected for'' (spandrels, byproducts, constraints) or something that was forced on an organism (e.g. viral DNA or transposable elements). The former evolved for other reasons and may not do anything for the organism while the latter primarily ``serves'' as a selfish element that is using the organism to spread its DNA.
+% \end{tabular}
+% \begin{tablenotes}
+% \item[1] Anything that was ``selected of'' rather than ``selected for'' (spandrels, byproducts, constraints) or something that was forced on an organism (e.g. viral DNA or transposable elements). The former evolved for other reasons and may not do anything for the organism while the latter primarily ``serves'' as a selfish element that is using the organism to spread its DNA.
 
-\end{tablenotes}
+% \end{tablenotes}
 
-\end{threeparttable}
-\end{table}
+% \end{threeparttable}
+% \end{table}
 
 \section{Conclusion}
 \label{sec:conclusion}
