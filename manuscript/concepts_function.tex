@@ -55,17 +55,66 @@ They did not require that these categories be mutually exclusive, instead allowi
 To categorise each usage of function using the scheme, the authors started by independently reading a paper's title and abstract.
 Next they used a list of definitions to assign at least one meaning of function to the example, which were supplemented by a few general coding rules to guide application of the definitions.
 One of the most striking fundings from this study was the difficulty of obtaining agreement between the different raters: in only 12\% of cases did all four raters independently assign an example the same category!
-Even after conferring with one another and employing a consensus-based approach, the raters were only able to assign 62\% of cases to a single category.
+After conferring with one another and employing a consensus-based approach, the raters were only able to assign 62\% of cases to a single category.
 Despite having a comprehensive and well-reasoned classification scheme in hand, these authors were not able to consistently categorise real-world usages of function into a single category.\footnote{We had a simlar experience in the course of developing our scheme. Early-on, we used an approach similar to Keeling et. al. (2019) in which we would individually rate sentences, and if there was a disagreement, we would try to categorise the example using a consensus-based approach. (The purpose of this was to identify a set of gold-standard examples that we could use to test the performance of our scheme on.) We frequently disagreed about how to classify certain examples, both independently and through trying to establish consensus.}
 This is clearly an immensely difficult problem to solve, and there are likely a number of factors that contributed to the difficulty in unambiguously assigning usages of function to a single concept.
-We suspect, however, that the most important factor lies in the different ways that individual investigators analyse natural language in order to meaning.
+We suggest, however, that the most important factor lies in the different ways that individual investigators analyse natural language in order to extract meaning.
 Without detailed step-by-step instructions, the semantic mapping from natural language to a definition of function is bound to be inconsistent among different investigators.
 
-In this manuscript, we ask a similar question but adopt a different methodology.
+In this manuscript, we ask a similar question to Keeling et. al. (2019) but adopt a different methodology.
+Our classification scheme does not try to semantically map directly from natural language to definitions of function.
+To assign an example to a definition, one follows a step-by-step flowchart, answering questions and identifying important features related to function that are contained within a piece of natural language.
+We unpack each piece of natural language into one of several common forms.
+For example, to be classified as Biological Role, an example must be able to fit an unpacked form of ``The function of \emph{x} is \emph{y} in \emph{z}'' (e.g. \emph{x} could be ``The heart'', \emph{y} could be ``to pump blood'', and \emph{z} could be ``through the circulatory system'').
+By simplifying natural language into simple, common forms, our approach avoids obfuscation of meaning due to variation in syntactic construction and helps standardise the technique for extracting meaning.
+Moreover, we provide detailed instructions for how to use the dependency grammar framework and modern natural language processing techniques as aids in identifying the variables in the common forms (e.g. \emph{x}, \emph{y}, and \emph{z} in ``The function of \emph{x} is \emph{y} in \emph{z}'').
+
+\section{Classification scheme}
+\label{sec:class-scheme}
+
+
+
+
+We decided to use the scheme of Wouters (2003) as our starting point.
+Wouters breaks down function into four categories: (i) Activity; (ii) Biological Role; (iii) Biological Advantage; and (iv) Selected Effect.
+In Wouters's scheme, Activity is ``what an item does or is capable of doing'', Biological Role describes ``how a certain item or activity contributes to the emergence of a complex capacity of an organism'', Biological Advantage refers to the ``biological value (utility) of a certain trait in comparison with another'', and Selected Effect is ``used in a historical sense to refer to the effects for which a certain trait was selected in the past''.
+Of these four categories, ii--iv have substantial precedent in the philosophical literature.
+For example, a recent survey of theories of biological function chose to highlight these three categories as the main theories of function (cite garson2016), note that Garson uses ``causal role'' instead of Biological Role, and ``fitness-contribution'' instead of Biological Advantage).
+The main controversial distinction in Wouters's scheme is the split between Activity and Biological Role, as Activity is often ignored or subsumed under Biological Role, with the resulting category typically being termed causal role function after Cummins (1975).
+We have chosen to keep this distinction for two main reasons.
+First, although Activity has received little philosophical treatment, we believe that Activity does reflect some actual biological use, most notably in the infamous ENCODE study (encode2012).
+Second, keeping the distinction preserves information.
+One can always combine (labelled examples of) Activity and Biological Role into a single category during the analysis phase if they have been separately classified.
+But one cannot separate these categories after the fact if they have been classified into a single category.
+
+From this base, we analysed real-world usages of biological function to develop a more comprehensive classification scheme through an iterative process.
+Since our focus was on how function is used in biology, we used examples from a wide variety of biological subfields.
+Specifically, we used the ARC FoR, matched with WoS/JIF, chose 1 paper from each of the top 5 journals by JIF, giving us xxx examples...(FILL IN LATER)
+To begin with, three of the authors (JRC, ZW, SG) independently analysed a subset of the sentences (using definitions and a simple set of classification guidelines, much like Keeling et. al. (2019)).
+We then compared our responses, and if our classifications differed, we used a consensus-based approach to categorise examples.
+We added a new definition whenever we encountered instances of usage that did not fit one of our definitions and reoccurred multiple times.
+To Activity, Biological Role, Biological Advantage, and Selected Effect, we added the following categories: Colloquial, Technical, and Performing
+
+From these examples, we developed a set of ``gold-standard'' examples that we agreed upon, which we were able to use for the purposes of testing our flowchart.
+
+
+
+From here, we jointly developed the classification scheme and our pipeline for the analysis of natural language.
+
+
+iterating our classification scheme as we worked through examples.
+
+Note that there's really 3 layers here: (i) classification scheme (i.e. categories and definitions); (ii) general flowchart; (iii) natural language processing, as an aid to ii.
+Actually, probably better to frame it as a new approach towards the classification scheme---we aren't operating on traditional definitions, rather our definitions require that we satisfy certain criteria wrt extracting certain features from a text and placing them in a common structure.
+
 First, our classification scheme contains different categories, partly because our focus is on biology in general, rather than specifically on de novo gene emergence, and partly due to individual preferences.\footnote{The Keeling et. al. study was published mid-way through this study, but after we had already developed our categories, and thus differences in the classification schemes reflect the diversity expected when research groups independently tackle similar questions but with different perspectives and focus.}
-Second, we have a different approach with regard to the overlapping of categories.
+Second, we have a different approach with regard to how we deal with potential overlap between categories.
 While Keeling et. al. (2019), allowed a single usage of function to have multiple senses, our usages of function have a single sense (i.e. our sense categories are mutually exclusive).
 Third, and most importantly, we have developed an explicit framework that utilises syntactic and semantic elements to guide investigators in analysing natural language of the sentences that contain usages of function.
+
+
+\section{Analysis of natural language}
+\label{sec:analys-natur-lang}
 
 Function has many derivatives (e.g. functional) and can be used in different parts of speech (noun, verb, etc.), which significantly complicates analysis of natural language.
 If we focus just on the forms of function when used as a noun, we have the singular ``function'' (``the function of the heart''), and the plural ``functions'' (``the heart has many functions''), and the derivative ``functionality'' (``the functionality of the heart'').
@@ -83,19 +132,43 @@ For example, a simple common form would be ``The function of \emph{x} is to \emp
 To simplify comparison of syntactically-diverse constructions, we will use word conversion to convert from derivations of "function" to its root form function (specifically morphological derivation and inflection). We will use morphological derivation to convert between parts of speech (e.g. adjective -> noun) and inflection to convert between number, tense and aspect (e.g. the plural functions to function). The key consideration during conversion is that we maintain (and convert if necessary) the dependencies between "function" and other parts of the sentence. What I will describe here is a method for converting these derivations of the word function to its base form (the verb or noun "function"), while at the same time, keeping track of and converting the form (where necessary) of the dependencies of "function". The idea is to rework the sentence such that semantic relations can be cast into a standard form.
 
 
+\section{relevance for philosophy of medicine}
+\label{sec:relev-phil-medic}
+
+expand upon the ``performing'' category (I can put the bits about requiring some normative backing, dysfunction, etc. here)
 
 \section{advice for best practices}
 \label{sec:advice-best-pract}
 
 should also mention that the elife paper has poor inter-observer agreement even though it overfits its definitions by testing on the ``train set''.
 
-add some stuff on automation here
+add some stuff on automation here and how some steps are better suited to statistical inference rather than rules (e.g. for selected effects and biological advantage it might be easier to label a bunch of examples and train a transformer model using supervision to classify the examples than it would be to provide bullet-proof rules)
 
 \section{limitations and further considerations}
 \label{sec:limitations}
 
 - for simplicity ignored functions above the level of the individual (e.g. ecological functions)
 - limit it to the sentence or to elsewhere in the document? First will make it easier to automate but latter might be more in-line with philosophical practices.
+- even once you accurately categorise sentences, there's still the issue of how to classify documents. The distinction between ``this usage of function is of type x'' and ``these authors use function in manner y in this document''.
+
+\section{example sentences}
+\label{sec:example-sentences}
+
+test=nlp("In general, these transcripts show little evidence of purifying selection, suggesting that many of them are not functional")
+
+effect unspecified (Question: what have these transcripts done to cause them to be selected? Answer: we don't know, it's not specified)
+
+change to
+
+test=nlp("In general, these transcripts show evidence of translation into proteins, suggesting that many of them are functional")
+
+either activity or role
+
+change to
+
+test=nlp("In general, these transcripts show little evidence of purifying selection on account of being translated into proteins, suggesting that many of them are not functional")
+
+now selected effects
 
 \section{Introduction-old-draft}
 \label{sec:introduction-1}
