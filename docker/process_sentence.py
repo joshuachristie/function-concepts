@@ -24,5 +24,5 @@ def show_dependency_graph(doc, width):
     displacy.render(doc, style="dep", jupyter=True, options={'distance' : width})
 
 def visualise(doc, width=100):
-    print_info(doc)
+    #print_info(doc)
     show_dependency_graph(doc, width)
