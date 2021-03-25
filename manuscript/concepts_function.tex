@@ -2,6 +2,9 @@
 \usepackage{graphicx}
 \usepackage{threeparttable}
 \usepackage{amssymb}
+\usepackage{hyperref}
+
+\usepackage{pdflscape}
 
 \title{Concepts of function in biology and biomedicine}
 
@@ -105,10 +108,39 @@ From this base, we analysed real-world usages of biological function to develop 
 We added a new category of function whenever we encountered instances of usage that reoccurred multiple times and could not be classified in one of our existing categories.
 To Biological Activity, Biological Role, Biological Advantage, and Selected Effect, we added the following categories: Colloquial, Technical, and Performing.
 In some instances, it is not possible to unpack a sentence into a common form and identify the variables.
-We thus added the following additional categories whose purpose is to specify what feature was ``missing'' from the sentence: \emph{ITEM} Unidentified, Meaning Unknown: \emph{EFFECT} Unidentified, and Meaning Unknown: \emph{EFFECT} Identified.
+We thus added the following additional categories whose purpose is to specify what feature was ``missing'' from the sentence: \emph{ITEM} Unspecified, Meaning Unknown: \emph{EFFECT} Unspecified, and Meaning Unknown: \emph{EFFECT} Specified.
 
 We have a different approach with regard to how we deal with potential overlap between categories.
 While Keeling et. al. (2019), allowed a single usage of function to have multiple senses, our usages of function have a single sense (i.e. our sense categories are mutually exclusive).
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\linewidth]{GeneralFlowchart.pdf}
+  \caption[\textbf{Decision flowchart for identifying sense of function.}]{}
+\end{figure}
+\begin{landscape}
+\begin{table}
+  \begin{tabular}{|p{0.17\linewidth}|p{0.97\linewidth}|}
+    \hline
+    Decision point & Description \\
+    \hline
+    Biological context? & Are we dealing with a case of biological function or colloquial use? For a set of definitions of colloquial use, see \href{http://wordnetweb.princeton.edu/perl/webwn?s=function&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=}{WordNet 3.1}. Most colloquial senses will be rarely encountered if one has a sufficiently narrow corpus (i.e. limited to scientific publications). Notable exceptions are mathematical functions and programming functions, which we have included under colloquial for simplicity. \\
+    \hline
+    Technical use? & Compound phrases such as ``functional ecology'', ``functional biology'', ``functional connectivity'', and so on. These phrases will be familiar to practitioners within a field. Their meanings are multi-faceted and influenced by a field's development and cannot be meaningfully unpacked using a flowchart.  A useful heuristic is that these phrases will often appear multiple times throughout a manuscript. \\
+    \hline
+    Identify \emph{ITEM} &  An \emph{ITEM} is a noun (or noun phrase) that can be a character or trait of a Darwinian individual. This applies most obviously to concrete nouns like ``heart'' that refer to a physical item, but it can also include abstract nouns (denoting concepts, qualities, or states) if they refer to a concrete concept. For example, ``gene'' refers to the concept of an atomic unit of DNA that has a well-defined phenotypic effect. This is sufficiently concrete to qualify as a character even if it does not exactly map onto a physical piece of DNA. Importantly, there must be a grammatical dependence between function and the \emph{ITEM}---it is not merely sufficient that a suitable \emph{ITEM} appear somewhere in the sentence. For example, ``protein'', not ``muscle'', is the \emph{ITEM} in  ``protein function aids muscle development'' but ``muscle'', not ``protein'', is the \emph{ITEM} in ``protein aids in muscle function''. \\
+    \hline
+    Identify \emph{ITEM}'s \emph{EFFECT} & \emph{EFFECT} is what the \emph{ITEM} does (or, less commonly, has done to it). \emph{EFFECT} is a verb (or verb phrase if including associated modifiers). \emph{EFFECT} might not always act as a verb in the text, so long as it can be turned into a verb through word conversion (e.g. in ``contribute to transcription'', the noun ``transcription'' could be converted to the verb ``transcribe''). \\
+    \hline
+    Is function used in the sense of Perform? & A heuristic is whether you can substitute ``\emph{ITEM} function'' (or equivalent, depending on the sentence) with ``how well \emph{ITEM} performs'', ``a working \emph{ITEM}'' or similar into the raw sentence without loss of meaning. For example, ``Liver function is important for health'' might become ``A working liver is important for health'' without loss of meaning.\\
+    \hline
+    Did doing \emph{EFFECT} select for \emph{ITEM} historically? & Can it fit the following form: the function of \emph{ITEM} is to \emph{EFFECT} such that doing \emph{EFFECT} in the past caused \emph{ITEM} to be selected for or maintained in a population (relative to an actual or counterfactual historical alternative or set of alternatives to \emph{ITEM})? \\
+    \hline
+    Identify \emph{SYSTEM} & The \emph{SYSTEM} is a system that contains \emph{ITEM}. In the spirit of Cummins (1975), the \emph{EFFECT} of the \emph{ITEM} on the \emph{SYSTEM} contributes to an activity of \emph{SYSTEM}. As a heuristic for identifying \emph{SYSTEM}, you can ask questions such as "how does \emph{ITEM} produce \emph{EFFECT}?" or "for what is \emph{ITEM} producing \emph{EFFECT} used? \\
+    \hline
+  \end{tabular}
+\end{table}
+\end{landscape}
 
 \section{Analysis of natural language}
 \label{sec:analys-natur-lang}
@@ -288,24 +320,6 @@ note the connection with adaptation
 
 \subsection{Ontogeny: how did it develop?}
 \label{sec:ontogeny:-how-did}
-
-
-
-% \section{Relations between the functions}
-% \label{sec:relat-betw-diff}
-
-% \begin{figure}[ht]
-%   \centering
-%   \includegraphics[width=\linewidth]{venn_function.pdf}
-%   \caption[\textbf{Relationship between causal role, biological advantage, and selected effects functions.}
-% ]{Biological advantage functions (BA) are the subset of causal role functions (CR) that affect organism fitness in the present time ($t$). For a function to become a selected effect function (SE) at a future time ($t'$), it must have been a biological advantage function. Not all current biological advantage functions, however, will become selected effects functions.
-% }
-% \label{fig:venn}
-% \end{figure}
-
-% \section{Function pluralism: asking the four questions}
-% \label{sec:funct-plur-asking}
-
 
 % \begin{table}
 % \centering
