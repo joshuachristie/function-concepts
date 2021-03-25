@@ -286,6 +286,13 @@ But of course, footnote 9 isn't dealin with anything in the predicate but specif
 this isn't a case of x being in the dobj, so I might be wrongly attacking footnote 9.
 Perhaps the bigger question here is whether something as specific as whether x has a dobj dependency should be in the flowchart
 I tend to think it shouldn't
+
+EDIT 20210325: I now disagree with even the narrow dobj scope of footnote 9.
+Take a sentence like "A polymerase transcribes a functional gene" or
+"A polymerase transcribes a gene, which makes the gene functional".
+I think it is correct to unpack these as "The function of THE GENE is TO BE TRANSCRIBED,
+but THE GENE is the direct object and is definitely having something done to it.
+
 """
   4. not the biggest issue, but there's a redundancy in the flowchart in step 4. If you go 4.2 and answer yes then you can go 4.3 -> 4.4 -> 4.5, so it's possible to end up at 4.5 by answering no to 4.2 even though you go to 4.5 if you answer yes to 4.2 (basically if you answer yes to 4.2 it can't answer yes to 4.5
      
