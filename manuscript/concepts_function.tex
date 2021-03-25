@@ -27,8 +27,8 @@ If a trait's function is what the trait ought to do, then a dysfunctional trait 
 We call this dysfunctional state ``disease''.
 But herein lies several problems.
 Function is a word with multiple senses in both its colloquial and discipline-specific uses.
-There are many philosophical theories of biological function, each differing in their claims to normativity (and some with arguably no normative claims whatsoever).
-It is often unclear which concept of function is being employed in real-world usage by biologists, medical researchers, and physicians, nor is it clear how well real-world usage maps onto philosphical conceptions of function.
+Within the discipline of philosophy, there are many theories of biological function, each differing in their claims to normativity (and some with arguably no normative claims whatsoever).
+In more applied disciplines, such as biology, medical research, and clinical medicine, it can be unclear which concept of function is being employed or how well usage maps onto philosphical conceptions of function.
 % One cannot easily make progress on a theory without first setting a solid foundation.
 
 Experimental philosophy relies, in large part, on extracting meaning from natural language.
@@ -40,7 +40,7 @@ The categories within the set should be exhaustive, covering all possible real-w
 Furthermore, the categories should either be exclusive (i.e. each use of function has one and only one sense) or there should be explicit rules for how one is to deal with membership in overlapping categories (e.g. a hierarchy of definitions or allowing of multiple senses for a single usage). 
 Second, one must develop a system that can consistently assign a piece of natural language on biological function (sentence, paragraph, etc.) into its correct category.
 
-The problem of developing a classification scheme will typically employ some form of conceptual analysis (and/or leverage earlier conceptual analysis).
+The problem of developing a set of categories will typically employ some form of conceptual analysis (and/or leverage earlier conceptual analysis).
 We cannot, however, simply paste together existing concepts of biological function.
 For one, this will not necessarily generate a set of function concepts that are exhaustive or exclusive.\footnote{For an example with respect to exclusivity, consider that some philosophical concepts of function have closely overlapping features. Say we have two overlapping concepts, such as the causal role and organisational theories of function. We must make some hard decisions when deciding how to incorporate these concepts into a coherent classification scheme. We could choose one category and remove the other, allow both but give one hierarchical precedence over the other when ambiguities arise, allow a single usage to be assigned to both categories, or create a general category that encompasses both concepts. (Here we have chosen the latter approach.)}
 Moreover, real-world usage of function does not always align with philosophical concepts of function.
@@ -55,63 +55,60 @@ They did not require that these categories be mutually exclusive, instead allowi
 To categorise each usage of function using the scheme, the authors started by independently reading a paper's title and abstract.
 Next they used a list of definitions to assign at least one meaning of function to the example, which were supplemented by a few general coding rules to guide application of the definitions.
 One of the most striking fundings from this study was the difficulty of obtaining agreement between the different raters: in only 12\% of cases did all four raters independently assign an example the same category!
-After conferring with one another and employing a consensus-based approach, the raters were only able to assign 62\% of cases to a single category.
+After conferring with one another and employing a consensus-based approach, the raters were still only able to assign 62\% of cases to a single category.
 Despite having a comprehensive and well-reasoned classification scheme in hand, these authors were not able to consistently categorise real-world usages of function into a single category.\footnote{We had a simlar experience in the course of developing our scheme. Early-on, we used an approach similar to Keeling et. al. (2019) in which we would individually rate sentences, and if there was a disagreement, we would try to categorise the example using a consensus-based approach. (The purpose of this was to identify a set of gold-standard examples that we could use to test the performance of our scheme on.) We frequently disagreed about how to classify certain examples, both independently and through trying to establish consensus.}
 This is clearly an immensely difficult problem to solve, and there are likely a number of factors that contributed to the difficulty in unambiguously assigning usages of function to a single concept.
-We suggest, however, that the most important factor lies in the different ways that individual investigators analyse natural language in order to extract meaning.
-Without detailed step-by-step instructions, the semantic mapping from natural language to a definition of function is bound to be inconsistent among different investigators.
+We suggest, however, that a crucial factor lies in the different ways that individual investigators analyse natural language in order to extract meaning.
+Without a detailed and standardised framework, the semantic mapping from natural language to a definition of function is bound to inconsistent among different investigators.
 
 In this manuscript, we ask a similar question to Keeling et. al. (2019) but adopt a different methodology.
 Our classification scheme does not try to semantically map directly from natural language to definitions of function.
-To assign an example to a definition, one follows a step-by-step flowchart, answering questions and identifying important features related to function that are contained within a piece of natural language.
+To assign an example to a definition, one instead follows a step-by-step flowchart, answering questions and identifying important features related to function that are contained within a piece of natural language.
 We unpack each piece of natural language into one of several common forms.
-For example, to be classified as Biological Role, an example must be able to fit an unpacked form of ``The function of \emph{x} is \emph{y} in \emph{z}'' (e.g. \emph{x} could be ``The heart'', \emph{y} could be ``to pump blood'', and \emph{z} could be ``through the circulatory system'').
+For example, to be classified as Biological Role (see section ``Senses of function''), an investigator must be able to identify each variable in the unpacked form of ``The function of \emph{ITEM} is \emph{EFFECT} in \emph{SYSTEM}''(e.g. \emph{ITEM} could be ``The heart'', \emph{EFFECT} could be ``to pump blood through'', and \emph{SYSTEM} could be ``the circulatory system'').
 By simplifying natural language into simple, common forms, our approach avoids obfuscation of meaning due to variation in syntactic construction and helps standardise the technique for extracting meaning.
-Moreover, we provide detailed instructions for how to use the dependency grammar framework and modern natural language processing techniques as aids in identifying the variables in the common forms (e.g. \emph{x}, \emph{y}, and \emph{z} in ``The function of \emph{x} is \emph{y} in \emph{z}'').
+Moreover, we provide detailed instructions for how to use the dependency grammar framework and modern natural language processing techniques as aids in identifying the variables in the common forms.
 
-\section{Classification scheme}
+\section{Classification flowchart}
 \label{sec:class-scheme}
 
-
-
-
-We decided to use the scheme of Wouters (2003) as our starting point.
-Wouters breaks down function into four categories: (i) Activity; (ii) Biological Role; (iii) Biological Advantage; and (iv) Selected Effect.
-In Wouters's scheme, Activity is ``what an item does or is capable of doing'', Biological Role describes ``how a certain item or activity contributes to the emergence of a complex capacity of an organism'', Biological Advantage refers to the ``biological value (utility) of a certain trait in comparison with another'', and Selected Effect is ``used in a historical sense to refer to the effects for which a certain trait was selected in the past''.
-Of these four categories, ii--iv have substantial precedent in the philosophical literature.
-For example, a recent survey of theories of biological function chose to highlight these three categories as the main theories of function (cite garson2016), note that Garson uses ``causal role'' instead of Biological Role, and ``fitness-contribution'' instead of Biological Advantage).
-The main controversial distinction in Wouters's scheme is the split between Activity and Biological Role, as Activity is often ignored or subsumed under Biological Role, with the resulting category typically being termed causal role function after Cummins (1975).
-We have chosen to keep this distinction for two main reasons.
-First, although Activity has received little philosophical treatment, we believe that Activity does reflect some actual biological use, most notably in the infamous ENCODE study (encode2012).
-Second, keeping the distinction preserves information.
-One can always combine (labelled examples of) Activity and Biological Role into a single category during the analysis phase if they have been separately classified.
-But one cannot separate these categories after the fact if they have been classified into a single category.
-
-From this base, we analysed real-world usages of biological function to develop a more comprehensive classification scheme through an iterative process.
+Our approach was to analyse real-world uses of biological function extracted from scientific papers.
+Through an iterative process, we altered our method each time that we encountered common occurences, or general patterns, that our method handled poorly\footnote{will need to expand on this to talk about what we mean by ``poorly'', how we began with consensus, and so forth. Not sure whether all of the general method should be here or whether some of it can go later. Currently pasting the various snippets of text about it in this section}.
 Since our focus was on how function is used in biology, we used examples from a wide variety of biological subfields.
 Specifically, we used the ARC FoR, matched with WoS/JIF, chose 1 paper from each of the top 5 journals by JIF, giving us xxx examples...(FILL IN LATER)
+
 To begin with, three of the authors (JRC, ZW, SG) independently analysed a subset of the sentences (using definitions and a simple set of classification guidelines, much like Keeling et. al. (2019)).
 We then compared our responses, and if our classifications differed, we used a consensus-based approach to categorise examples.
-We added a new definition whenever we encountered instances of usage that did not fit one of our definitions and reoccurred multiple times.
-To Activity, Biological Role, Biological Advantage, and Selected Effect, we added the following categories: Colloquial, Technical, and Performing
 
 From these examples, we developed a set of ``gold-standard'' examples that we agreed upon, which we were able to use for the purposes of testing our flowchart.
 
-
-
 From here, we jointly developed the classification scheme and our pipeline for the analysis of natural language.
-
-
-iterating our classification scheme as we worked through examples.
 
 Note that there's really 3 layers here: (i) classification scheme (i.e. categories and definitions); (ii) general flowchart; (iii) natural language processing, as an aid to ii.
 Actually, probably better to frame it as a new approach towards the classification scheme---we aren't operating on traditional definitions, rather our definitions require that we satisfy certain criteria wrt extracting certain features from a text and placing them in a common structure.
 
-First, our classification scheme contains different categories, partly because our focus is on biology in general, rather than specifically on de novo gene emergence, and partly due to individual preferences.\footnote{The Keeling et. al. study was published mid-way through this study, but after we had already developed our categories, and thus differences in the classification schemes reflect the diversity expected when research groups independently tackle similar questions but with different perspectives and focus.}
-Second, we have a different approach with regard to how we deal with potential overlap between categories.
-While Keeling et. al. (2019), allowed a single usage of function to have multiple senses, our usages of function have a single sense (i.e. our sense categories are mutually exclusive).
-Third, and most importantly, we have developed an explicit framework that utilises syntactic and semantic elements to guide investigators in analysing natural language of the sentences that contain usages of function.
+\subsection{Senses of function}
+\label{sec:senses-function}
 
+First, we must choose the categories of our classification scheme.\footnote{The Keeling et. al. study was published mid-way through this study, but after we had already developed our categories, and thus differences in the classification schemes reflect the diversity expected when research groups independently tackle similar questions but with different perspectives and focus.}
+We decided to use the scheme of Wouters (2003) as our starting point.
+Wouters breaks down function into four categories: (i) Biological Activity; (ii) Biological Role; (iii) Biological Advantage; and (iv) Selected Effect.
+In Wouters's scheme, Biological Activity is ``what an item does or is capable of doing'', Biological Role describes ``how a certain item or activity contributes to the emergence of a complex capacity of an organism'', Biological Advantage refers to the ``biological value (utility) of a certain trait in comparison with another'', and Selected Effect is ``used in a historical sense to refer to the effects for which a certain trait was selected in the past''.\footnote{Of these four categories, ii--iv have substantial precedent in the philosophical literature. For example, a recent survey of theories of biological function chose to highlight these three categories as the main theories of function (cite garson2016), note that Garson uses ``causal role'' instead of Biological Role, and ``fitness-contribution'' instead of Biological Advantage).}
+The main controversial distinction in Wouters's scheme is the split between Biological Activity and Biological Role, as Biological Activity is often ignored or subsumed under Biological Role, with the resulting category typically being termed causal role function after Cummins (1975).
+We have chosen to keep this distinction for two main reasons.
+First, although Biological Activity has received little philosophical treatment, we believe that Biological Activity does reflect some actual biological use, most notably in the infamous ENCODE study whose goal was to map functionality across the human genome (encode2012).\footnote{It is commonly stated that ENCODE used a causal role definition (e.g. cite1, cite2), but we believe this to be a (detrimental) conflation of Biological Activity and Biological Role. ENCODE focused on correlates of biological activity (encoding protein or non-coding RNA, or displaying a biological signature such as protein binding or a specific chromatin structure) without trying to establish how this activity is used to generate a complex capacity in the wider system. For ENCODE to have used a Biological Role/causal role definition would have required that they develop specific causal role explanations for 80\% of the genome, an impossible task given our current understanding of genomics.}
+Second, keeping the distinction preserves information.
+If an investigator believes that the distinction between Biological Activity and Role is spurious, then they can always combine (labelled examples of) the two categories into a single category during the analysis phase.
+But one cannot separate these categories \emph{post hoc} if they were originally classified as a single category.
+
+From this base, we analysed real-world usages of biological function to develop a more comprehensive classification scheme using an iterative process.
+We added a new category of function whenever we encountered instances of usage that reoccurred multiple times and could not be classified in one of our existing categories.
+To Biological Activity, Biological Role, Biological Advantage, and Selected Effect, we added the following categories: Colloquial, Technical, and Performing.
+In some instances, it is not possible to unpack a sentence into a common form and identify the variables.
+We thus added the following additional categories whose purpose is to specify what feature was ``missing'' from the sentence: \emph{ITEM} Unidentified, Meaning Unknown: \emph{EFFECT} Unidentified, and Meaning Unknown: \emph{EFFECT} Identified.
+
+We have a different approach with regard to how we deal with potential overlap between categories.
+While Keeling et. al. (2019), allowed a single usage of function to have multiple senses, our usages of function have a single sense (i.e. our sense categories are mutually exclusive).
 
 \section{Analysis of natural language}
 \label{sec:analys-natur-lang}
@@ -125,9 +122,6 @@ We also encounter cases such as the gerund form ``functioning'', which is the -i
 And to complicate matters even further, ``functioning'' might be a present participle instead of a gerund, in which case it either acts as an adjective (``the functioning heart'') or to form verb tense (``the heart was functioning''). Suffice it to say, when dealing with real-world sentences, the sheer variety of syntactical forms present a challenge for semantic interpretation of function.
 Thus, the first component of our approach is to simplify these diverse syntactic constructions into common forms.
 For example, a simple common form would be ``The function of \emph{x} is to \emph{y}'', where \emph{x} is a biological item (e.g. ``heart'') and \emph{y} indicates what the biological item does (e.g. ``pump blood'').
-
-
-
 
 To simplify comparison of syntactically-diverse constructions, we will use word conversion to convert from derivations of "function" to its root form function (specifically morphological derivation and inflection). We will use morphological derivation to convert between parts of speech (e.g. adjective -> noun) and inflection to convert between number, tense and aspect (e.g. the plural functions to function). The key consideration during conversion is that we maintain (and convert if necessary) the dependencies between "function" and other parts of the sentence. What I will describe here is a method for converting these derivations of the word function to its base form (the verb or noun "function"), while at the same time, keeping track of and converting the form (where necessary) of the dependencies of "function". The idea is to rework the sentence such that semantic relations can be cast into a standard form.
 
