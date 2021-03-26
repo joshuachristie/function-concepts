@@ -2,6 +2,9 @@
 \usepackage{graphicx}
 \usepackage{threeparttable}
 \usepackage{amssymb}
+\usepackage{hyperref}
+
+\usepackage{pdflscape}
 
 \title{Concepts of function in biology and biomedicine}
 
@@ -105,10 +108,69 @@ From this base, we analysed real-world usages of biological function to develop 
 We added a new category of function whenever we encountered instances of usage that reoccurred multiple times and could not be classified in one of our existing categories.
 To Biological Activity, Biological Role, Biological Advantage, and Selected Effect, we added the following categories: Colloquial, Technical, and Performing.
 In some instances, it is not possible to unpack a sentence into a common form and identify the variables.
-We thus added the following additional categories whose purpose is to specify what feature was ``missing'' from the sentence: \emph{ITEM} Unidentified, Meaning Unknown: \emph{EFFECT} Unidentified, and Meaning Unknown: \emph{EFFECT} Identified.
+We thus added the following additional categories whose purpose is to specify what feature was ``missing'' from the sentence: \emph{ITEM} Unspecified, Meaning Unknown: \emph{EFFECT} Unspecified, and Meaning Unknown: \emph{EFFECT} Specified.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\linewidth]{GeneralFlowchart.pdf}
+  \caption[\textbf{Decision flowchart for identifying sense of function.}]{}
+  \label{flowchart}
+\end{figure}
+
+
+\begin{landscape}
+  \begin{table}
+    \caption{Description of each decision point in the classification flowchart (Figure \ref{flowchart})}
+  \begin{tabular}{|p{0.17\linewidth}|p{0.97\linewidth}|}
+    \hline
+    Decision point & Description \\
+    \hline
+    Biological context? & Are we dealing with a case of biological function or colloquial use (see \href{http://wordnetweb.princeton.edu/perl/webwn?s=function&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=}{WordNet 3.1} for colloquial definitions)? These examples are rare if one restricts the corpus to scientific papers in biology. Notable exceptions are mathematical functions and programming functions, which we place within Colloquial to simplify the flowchart. \\
+    \hline
+    Technical use? & Compound phrases such as ``functional ecology'', ``functional biology'', ``functional connectivity'', and so on. These phrases will be familiar to practitioners within a field. Their meanings are multi-faceted and influenced by a field's development and cannot be meaningfully unpacked using a flowchart.  These phrases will often appear multiple times in a manuscript. \\
+    \hline
+    Identify \emph{ITEM} &  An \emph{ITEM} is something that can be a character (or trait) of a Darwinian individual. Obvious candidates are concrete nouns, which refer to a physical item (e.g. heart), but it also includes abstract nouns if they refer to a concrete concept (e.g. ``gene'' as used in population genetics, ``boldness'' as a behavioural phenotype, etc.). Importantly, there must be a grammatical dependence between function and the \emph{ITEM}---it is not sufficient that a suitable \emph{ITEM} simply appear in the sentence (e.g. ``protein'' is the \emph{ITEM} in  ``protein function aids muscle development'' but ``muscle'' is the \emph{ITEM} in ``protein aids in muscle function''). \\
+%    For example, ``gene'' can refer to the concept of an atomic unit of DNA with a well-defined phenotype. This is sufficiently concrete to qualify as a character despite not necessarily mapping onto a physical piece of DNA. 
+    \hline
+    Identify \emph{ITEM}'s \emph{EFFECT} & \emph{EFFECT} is what the \emph{ITEM} does (or, less commonly, has done to it). \emph{EFFECT} is a verb or verb phrase, but it might not always act as a verb in the text, so long as it can be turned into a verb through word conversion (e.g. ``contribute to transcription'' could be converted to the verb ``transcribe''). \\
+    \hline
+    Is function used in the sense of Perform? & A heuristic is whether you can substitute ``\emph{ITEM} function'' (or equivalent, depending on the sentence) with ``how well \emph{ITEM} performs'', ``a working \emph{ITEM}'', or similar into the raw sentence without loss of meaning. For example, ``Liver function is important for health'' might become ``A working liver is important for health'' without loss of meaning.\\
+    \hline
+    Did doing \emph{EFFECT} select for \emph{ITEM} historically? & Can it fit the following form: the function of \emph{ITEM} is to \emph{EFFECT} such that doing \emph{EFFECT} in the past caused \emph{ITEM} to be selected or maintained in a population (relative to an actual or counterfactual historical alternative to \emph{ITEM})? An example would be ``zebra stripes evolved to reduce insect bites'' as reducing insect bites (\emph{EFFECT}) has selected for zebra stripes (\emph{ITEM}).\\
+    \hline
+    Identify \emph{SYSTEM} & A \emph{SYSTEM} is either a Darwinian individual, or a complex system within an individual, that contains the \emph{ITEM}. The \emph{EFFECT} of the \emph{ITEM} on the \emph{SYSTEM} contributes to a capacity of the \emph{SYSTEM}. As a heuristic for identifying the \emph{SYSTEM}, you can ask  ``how does \emph{ITEM} produce \emph{EFFECT}?'' or ``for what is \emph{ITEM} producing \emph{EFFECT} used?''. \\
+    \hline
+    Is the function of \emph{ITEM} \emph{EFFECT} in \emph{SYSTEM} and \emph{EFFECT} benefits \emph{SYSTEM}? &  Biological Advantage characterisations are contrastive, which means that \emph{ITEM}'s \emph{EFFECT} benefits \emph{SYSTEM} relative to an explicitly-identified or implied alternative to \emph{ITEM}\footnote{I think most of this can move to the main text}. An example is ``Transcript X functions to regulate expression in the liver, which improves performance through regulation of glycogen storage.''. We can unpack this as ``The function of \emph{TRANSCRIPT X} is to \emph{REGULATE EXPRESSION} in \emph{GLYCOGEN STORAGE IN THE LIVER} and \emph{REGULATING EXPRESSION} benefits [improves performance of] \emph{GLYCOGEN STORAGE IN THE LIVER}''. Note the statement's contrastive nature: ``improves performance'' indicates that transcript X is being compared to an (unstated) alternative (e.g. transcript Y). \\
+    \hline
+    Is the function of \emph{ITEM} \emph{EFFECT} in \emph{SYSTEM}? &  Biological Role is not contrastive (with respect to the \emph{ITEM}), and it lacks the normative language (indicating a benefit to the \emph{SYSTEM}) of Biological Advantage. An example is ``Transcript X functions to regulate expression in the liver, playing a role in regulation of glycogen storage''. This statement neither contrasts transcript X with an alternative---it simply describes how transcript X contributes to a capacity of the \emph{SYSTEM}---nor explicitly describes a benefit to the \emph{SYSTEM}.  \\
+    \hline
+    Is the function of \emph{ITEM} \emph{EFFECT}? &  Biological Activity is Biological Role when no \emph{SYSTEM} is specified. An example is ``Transcript X functions to regulate expression'', which simply describes what transcript X does. We do not know how (or in what \emph{SYSTEM}) it is being used. \\
+    \hline
+  \end{tabular}
+\end{table}
+\end{landscape}
+
+\subsection{Relation between Biological Activity, Role, Advantage, and Selected Effect}
+\label{sec:relat-betw-funct}
+
+here can briefly write about how each of these relate to the other. Selected effect is sort of the odd one out so can either write some general stuff from the table that combines the different sense (e.g. a selected effect was a biological advantage (and activity/role) in the past although it need not be now. I can probably get the highlights from the previous stuff I wrote in this section.
+
+This may be best place to go through examples due to space constraints but will have to see
+
+it's might also be the place to situate the various theories of function within our categories (e.g. organisational theories)
+
+\subsection{Function as Performing}
+\label{sec:funct-as-perf}
+
+expand upon the ``performing'' category (I can put the bits about requiring some normative backing, dysfunction, etc. here)
+
+
+
+
 
 We have a different approach with regard to how we deal with potential overlap between categories.
 While Keeling et. al. (2019), allowed a single usage of function to have multiple senses, our usages of function have a single sense (i.e. our sense categories are mutually exclusive).
+
 
 \section{Analysis of natural language}
 \label{sec:analys-natur-lang}
@@ -126,11 +188,6 @@ For example, a simple common form would be ``The function of \emph{x} is to \emp
 To simplify comparison of syntactically-diverse constructions, we will use word conversion to convert from derivations of "function" to its root form function (specifically morphological derivation and inflection). We will use morphological derivation to convert between parts of speech (e.g. adjective -> noun) and inflection to convert between number, tense and aspect (e.g. the plural functions to function). The key consideration during conversion is that we maintain (and convert if necessary) the dependencies between "function" and other parts of the sentence. What I will describe here is a method for converting these derivations of the word function to its base form (the verb or noun "function"), while at the same time, keeping track of and converting the form (where necessary) of the dependencies of "function". The idea is to rework the sentence such that semantic relations can be cast into a standard form.
 
 
-\section{relevance for philosophy of medicine}
-\label{sec:relev-phil-medic}
-
-expand upon the ``performing'' category (I can put the bits about requiring some normative backing, dysfunction, etc. here)
-
 \section{advice for best practices}
 \label{sec:advice-best-pract}
 
@@ -138,12 +195,7 @@ should also mention that the elife paper has poor inter-observer agreement even 
 
 add some stuff on automation here and how some steps are better suited to statistical inference rather than rules (e.g. for selected effects and biological advantage it might be easier to label a bunch of examples and train a transformer model using supervision to classify the examples than it would be to provide bullet-proof rules)
 
-\section{limitations and further considerations}
-\label{sec:limitations}
-
-- for simplicity ignored functions above the level of the individual (e.g. ecological functions)
-- limit it to the sentence or to elsewhere in the document? First will make it easier to automate but latter might be more in-line with philosophical practices.
-- even once you accurately categorise sentences, there's still the issue of how to classify documents. The distinction between ``this usage of function is of type x'' and ``these authors use function in manner y in this document''.
+Actually this section is probably unnecessary, likely too technical
 
 \section{example sentences}
 \label{sec:example-sentences}
@@ -163,6 +215,19 @@ change to
 test=nlp("In general, these transcripts show little evidence of purifying selection on account of being translated into proteins, suggesting that many of them are not functional")
 
 now selected effects
+
+\section{limitations and further considerations}
+\label{sec:limitations}
+
+- very difficult to make nlp component completely robust to all cases (i.e. still a work in progress)
+- for simplicity ignored functions above the level of the individual (e.g. ecological functions)
+- limit it to the sentence or to elsewhere in the document? First will make it easier to automate but latter might be more in-line with philosophical practices.
+- even once you accurately categorise sentences, there's still the issue of how to classify documents. The distinction between ``this usage of function is of type x'' and ``these authors use function in manner y in this document''.
+
+\section{Conclusion}
+\label{sec:conclusion-1}
+
+finish by tying it back to philosophy of medicine
 
 \section{Introduction-old-draft}
 \label{sec:introduction-1}
@@ -288,24 +353,6 @@ note the connection with adaptation
 
 \subsection{Ontogeny: how did it develop?}
 \label{sec:ontogeny:-how-did}
-
-
-
-% \section{Relations between the functions}
-% \label{sec:relat-betw-diff}
-
-% \begin{figure}[ht]
-%   \centering
-%   \includegraphics[width=\linewidth]{venn_function.pdf}
-%   \caption[\textbf{Relationship between causal role, biological advantage, and selected effects functions.}
-% ]{Biological advantage functions (BA) are the subset of causal role functions (CR) that affect organism fitness in the present time ($t$). For a function to become a selected effect function (SE) at a future time ($t'$), it must have been a biological advantage function. Not all current biological advantage functions, however, will become selected effects functions.
-% }
-% \label{fig:venn}
-% \end{figure}
-
-% \section{Function pluralism: asking the four questions}
-% \label{sec:funct-plur-asking}
-
 
 % \begin{table}
 % \centering
