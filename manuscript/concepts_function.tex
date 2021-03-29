@@ -96,13 +96,7 @@ Actually, probably better to frame it as a new approach towards the classificati
 First, we must choose the categories of our classification scheme.\footnote{The Keeling et. al. study was published mid-way through this study, but after we had already developed our categories, and thus differences in the classification schemes reflect the diversity expected when research groups independently tackle similar questions but with different perspectives and focus.}
 We decided to use the scheme of Wouters (2003) as our starting point.
 Wouters breaks down function into four categories: (i) Biological Activity; (ii) Biological Role; (iii) Biological Advantage; and (iv) Selected Effect.
-In Wouters's scheme, Biological Activity is ``what an item does or is capable of doing'', Biological Role describes ``how a certain item or activity contributes to the emergence of a complex capacity of an organism'', Biological Advantage refers to the ``biological value (utility) of a certain trait in comparison with another'', and Selected Effect is ``used in a historical sense to refer to the effects for which a certain trait was selected in the past''.\footnote{Of these four categories, ii--iv have substantial precedent in the philosophical literature. For example, a recent survey of theories of biological function chose to highlight these three categories as the main theories of function (cite garson2016), note that Garson uses ``causal role'' instead of Biological Role, and ``fitness-contribution'' instead of Biological Advantage).}
-The main controversial distinction in Wouters's scheme is the split between Biological Activity and Biological Role, as Biological Activity is often ignored or subsumed under Biological Role, with the resulting category typically being termed causal role function after Cummins (1975).
-We have chosen to keep this distinction for two main reasons.
-First, although Biological Activity has received less philosophical treatment\footnote{so actually Neander talks about this way back in 1995 as ``minimal functions'' (Functional analysis and the species design) so I might need to rethink how I introduce this...maybe it doesn't need any justification}, we believe that Biological Activity does reflect some actual biological use, most notably in the infamous ENCODE study whose goal was to map functionality across the human genome (encode2012).\footnote{It is commonly stated that ENCODE used a causal role definition (e.g. cite1, cite2), but we believe this to be a conflation of Biological Activity and Biological Role. ENCODE focused on correlates of biological activity (encoding protein or non-coding RNA, or displaying a biological signature such as protein binding or a specific chromatin structure) without trying to establish how this activity is used to generate a complex capacity in the wider system.}
-Second, keeping the distinction preserves information.
-If an investigator believes that the distinction between Biological Activity and Role is spurious, then they can always combine (labelled examples of) the two categories into a single category during the analysis phase.
-But one cannot separate these categories \emph{post hoc} if they were originally classified as a single category.
+In Wouters's scheme, Biological Activity is ``what an item does or is capable of doing'', Biological Role describes ``how a certain item or activity contributes to the emergence of a complex capacity of an organism'', Biological Advantage refers to the ``biological value (utility) of a certain trait in comparison with another'', and Selected Effect is ``used in a historical sense to refer to the effects for which a certain trait was selected in the past''.
 
 From this base, we analysed real-world usages of biological function to develop a more comprehensive classification scheme using an iterative process.
 We added a new category of function whenever we encountered instances of usage that reoccurred multiple times and could not be classified in one of our existing categories.
@@ -130,7 +124,7 @@ We thus added the following additional categories whose purpose is to specify wh
     \hline
     Technical use? & Compound phrases such as ``functional ecology'', ``functional biology'', ``functional connectivity'', and so on. These phrases will be familiar to practitioners within a field. Their meanings are multi-faceted and influenced by a field's development and cannot be meaningfully unpacked using a flowchart.  These phrases will often appear multiple times in a manuscript. \\
     \hline
-    Identify \emph{ITEM} &  An \emph{ITEM} is something that can be a character (or trait) of a Darwinian individual. Obvious candidates are concrete nouns, which refer to a physical item (e.g. heart), but it also includes abstract nouns if they refer to a concrete concept (e.g. ``gene'' as used in population genetics, ``boldness'' as a behavioural phenotype, etc.). Importantly, there must be a grammatical dependence between function and the \emph{ITEM}---it is not sufficient that a suitable \emph{ITEM} simply appear in the sentence (e.g. ``protein'' is the \emph{ITEM} in  ``protein function aids muscle development'' but ``muscle'' is the \emph{ITEM} in ``protein aids in muscle function''). \\
+    Identify \emph{ITEM} &  An \emph{ITEM} is something that can be a character or trait of a Darwinian individual. Obvious candidates are concrete nouns, which refer to a physical item (e.g. heart), but it also includes abstract nouns if they refer to a concrete concept (e.g. ``gene'' as used in population genetics, ``boldness'' as a behavioural phenotype, etc.). Importantly, there must be a dependency between function and the \emph{ITEM}---it is not sufficient that a suitable \emph{ITEM} simply appear in the sentence (e.g. ``protein'' is the \emph{ITEM} in  ``protein function aids muscle development'' but ``muscle'' is the \emph{ITEM} in ``protein aids in muscle function''). \\
 %    For example, ``gene'' can refer to the concept of an atomic unit of DNA with a well-defined phenotype. This is sufficiently concrete to qualify as a character despite not necessarily mapping onto a physical piece of DNA. 
     \hline
     Identify \emph{ITEM}'s \emph{EFFECT} & \emph{EFFECT} is what the \emph{ITEM} does (or, less commonly, has done to it). \emph{EFFECT} is a verb or verb phrase, but it might not always act as a verb in the text, so long as it can be turned into a verb through word conversion (e.g. ``contribute to transcription'' could be converted to the verb ``transcribe''). \\
@@ -141,39 +135,70 @@ We thus added the following additional categories whose purpose is to specify wh
     \hline
     Identify \emph{SYSTEM} & A \emph{SYSTEM} is either a Darwinian individual, or a complex system within an individual, that contains the \emph{ITEM}. The \emph{EFFECT} of the \emph{ITEM} on the \emph{SYSTEM} contributes to a capacity of the \emph{SYSTEM}. As a heuristic for identifying the \emph{SYSTEM}, you can ask  ``how does \emph{ITEM} produce \emph{EFFECT}?'' or ``for what is \emph{ITEM} producing \emph{EFFECT} used?''. \\
     \hline
-    Is the function of \emph{ITEM} \emph{EFFECT} in \emph{SYSTEM} and \emph{EFFECT} benefits \emph{SYSTEM}? &  Biological Advantage characterisations are contrastive, which means that \emph{ITEM}'s \emph{EFFECT} benefits \emph{SYSTEM} relative to an explicitly-identified or implied alternative to \emph{ITEM}\footnote{I think most of this can move to the main text}. An example is ``Transcript X functions to regulate expression in the liver, which improves performance through regulation of glycogen storage.''. We can unpack this as ``The function of \emph{TRANSCRIPT X} is to \emph{REGULATE EXPRESSION} in \emph{GLYCOGEN STORAGE IN THE LIVER} and \emph{REGULATING EXPRESSION} benefits [improves performance of] \emph{GLYCOGEN STORAGE IN THE LIVER}''. Note the statement's contrastive nature: ``improves performance'' indicates that transcript X is being compared to an (unstated) alternative (e.g. transcript Y). \\
+    Is the function of \emph{ITEM} \emph{EFFECT} in \emph{SYSTEM} and \emph{EFFECT} benefits \emph{SYSTEM} (or \emph{SUPERSYSTEM})? & Consider ``Transcript X functions to regulate expression in the liver, which improves liver performance through regulation of glycogen storage.''. We can unpack this as ``The function of \emph{TRANSCRIPT X} is to \emph{REGULATE EXPRESSION} in \emph{GLYCOGEN STORAGE IN THE LIVER} and \emph{REGULATING EXPRESSION} benefits [improves performance of] \emph{THE LIVER}''. Note the statement's contrastive nature: ``improves liver performance'' indicates that transcript X is being compared to an (unstated) alternative (e.g. transcript Y). Although contrast will often occur, it is not required. For example, we would still classify this example as Biological Advantage if we replaced ``improves liver performance'' with ``aids metabolic control''. Although this alteration removes the contrast, it nevertheless describes a benefit to a supersystem (metabolic system). (A \emph{SUPERSYSTEM} is a system that contains \emph{SYSTEM}.) \\
     \hline
-    Is the function of \emph{ITEM} \emph{EFFECT} in \emph{SYSTEM}? &  Biological Role is not contrastive (with respect to the \emph{ITEM}), and it lacks the normative language (indicating a benefit to the \emph{SYSTEM}) of Biological Advantage. An example is ``Transcript X functions to regulate expression in the liver, playing a role in regulation of glycogen storage''. This statement neither contrasts transcript X with an alternative---it simply describes how transcript X contributes to a capacity of the \emph{SYSTEM}---nor explicitly describes a benefit to the \emph{SYSTEM}.  \\
+    Is the function of \emph{ITEM} \emph{EFFECT} in \emph{SYSTEM}? &  Biological Role is not contrastive, and it does not contain language indicating a benefit to a system (or supersystem). An example is ``Transcript X functions to regulate expression in the liver, which plays a role in regulation of glycogen storage''. This statement neither contrasts transcript X with an alternative---it simply describes how transcript X contributes to a capacity of the \emph{SYSTEM}---nor explicitly describes a benefit to the \emph{SYSTEM}.  \\
     \hline
-    Is the function of \emph{ITEM} \emph{EFFECT}? &  Biological Activity is Biological Role when no \emph{SYSTEM} is specified. An example is ``Transcript X functions to regulate expression'', which simply describes what transcript X does. We do not know how (or in what \emph{SYSTEM}) it is being used. \\
+    Is the function of \emph{ITEM} \emph{EFFECT}? &  Biological Activity is Biological Role when no \emph{SYSTEM} is specified. An example is ``Transcript X functions to regulate expression'', which simply describes what transcript X does. We do not know how (or in what system) it is being used. \\
     \hline
   \end{tabular}
 \end{table}
 \end{landscape}
 
-\subsection{Relation between Biological Activity, Role, Advantage, and Selected Effect}
+\subsection{Relation between Biological Activity, Role, and Advantage}\footnote{need to improve organisation of these section and the previous, as there's some overlap/redundancy}
 \label{sec:relat-betw-funct}
 
-can talk generally about types and tokens but don't think I need to explain what I mean in detail (is a philosophy audience after all)
+The categories of Biological Activity, Biological Role, and Biological Advantage are conceptually related.
+The relationship between Biological Activity and Role is straightforward: a Biological Role is a Biological Activity that contributes to the capacity of a organism (or, more generally, to the capacity of a system). 
+The difference between Biological Role and Biological Advantage is summed up, in Wouters's words, by ``a distinction between 'how it is used' (role) and 'how it is useful' (advantage)'' (wouters2003).
+We can thus think of Biological Advantage as a Biological Role that benefits an organism by virtue of contributing to a capacity of a system (of that organism).
 
-A mechanistic analysis is applied to \emph{characters}.
-One of the first questions we might ask of a character is ``how does it work?'' or ``what role does it play in an organism (or a system of the organism)?''.
+We classify these three categories in a hierarchical manner, such that Advantage $>$ Role $>$ Activity.
+By this we mean that if an example is classified as Biological Advantage, it has also satisfied the criteria for Role and Activity, and if classfied as Role, then it has also satisfied the criteria for Activity.
+There are three benefits behind our approach: (i) it neatly captures the relation between these categories within the context of our classification process, as each category is associated with identifying additional feature(s) (\emph{ITEM} and \emph{EFFECT} for the base category of Biological Activity, \emph{SYSTEM} for Biological Role, and a benefit of \emph{EFFECT} toward \emph{SYSTEM} (or \emph{SUPERSYSTEM}) for Biological Advantage); (ii) it is an effective method for developing a classification with mutually-exclusive categories (there would be significant overlap without a hierarchical system, e.g. every Biological Role would also be a Biological Activity); (iii) it allows for categories to be easily combined \emph{post hoc} if desired (see next section for an example)
 
-We are generally not concerned here with traits.
+\subsubsection{Biological Activity}
+\label{sec:biological-activity-1}
 
+Biological Activity answers the question ``what does it do?''.
+It was first(?) described by Neander (1995), which she called ``minimal function''.
+It deals with biological characters (e.g. a biological item, feature, or behaviour), describing what these characters do (or are capable of doing) (Wouters2003).
+It has received relatively little philosophical attention, likely because a statement of Biological Activity leaves out important information about how the character is used or why it exists.
+Indeed, Biological Activity is often ignored or subsumed under Biological Role, with the resulting category typically being termed ``causal role'' function after Cummins (1975).
+We have chosen to keep this distinction for two main reasons.
+We believe that Biological Activity does reflect some actual biological use, most notably in the infamous ENCODE study whose goal was to map functionality across the human genome (encode2012).\footnote{It is commonly stated that ENCODE used a causal role definition (e.g. cite1, cite2), but we believe this to be a conflation of Biological Activity and Biological Role. ENCODE focused on correlates of biological activity (encoding protein or non-coding RNA, or displaying a biological signature such as protein binding or a specific chromatin structure) without trying to establish how this activity is used to generate a complex capacity in the wider system.}
+Second, keeping the distinction preserves information.
+If an investigator believes that the distinction between Biological Activity and Role is spurious, then they can always combine (labelled examples of) the two categories into a single category during the analysis phase.
+But one cannot separate these categories \emph{post hoc} if they were originally classified as a single category.
 
-Causal role function tends to talk of characters (or items or behaviours) and is interested in how they work within a complex system. It's mainly concerned with determinable types, as we want to talk about what this part or component does within a system. (Though I might need to do a little reading on this because Garson 2019 says that CR people consider a CR token being dysfunctional as being the same as having no function. I suppose CR need not be applied to types, as it doesn't have a lineage concept, but nevertheless it seems to be applied to types. For example, if a biologist runs an experiment, they use many individuals because they want to get at the type characterisation not token.)
+\subsubsection{Biological Role}
+\label{sec:biological-role}
 
-Biological advantage function is causal role function with two differences: (i) it's comparative (trait $i$ vs trait $j$) and (ii) it's generally interested in variants of types (traits) rather than the characters themselves. BA functions answer the question ``what advantage does this trait variant give its bearer over another (counterfactual or actual) organism with a different trait variant?''. 
+Biological Role answers the question ``how is it used?''.
+It is closely linked to causal role or mechanistic theories of function (e.g. Cummins 1975, Wouters also cites Bechtel/ Richardson 1993 and Craver 2001).
+Like Activity, it deals with biological characters (wouters2003), describing how a character's effect can contribute to a capacity of a complex system.
+In addition to causal theories, some real-world uses of organisational theories of function (mossio2009) will likely fall under Biological Role.
+Organisational theories differ from causal theories in that they use the notion of a closed and differentiated self-maintaining organisation as a basis for teleology and normativity.
+But organisational theories might be classified as Biological Role if the self-maintenance aspect is omitted or downplayed in a particular usage.
 
-Selected effects functions deal again with advantages of trait variants, only now it asks whether these advantages have accumulated in such a way that we can tell a causal story about how the effect of the trait variant has led to the evolution of the trait. A criticism of SE is that it doesn't tell you anything about the current function of the trait (see 2009 organizational closure paper), which is another argument for pluralism.
+\subsubsection{Biological Advantage}
+\label{sec:biological-advantage}
 
-here can briefly write about how each of these relate to the other. Selected effect is sort of the odd one out so can either write some general stuff from the table that combines the different sense (e.g. a selected effect was a biological advantage (and activity/role) in the past although it need not be now. I can probably get the highlights from the previous stuff I wrote in this section. actually I think it's better to just get rid of selected effects here.
+Biological Advantage answers the question ``how does it help?''.
+It is closely linked with [see garson2016, who calls it fitness-contribution, for some different theories under this broad umbrella; mossoi2009 also mentions Bigelow and Pargetter [1987]; Canfield [1964]; Ruse [1971]].
+In Wouters's characterisation, Biological Advantage deals with traits (specific variants of a character), and it is contrastive in nature, describing how a trait's effect has benefits relative to an alternative trait.
+Wouters's interpretation of advantage is somewhat more general than the aforementioned theories that focus explicitly on fitness benefits for Darwinian individuals.
+Wouters's definition requires that an \emph{ITEM} demonstrate biological value (or utility) over an alternative.
+While Wouters states that the ultimate benchmark for biological value is fitness, he acknowledges that Biological Advantage statements may simply describe ``the efficiency with which a certain biological role is performed''.
+In these sorts of statements, there is an implicit assumption that improved efficiency of this role benefits the individual, and that it does so in such a way that it correlates with fitness.
+This approach will thus include false-positives in cases where the benefits identified correlate poorly with fitness.
+In practice, this means that the Wouters's characterisation of Biological Advantage is quite permissive, being satisfied if an organism can do \emph{EFFECT} better with \emph{ITEM} than with an alternative trait.
 
-This may be best place to go through examples due to space constraints but will have to see
-
-I think it's also the place to situate the various theories of function within our categories (e.g. organisational theories)
-
+Some have argued, in opposition to Wouters, that Biological Advantage need not be contrastive (or be limited to dealing with traits), instead focusing on how it contributes to survival (garson2016 referencing buller1998).
+There are obvious parallels between a non-contrastive view of Biological Advantage and organisational theories of function, which focus on how an \emph{ITEM}'s \emph{EFFECT} contributes to self-maintenance [a non-contrastive benefit] of a \emph{SYSTEM}.
+With this in mind, we take a very general view of Biological Advantage, adopting Wouters's permissive interpretation of biological advantage as improving a biological role's efficiency without requiring that the characterisation be contrastive.\footnote{We also found that a strict philosophical interpretation of Biological Advantage meant that it could be difficult to identify all the requisite components within a sentence, leading to few examples being characterised as Biological Advantage.}
+For our purposes, any explicit mention of a benefit to a system of a Darwinian individual is sufficient for an example to be categorised as Biological Advantage instead of Biological Role.
+Usages of organisational theories explicitly mentioning the benefits of self-maintenance will thus fall under Biological Advantage (as mentioned previously, those usages of organisational theories that omit explicit references to the benefits of self-maintenance will likely fall under Biological Role).
 
 \subsection{Function as Performing}
 \label{sec:funct-as-perf}
