@@ -122,14 +122,14 @@ We thus added the following additional categories whose purpose is to specify wh
     \hline
     Technical use? & Compound phrases such as ``functional ecology'', ``functional biology'', ``functional connectivity'', and so on. These phrases will be familiar to practitioners within a field. Their meanings are multi-faceted and influenced by a field's development and cannot be meaningfully unpacked using a flowchart.  These phrases will often appear multiple times in a manuscript. \\
     \hline
-    Identify \emph{ITEM} &  An \emph{ITEM} is something that can be a character or trait of a Darwinian individual. Obvious candidates are concrete nouns, which refer to a physical item (e.g. heart), but it also includes abstract nouns if they refer to a concrete concept (e.g. ``gene'' as used in population genetics, ``boldness'' as a behavioural phenotype, etc.). Importantly, there must be a dependency between function and the \emph{ITEM}---it is not sufficient that a suitable \emph{ITEM} simply appear in the sentence (e.g. ``protein'' is the \emph{ITEM} in  ``protein function aids muscle development'' but ``muscle'' is the \emph{ITEM} in ``protein aids in muscle function''). \\
+    Identify \emph{ITEM} &  An \emph{ITEM} is something that can be a character or trait (or produced by one) of a Darwinian individual. Obvious candidates are concrete nouns, which refer to a physical item (e.g. heart), but it also includes abstract nouns if they refer to a concrete concept (e.g. ``gene'' as used in population genetics, ``boldness'' as a behavioural phenotype, etc.). Importantly, there must be a dependency between function and the \emph{ITEM}---it is not sufficient that a suitable \emph{ITEM} simply appear in the sentence (e.g. ``protein'' is the \emph{ITEM} in  ``protein function aids muscle development'' but ``muscle'' is the \emph{ITEM} in ``protein aids in muscle function''). \\
 %    For example, ``gene'' can refer to the concept of an atomic unit of DNA with a well-defined phenotype. This is sufficiently concrete to qualify as a character despite not necessarily mapping onto a physical piece of DNA. 
     \hline
     Identify \emph{ITEM}'s \emph{EFFECT} & \emph{EFFECT} is what the \emph{ITEM} does (or, less commonly, has done to it). \emph{EFFECT} is a verb or verb phrase, or it is a word or phrase that can be converted into a verb (e.g. ``contribute to transcription'' could be converted to the verb ``transcribe''). \emph{EFFECT} must be a concrete action in a biological system (e.g. if \emph{ITEM} is ``gene'' then ``is transcribed'' is acceptable but ``benefits health'' is not). \\
     \hline
     Is function used in the sense of To Work? & A heuristic is whether you can substitute ``\emph{ITEM} function'' (or equivalent, depending on the sentence) with ``how well \emph{ITEM} performs'', ``a working \emph{ITEM}'', or similar into the raw sentence without loss of meaning. For example, ``Liver function is important for health'' might become ``A working liver is important for health'' without loss of meaning.\\
     \hline
-    Did doing \emph{EFFECT} select for \emph{ITEM} historically? & Can it fit the following form: the function of \emph{ITEM} is to \emph{EFFECT} such that doing \emph{EFFECT} in the past caused \emph{ITEM} to be selected or maintained in a population (relative to an actual or counterfactual historical alternative to \emph{ITEM})? An example would be ``zebra stripes evolved to reduce insect bites'' as reducing insect bites (\emph{EFFECT}) has selected for zebra stripes (\emph{ITEM}).\\
+    Did doing \emph{EFFECT} select for \emph{ITEM} historically? & Can it fit the following form: the function of \emph{ITEM} is to \emph{EFFECT} such that doing \emph{EFFECT} in the past caused \emph{ITEM} to be selected or maintained in a population (relative to an actual or counterfactual historical alternative to \emph{ITEM})? An example would be ``zebra stripes are functional because they evolved to reduce insect bites'' as reducing insect bites (\emph{EFFECT}) has selected for zebra stripes (\emph{ITEM}).\\
     \hline
     Identify \emph{SYSTEM} & A \emph{SYSTEM} is either a Darwinian individual, or a complex system within an individual, that contains the \emph{ITEM}. The \emph{EFFECT} of the \emph{ITEM} on the \emph{SYSTEM} contributes to a capacity of the \emph{SYSTEM}. As a heuristic for identifying the \emph{SYSTEM}, you can ask  ``how does \emph{ITEM} produce \emph{EFFECT}?'' or ``for what is \emph{ITEM} producing \emph{EFFECT} used?''. \\
     \hline
@@ -248,34 +248,44 @@ A central component of our approach is to simplify these diverse syntactic const
  
 To simplify comparison of syntactically-diverse constructions, we use word conversion to convert from derivations of function (e.g. functional) to its morpheme form ``function''.
 We will use morphological derivation to convert between parts of speech (e.g. adjective to noun) and inflection to convert between number, tense, and aspect (e.g. the plural ``functions'' to ``function'').
-During conversion, it is crucial that we retain the syntactic dependencies between the function fuse and other parts of speech, as these form the basis for identifying the variables in the unpacked form (\emph{ITEM}, \emph{EFFECT}, etc.).
-The idea is to use syntactic dependencies to unpack a sentence such that semantic relations can be cast into a standard form.
+During conversion, it is crucial that we retain the syntactic dependencies between the function use and other parts of speech, as these form the basis for identifying the variables in the unpacked form (\emph{ITEM}, \emph{EFFECT}, etc.).
+The general idea is to use syntactic dependencies (starting from function or its derivative) to unpack a sentence such that semantic relations can be cast into a standard form.
+
+\section{Analysis of function sentences}
+\label{sec:example-sentences}
 
 We use the natural language processing software \texttt{spaCy} to label parts of speech (noun, verb, and so on) and to generate the dependency grammar representation \cite{spacy}.
 \texttt{spaCy} implements a dependency grammar framework called \href{https://universaldependencies.org/#language-en}{Universal Dependencies}.
-We show some worked-out examples in the section below, in which we will focus on a high-level description of the natural language analysis.
-Additional, more detailed, worked-out examples, as well as a handbook detailing the rules governing the natural language analysis, can be found at
+We focus on short toy sentences to illustrate the framework, focusing on a high-level description of the natural language analysis.
+Real-world usages involve more complex syntactic constructions.
+To download the software, explore some more detailed examples, or to read a handbook detailing the rules governing the natural language analysis, see
 \newline
 \href{https://github.com/joshuachristie/function-concepts}{https://github.com/joshuachristie/function-concepts}.
 
-\section{example sentences}
-\label{sec:example-sentences}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\linewidth]{combined_eff_role_adv.png}
+  \caption[]{\textbf{Dependency grammar analysis of Biological Activity (A), Role (B), and Advantage (C).}}
+  \label{eff_role_adv}
+\end{figure}
 
-test=nlp("In general, these transcripts show little evidence of purifying selection, suggesting that many of them are not functional")
+\subsection{Biological Activity}
+\label{sec:biological-activity}
 
-effect unspecified (Question: what have these transcripts done to cause them to be selected? Answer: we don't know, it's not specified)
+Let us work through the flowchart (Figure \ref{flowchart}) using the sentence ``The transcript functions to regulate metabolism'' (Figure \ref{eff_role_adv}A).
+Here ``functions'' is used as a verb.
+There is a dependency---represented by an arrow---between functions and ``transcript'' (of type \texttt{nsubj} (nominal subject)).
+Given this dependency, and the fact that ``transcript'' is a potential \emph{ITEM} (it is a product of a trait of a Darwinian individual), we can identify ``transcript'' as the \emph{ITEM}.
 
-change to
 
-test=nlp("In general, these transcripts show evidence of translation into proteins, suggesting that many of them are functional")
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\linewidth]{combined_seleff_towork_toworkadv.png}
+  \caption[]{\textbf{Dependency grammar analysis of Selected Effect (A), To Work (B), and Advantage (C).}}
+  \label{seleff_towork_toworkadv}
+\end{figure}
 
-either activity or role
 
-change to
-
-test=nlp("In general, these transcripts show little evidence of purifying selection on account of being translated into proteins, suggesting that many of them are not functional")
-
-now selected effects
 
 \section{limitations and further considerations}
 \label{sec:limitations}
