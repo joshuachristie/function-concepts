@@ -100,7 +100,7 @@ In Wouters's scheme, Biological Activity is ``what an item does or is capable of
 
 From this base, we analysed real-world usages of biological function to develop a more comprehensive classification scheme using an iterative process.
 We added a new category of function whenever we encountered instances of usage that reoccurred multiple times and could not be classified in one of our existing categories.
-To Biological Activity, Biological Role, Biological Advantage, and Selected Effect, we added the following categories: Colloquial, Technical, and Performing.
+To Biological Activity, Biological Role, Biological Advantage, and Selected Effect, we added the following categories: Colloquial, Technical, and To Work.
 In some instances, it is not possible to unpack a sentence into a common form and identify the variables.
 We thus added the following additional categories whose purpose is to specify what feature was ``missing'' from the sentence: \emph{ITEM} Unspecified, Meaning Unknown: \emph{EFFECT} Unspecified, and Meaning Unknown: \emph{EFFECT} Specified.
 
@@ -129,7 +129,7 @@ We thus added the following additional categories whose purpose is to specify wh
     \hline
     Identify \emph{ITEM}'s \emph{EFFECT} & \emph{EFFECT} is what the \emph{ITEM} does (or, less commonly, has done to it). \emph{EFFECT} is a verb or verb phrase, but it might not always act as a verb in the text, so long as it can be turned into a verb through word conversion (e.g. ``contribute to transcription'' could be converted to the verb ``transcribe''). \\
     \hline
-    Is function used in the sense of Perform? & A heuristic is whether you can substitute ``\emph{ITEM} function'' (or equivalent, depending on the sentence) with ``how well \emph{ITEM} performs'', ``a working \emph{ITEM}'', or similar into the raw sentence without loss of meaning. For example, ``Liver function is important for health'' might become ``A working liver is important for health'' without loss of meaning.\\
+    Is function used in the sense of To Work? & A heuristic is whether you can substitute ``\emph{ITEM} function'' (or equivalent, depending on the sentence) with ``how well \emph{ITEM} performs'', ``a working \emph{ITEM}'', or similar into the raw sentence without loss of meaning. For example, ``Liver function is important for health'' might become ``A working liver is important for health'' without loss of meaning.\\
     \hline
     Did doing \emph{EFFECT} select for \emph{ITEM} historically? & Can it fit the following form: the function of \emph{ITEM} is to \emph{EFFECT} such that doing \emph{EFFECT} in the past caused \emph{ITEM} to be selected or maintained in a population (relative to an actual or counterfactual historical alternative to \emph{ITEM})? An example would be ``zebra stripes evolved to reduce insect bites'' as reducing insect bites (\emph{EFFECT}) has selected for zebra stripes (\emph{ITEM}).\\
     \hline
@@ -145,7 +145,13 @@ We thus added the following additional categories whose purpose is to specify wh
 \end{table}
 \end{landscape}
 
-\subsection{Relation between Biological Activity, Role, and Advantage}\footnote{need to improve organisation of these section and the previous, as there's some overlap/redundancy}
+
+
+We have a different approach with regard to how we deal with potential overlap between categories.
+While Keeling et. al. (2019), allowed a single usage of function to have multiple senses, our usages of function have a single sense (i.e. our sense categories are mutually exclusive).
+
+
+\subsection{Relation between Biological Activity, Role, and Advantage}
 \label{sec:relat-betw-funct}
 
 The categories of Biological Activity, Biological Role, and Biological Advantage are conceptually related.
@@ -200,38 +206,33 @@ With this in mind, we take a very general view of Biological Advantage, adopting
 For our purposes, any explicit mention of a benefit to a system of a Darwinian individual is sufficient for an example to be categorised as Biological Advantage instead of Biological Role.
 Usages of organisational theories explicitly mentioning the benefits of self-maintenance will thus fall under Biological Advantage (as mentioned previously, those usages of organisational theories that omit explicit references to the benefits of self-maintenance will likely fall under Biological Role).
 
-\subsection{Function as Work}
+\subsection{Function as To Work}
 \label{sec:funct-as-perf}
 
-We identify another common use of function, namely that of Work.
+We identify another common use of function, namely that of To Work.
 This use has an analog in one of the colloquial senses of function, namely ``to work as expected''.
-An example of this usage is ``liver function is important for human health''.
-Here function does not refer to a function of the liver (e.g. ``the liver functions to store glycogen''), but rather it refers to the \emph{functioning} of the liver.
-We could express the same meaning in ``liver function is important for human health'' with ``a working liver is important for human health'' or with ``liver dysfunction harms human health''.
-The former illustrates the sense in which function is being used, while the latter highlights the normative component of this sense of function.
+Function as To Work is primarily concerned with how an item has developed in individuals, and whether it is deemed to be functional (in the sense of working as expected) or dysfunctional (not working as expected).
+This use of function differs from Biological Activity, Role, Advantage, and Selected Effect, which are all ``type'' level designations (dealing with lineages of characters or traits).
+Function as To Work instead focuses on token level ascriptions (traits of individuals), and it is concerned with the development and manifestation of traits or systems in individuals.\footnote{Of course, dysfunctions are also applied to groups of individuals by virtue of being categorised into diseases or syndromes.
+But to the degree that diseases or syndromes cluster traits and systems, they primarily do so based on similarities in how or why ``things have gone wrong'' rather than on lineages of characters or traits.
+(There are, admittedly, some difficult cases, such as genetic disorders like mitochondrial disease, in which a disease will cluster traits in a manner more akin to Selected Effect lineages. In these cases, the line between novel type traits and dysfunctional token traits becomes blurred.)}
 
-Indeed, for an item to ``work as expected'' implies that we have a normative basis for believing how the item ought to function.
-The normative basis might derive from a philosophical theory (e.g. selected effects or the organisational theory), but it might equally have a poorly-justified basis.
+An example of this usage is ``liver function is important for human health''.
+Here function does not refer to a function of the liver (e.g. ``the liver functions to store glycogen''), but to the \emph{functioning} of the liver.
+We could, for example, express the same meaning in the revised phrase ``a liver that works as expected is important for human health''.
+An item that ``works as expected'' is one that aligns with the naturalist view of ``healthy'' or ``absence of disease''.
+It implies that there exists a normative basis for believing how the item ought to function.
+The normative basis might derive from a philosophical theory, such as selected effects or the organisational theory, but it might have another basis entirely.
 Consider a statement such as ``The gene is transcribed and thus is functional''.
 What is the normative basis behind this statement?
 It appears to adopt some form of a Biological Activity definition, namely that for function it is sufficient that a gene (item) is transcribed (effect) without regard for how it is used within a system.
-There might be an explicit set of criteria behind this definition---as in the ENCODE project---but it could also be the case that the author simply has a vague notion that a gene that does anything is functional (i.e. the complement to the notion that a non-functional gene is one that does nothing).
-For this category, the important thing is whether a normative basis exists---we areare agnostic as to how the normative basis is constructed (as this can be impossible to determine in a short piece of natural language).
+There might be an explicit set of criteria behind this definition---as in the ENCODE project---but frequently the appeal to normativity will be implicit (and its justification may be less than sound).
+In the statement above, the author may simply have a vague sense that any gene that does something is functional, perhaps as a complement to the notion that a non-functional gene is one that does nothing.
+Few scientific papers that use ``function'' explicitly define it, making it difficult to infer a normative basis in short pieces of natural language.
+For the To Work category, we focus on whether a normative basis is expressed by the author's language.
+For practical reasons, we choose to be agnostic as to how the normative basis is constructed.
 
-This use of function differs from Activity, Role, and Advantage, which are all ``type'' level designations (dealing with characters or traits) in that it focuses on token level designations.
-Function as Work is concerned with how an item has developed in a particular individual (or possibly group of individuals in the case of a syndrome)
-
-old stuff below
-
- Although it must be said that this isn't the cleanest distinction. While we'll want to ascribe a dysfunctional state (e.g. disease) to an individual, we might cluster underlying etiologies into a single coarse grain phenotype (e.g. a syndrome). Might also cluster a single genotype change (e.g. mito diseases). This could also be without regard for trait (e.g. some mito diseases will apply to the character (all human mito haplotypes), though need to check that this is true), but perhaps some are specific to some traits.
-Note that I think part of this comes down to the fact that it's not well-defined whether a new token is a new trait or whether it is a dysfunctional member of the type (i.e. are we dealing with a collection of dysfunctional tokens who are grouped based on either a common inheritance, common architecture, common phenotype, or a new trait type? (you could go via inheritance vs ontogeny but there might be some diseases that are hard to tease apart here? e.g. mito disease could be a mutation from mother, stable inheritance, mutation in zygote, etc.---would we really distinguish them if they're the same structurally? I need to be careful here because I'm claiming that dysfunction is ontogenic so I really need to be able to make the claim that dysfunction is token-level which means syndromes/diseases are collections of token dysfunctions. Note Neander 2017 says that malfunctions are token level.)
-One way of talking about when a dysfunction becomes a trait is when it is heritable...this will lead to some odd cases (mitochondrial diseases becoming traits), or we just accept that harmful dysfunctions that are heritable are a grey zone. Huntington's disease is another good example because it can be caused by ``slippage'' of genetic repeats so is ontogenic in this sense, yet it is also heritable.
-Neander (2017) actually seems to want to say that ``not performing function = malfunction'' due to mismatch (pg 1152)
-
-Will also need to address organizational theories and their claim of normativity. Will need to sidestep all the details but basically the main point is for dysfunction you need two things: (i) a Cummins-style functional analysis but of how an item is working in a token (not character); and (ii) a normative grounding that tells you how it ``ought to work''. All approaches must borrow elements from each other to make this work (SE needs CR; CR needs SE or some other framework that ascribes type-level normativity; organizational must borrow elements from CR and SE (for the latter need to see whether they've developed the reproduction aspect). So the point is that we need pluralism of the three function questions to get at dysfunction.
-
-We have a different approach with regard to how we deal with potential overlap between categories.
-While Keeling et. al. (2019), allowed a single usage of function to have multiple senses, our usages of function have a single sense (i.e. our sense categories are mutually exclusive).
+\footnote{Should I include something brief on how To Work could also mean hyperfunctional. This gets into the distinction between a novel type trait and a dysfunctional (or hyperfunctional) token trait. It's definitely interesting but probably want to avoid it altogether}
 
 \section{Analysis of natural language}
 \label{sec:analys-natur-lang}
@@ -247,15 +248,6 @@ Thus, the first component of our approach is to simplify these diverse syntactic
 For example, a simple common form would be ``The function of \emph{x} is to \emph{y}'', where \emph{x} is a biological item (e.g. ``heart'') and \emph{y} indicates what the biological item does (e.g. ``pump blood'').
 
 To simplify comparison of syntactically-diverse constructions, we will use word conversion to convert from derivations of "function" to its root form function (specifically morphological derivation and inflection). We will use morphological derivation to convert between parts of speech (e.g. adjective -> noun) and inflection to convert between number, tense and aspect (e.g. the plural functions to function). The key consideration during conversion is that we maintain (and convert if necessary) the dependencies between "function" and other parts of the sentence. What I will describe here is a method for converting these derivations of the word function to its base form (the verb or noun "function"), while at the same time, keeping track of and converting the form (where necessary) of the dependencies of "function". The idea is to rework the sentence such that semantic relations can be cast into a standard form.
-
-\section{advice for best practices}
-\label{sec:advice-best-pract}
-
-should also mention that the elife paper has poor inter-observer agreement even though it overfits its definitions by testing on the ``train set''.
-
-add some stuff on automation here and how some steps are better suited to statistical inference rather than rules (e.g. for selected effects and biological advantage it might be easier to label a bunch of examples and train a transformer model using supervision to classify the examples than it would be to provide bullet-proof rules)
-
-Actually this section is probably unnecessary, likely too technical
 
 \section{example sentences}
 \label{sec:example-sentences}
@@ -288,6 +280,17 @@ now selected effects
 \label{sec:conclusion-1}
 
 finish by tying it back to philosophy of medicine
+
+
+\section{advice for best practices (probably delete)}
+\label{sec:advice-best-pract}
+
+should also mention that the elife paper has poor inter-observer agreement even though it overfits its definitions by testing on the ``train set''.
+
+add some stuff on automation here and how some steps are better suited to statistical inference rather than rules (e.g. for selected effects and biological advantage it might be easier to label a bunch of examples and train a transformer model using supervision to classify the examples than it would be to provide bullet-proof rules)
+
+Actually this section is probably unnecessary, likely too technical
+
 
 \end{document}
 %%% Local Variables:
