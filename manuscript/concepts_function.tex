@@ -142,6 +142,7 @@ We thus added the following additional categories whose purpose is to specify wh
     Is the function of \emph{ITEM} \emph{EFFECT}? &  Biological Activity is Biological Role when no \emph{SYSTEM} is specified. An example is ``Transcript X functions to regulate expression'', which simply describes what transcript X does. We do not know how (or in what system) it is being used. \\
     \hline
   \end{tabular}
+  \label{tab:flowchart}
 \end{table}
 \end{landscape}
 
@@ -244,10 +245,19 @@ In ``the function of the heart'' and ``the functionality of the heart'', functio
 Aside from its use as a noun, ``functions'' (and ``function'') can also be used as a verb (``the heart functions to pump blood'').
 We also encounter cases such as the gerund form ``functioning'', which is the -ing form of the verb ``function'' that acts as a noun (``functioning is important for hearts'')!
 And to complicate matters even further, ``functioning'' might be a present participle instead of a gerund, in which case it either acts as an adjective (``the functioning heart'') or to form verb tense (``the heart was functioning''). Suffice it to say, when dealing with real-world sentences, the sheer variety of syntactical forms present a challenge for semantic interpretation of function.
-Thus, the first component of our approach is to simplify these diverse syntactic constructions into common forms.
-For example, a simple common form would be ``The function of \emph{x} is to \emph{y}'', where \emph{x} is a biological item (e.g. ``heart'') and \emph{y} indicates what the biological item does (e.g. ``pump blood'').
+A central component of our approach is to simplify these diverse syntactic constructions into the common forms highlighted in Figure \ref{flowchart} and Table \ref{tab:flowchart}.
+ 
+To simplify comparison of syntactically-diverse constructions, we use word conversion to convert from derivations of function (e.g. functional) to its morpheme form ``function''.
+We will use morphological derivation to convert between parts of speech (e.g. adjective to noun) and inflection to convert between number, tense, and aspect (e.g. the plural ``functions'' to ``function'').
+During conversion, it is crucial that we retain the syntactic dependencies between the function fuse and other parts of speech, as these form the basis for identifying the variables in the unpacked form (\emph{ITEM}, \emph{EFFECT}, etc.).
+The idea is to use syntactic dependencies to unpack a sentence such that semantic relations can be cast into a standard form.
 
-To simplify comparison of syntactically-diverse constructions, we will use word conversion to convert from derivations of "function" to its root form function (specifically morphological derivation and inflection). We will use morphological derivation to convert between parts of speech (e.g. adjective -> noun) and inflection to convert between number, tense and aspect (e.g. the plural functions to function). The key consideration during conversion is that we maintain (and convert if necessary) the dependencies between "function" and other parts of the sentence. What I will describe here is a method for converting these derivations of the word function to its base form (the verb or noun "function"), while at the same time, keeping track of and converting the form (where necessary) of the dependencies of "function". The idea is to rework the sentence such that semantic relations can be cast into a standard form.
+We use the natural language processing software \texttt{spaCy} to label parts of speech (noun, verb, and so on) and to generate the dependency grammar representation \cite{spacy}.
+\texttt{spaCy} implements a dependency grammar framework called \href{https://universaldependencies.org/#language-en}{Universal Dependencies}.
+We show some worked-out examples in the section below, in which we will focus on a high-level description of the natural language analysis.
+Additional, more detailed, worked-out examples, as well as a handbook detailing the rules governing the natural language analysis, can be found at
+\newline
+\href{https://github.com/joshuachristie/function-concepts}{https://github.com/joshuachristie/function-concepts}.
 
 \section{example sentences}
 \label{sec:example-sentences}
