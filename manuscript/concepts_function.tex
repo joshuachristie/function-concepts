@@ -249,7 +249,15 @@ A central component of our approach is to simplify these diverse syntactic const
 To simplify comparison of syntactically-diverse constructions, we use word conversion to convert from derivations of function (e.g. functional) to its morpheme form ``function''.
 We will use morphological derivation to convert between parts of speech (e.g. adjective to noun) and inflection to convert between number, tense, and aspect (e.g. the plural ``functions'' to ``function'').
 During conversion, it is crucial that we retain the syntactic dependencies between the function use and other parts of speech, as these form the basis for identifying the variables in the unpacked form (\emph{ITEM}, \emph{EFFECT}, etc.).
-The general idea is to use syntactic dependencies (starting from function or its derivative) to unpack a sentence such that semantic relations can be cast into a standard form.
+We use a grammatical framework called dependency grammar (cite that recent review), which structures grammatical relations as directed links between words.
+Effectively, these syntactic dependencies constrain the parts of a sentence that can be chosen as \emph{ITEM}, \emph{EFFECT}, and so on.
+To see why this is necessary, consider a statement such as ``Protein function aids muscle development''.
+There is a syntactic dependency between ``protein'' and ``function'' (``protein function'' is a compound noun).
+If we were to ignore syntactic dependencies, then ``protein'' and ``muscle'' would be equally good candidates for the \emph{ITEM}, as both are biological items.
+In this case, ``protein'' is the correct \emph{ITEM} due to its dependency with ``function''.
+If we had chosen ``muscle'' instead, we would have unintentionally altered the meaning of the sentence, rendering our analysis of function incorrect.
+(In this example, it is trivial to use intuition to see that ``protein'' should be the \emph{ITEM}, but in real natural language it is frequently difficult to establish this connect through intuition alone.)
+Our goal is to use syntactic dependencies (starting from function or its derivative) to unpack a sentence such that the correct semantic relations can be cast into a standard form.
 
 \section{Analysis of function sentences}
 \label{sec:example-sentences}
