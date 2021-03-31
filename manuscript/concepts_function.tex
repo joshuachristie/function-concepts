@@ -70,37 +70,34 @@ For example, to be classified as Biological Role (see section ``Senses of functi
 By simplifying natural language into simple, common forms, our approach avoids obfuscation of meaning due to variation in syntactic construction and helps standardise the technique for extracting meaning.
 Moreover, we provide detailed instructions for how to use the dependency grammar framework and modern natural language processing techniques as aids in identifying the variables in the common forms.
 
-\section{Classification flowchart}
+\section{Classification scheme}\footnote{Paul: hoping you can give some comments about expectations in philosophy when describing a process like this that is iterative and not straightforward to describe (since the approach is a bit undirected and circular compared to an experiment). Just want the minimum acceptible description of the general method for this section since ultimately the only thing that really matters is whether the scheme works.}
 \label{sec:class-scheme}
 
 Our approach was to analyse real-world uses of biological function extracted from scientific papers.
-Through an iterative process, we altered our method each time that we encountered common occurences, or general patterns, that our method handled poorly\footnote{will need to expand on this to talk about what we mean by ``poorly'', how we began with consensus, and so forth. Not sure whether all of the general method should be here or whether some of it can go later. Currently pasting the various snippets of text about it in this section}.
 Since our focus was on how function is used in biology, we used examples from a wide variety of biological subfields.
-Specifically, we used the ARC FoR, matched with WoS/JIF, chose 1 paper from each of the top 5 journals by JIF, giving us xxx examples...(FILL IN LATER)
+Specifically, we used the Australian Research Council FoR (Field of Research) codes to identify the following biological subfields: biochemistry and cell biology, ecology, evolutionary biology, genetics, microbiology, physiology, plant biology, and zoology.
+We matched these subfields to fields from Clarivate Analytic’s Web of Science database.\footnote{hoping Zach or Stefan can find these}.
+For each subfield, we used Clarivate Analytic’s Journal Impact Factor to get a ranking of journals, and we chose one paper from each of the top five journals by JIF, giving us 1316 usages of function that we used to develop our scheme.
 
 To begin with, three of the authors (JRC, ZW, SG) independently analysed a subset of the sentences (using definitions and a simple set of classification guidelines, much like Keeling et. al. (2019)).
 We then compared our responses, and if our classifications differed, we used a consensus-based approach to categorise examples.
-
 From these examples, we developed a set of ``gold-standard'' examples that we agreed upon, which we were able to use for the purposes of testing our flowchart.
-
-From here, we jointly developed the classification scheme and our pipeline for the analysis of natural language.
-
-Note that there's really 3 layers here: (i) classification scheme (i.e. categories and definitions); (ii) general flowchart; (iii) natural language processing, as an aid to ii.
-Actually, probably better to frame it as a new approach towards the classification scheme---we aren't operating on traditional definitions, rather our definitions require that we satisfy certain criteria wrt extracting certain features from a text and placing them in a common structure.
+Through an iterative process, we altered our classification scheme each time that we encountered common occurences or general patterns that our method was unable to adequately categorise (e.g. altering the flowchart or adding new categories).
+We first developed the classification scheme (flowchart and categories), and then we developed the pipeline for the analysis of natural language.
 
 \subsection{Senses of function}
 \label{sec:senses-function}
 
-First, we must choose the categories of our classification scheme.\footnote{The Keeling et. al. study was published mid-way through this study, but after we had already developed our categories, and thus differences in the classification schemes reflect the diversity expected when research groups independently tackle similar questions but with different perspectives and focus.}
+The first step was to choose the categories of our classification scheme.\footnote{The Keeling et. al. study was published mid-way through this study, but after we had already developed our categories, and thus differences in the classification schemes reflect the diversity expected when research groups independently tackle similar questions but with different perspectives and focus.}
 We decided to use the scheme of Wouters (2003) as our starting point.
 Wouters breaks down function into four categories: (i) Biological Activity; (ii) Biological Role; (iii) Biological Advantage; and (iv) Selected Effect.
 In Wouters's scheme, Biological Activity is ``what an item does or is capable of doing'', Biological Role describes ``how a certain item or activity contributes to the emergence of a complex capacity of an organism'', Biological Advantage refers to the ``biological value (utility) of a certain trait in comparison with another'', and Selected Effect is ``used in a historical sense to refer to the effects for which a certain trait was selected in the past''.
 
-From this base, we analysed real-world usages of biological function to develop a more comprehensive classification scheme using an iterative process.
 We added a new category of function whenever we encountered instances of usage that reoccurred multiple times and could not be classified in one of our existing categories.
 To Biological Activity, Biological Role, Biological Advantage, and Selected Effect, we added the following categories: Colloquial, Technical, and To Work.
-In some instances, it is not possible to unpack a sentence into a common form and identify the variables.
-We thus added the following additional categories whose purpose is to specify what feature was ``missing'' from the sentence: \emph{ITEM} Unspecified, Meaning Unknown: \emph{EFFECT} Unspecified, and Meaning Unknown: \emph{EFFECT} Specified.
+In some instances, the sentence does not contain sufficient information to identify all the variables.
+We thus added the following additional categories whose purpose is to specify which feature is missing from the sentence: \emph{ITEM} Unspecified, Meaning Unknown: \emph{EFFECT} Unspecified, and Meaning Unknown: \emph{EFFECT} Specified.
+The classification scheme flowchart is shown in Figure \ref{flowchart} and descriptions of the decision points are in Table \ref{tab:flowchart}.
 
 \begin{figure}[ht]
   \centering
@@ -144,13 +141,7 @@ We thus added the following additional categories whose purpose is to specify wh
 \end{table}
 \end{landscape}
 
-
-
-We have a different approach with regard to how we deal with potential overlap between categories.
-While Keeling et. al. (2019), allowed a single usage of function to have multiple senses, our usages of function have a single sense (i.e. our sense categories are mutually exclusive).
-
-
-\subsection{Relation between Biological Activity, Role, and Advantage}
+\subsection{Biological Activity, Role, and Advantage}
 \label{sec:relat-betw-funct}
 
 The categories of Biological Activity, Biological Role, and Biological Advantage are conceptually related.
@@ -368,8 +359,10 @@ This is a useful example to highlight the difference of our more formal analysis
 At first glance, this statement seems to be a clear-cut example of Selected Effect.\footnote{This is a simplified version of a sentence analysed by Keeling et. al. (2019). The original sentence was ``In general, these transcripts show little evidence of purifying selection, suggesting that many of them are not functional'' from \cite{Ruiz-Orera_PlosGenetics_2015} and it was one of the few instances unanimously identified as Evolutionary Implications.}
 Our analysis indicates, however, that it is missing an \emph{EFFECT} and is thus an incomplete (Selected Effect) description, analogous to if the sentence in Figure \ref{seleff_towork_effunsp}A were the truncated statement ``Zebra stripes are functional as [because] they evolved''.
 
-\section{limitations and further considerations}
+\section{Limitations and further considerations}
 \label{sec:limitations}
+
+
 
 - very difficult to make nlp component completely robust to all cases (i.e. still a work in progress)
 - for simplicity ignored functions above the level of the individual (e.g. ecological functions)
@@ -382,14 +375,14 @@ Our analysis indicates, however, that it is missing an \emph{EFFECT} and is thus
 finish by tying it back to philosophy of medicine
 
 
-\section{advice for best practices (probably delete)}
-\label{sec:advice-best-pract}
+% \section{advice for best practices (probably delete)}
+% \label{sec:advice-best-pract}
 
-should also mention that the elife paper has poor inter-observer agreement even though it overfits its definitions by testing on the ``train set''.
+% should also mention that the elife paper has poor inter-observer agreement even though it overfits its definitions by testing on the ``train set''.
 
-add some stuff on automation here and how some steps are better suited to statistical inference rather than rules (e.g. for selected effects and biological advantage it might be easier to label a bunch of examples and train a transformer model using supervision to classify the examples than it would be to provide bullet-proof rules)
+% add some stuff on automation here and how some steps are better suited to statistical inference rather than rules (e.g. for selected effects and biological advantage it might be easier to label a bunch of examples and train a transformer model using supervision to classify the examples than it would be to provide bullet-proof rules)
 
-Actually this section is probably unnecessary, likely too technical
+% Actually this section is probably unnecessary, likely too technical
 
 
 \end{document}
