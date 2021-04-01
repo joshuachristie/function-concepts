@@ -96,7 +96,7 @@ In Wouters's scheme, Biological Activity is ``what an item does or is capable of
 We added a new category of function whenever we encountered instances of usage that reoccurred multiple times and could not be classified in one of our existing categories.
 To Biological Activity, Biological Role, Biological Advantage, and Selected Effect, we added the following categories: Colloquial, Technical, and To Work.
 In some instances, the sentence does not contain sufficient information to identify all the variables.
-We thus added the following additional categories whose purpose is to specify which feature is missing from the sentence: \emph{ITEM} Unspecified, Meaning Unknown: \emph{EFFECT} Unspecified, and Meaning Unknown: \emph{EFFECT} Specified.
+We thus added the following additional categories whose purpose is to specify which feature is missing from the sentence: Description Incomplete: \emph{ITEM} Unspecified, Description Incomplete: \emph{EFFECT} Unspecified, and Description Incomplete: \emph{EFFECT} Specified.
 The classification scheme flowchart is shown in Figure \ref{flowchart} and descriptions of the decision points are in Table \ref{tab:flowchart}.
 
 \begin{figure}[ht]
@@ -353,7 +353,7 @@ We can thus ask whether ``suggesting that it is functional'' is a concrete actio
 (We obtain ``suggesting that it is functional'' from the fact that ``suggesting'' has a dependency relation with ``functional'', the latter of which has dependency relations of its own with ``that'', ``it'', and ``is''.)
 There are no more dependencies to explore, and as we are unable to identify the \emph{EFFECT}, the next question we ask is whether function is used in the sense of To Work.
 We can substitute ``it is functional'' with ``it works'' to obtain ``The transcript shows evidence of purifying selection, suggesting that it works.''
-This modification alters the meaning of the original sentence---``functional'' indicates that the \emph{ITEM} has a function not that the \emph{ITEM} works (performs its function) as expected ---which means we classify this instance as Meaning Unknown: \emph{EFFECT} Unspecified.
+This modification alters the meaning of the original sentence---here ``functional'' indicates that the \emph{ITEM} has a function not that the \emph{ITEM} works (performs its function) as expected ---which means we classify this instance as Description Incomplete: \emph{EFFECT} Unspecified.
 
 This is a useful example to highlight the difference of our more formal analysis over an intuitive one.
 At first glance, this statement seems to be a clear-cut example of Selected Effect.\footnote{This is a simplified version of a sentence analysed by Keeling et. al. (2019). The original sentence was ``In general, these transcripts show little evidence of purifying selection, suggesting that many of them are not functional'' from \cite{Ruiz-Orera_PlosGenetics_2015} and it was one of the few instances unanimously identified as Evolutionary Implications.}
