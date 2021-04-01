@@ -55,9 +55,9 @@ They achieve an exhaustive scheme by implementing a catch-all category of Vague 
 They did not require that these categories be mutually exclusive, instead allowing a single usage to have membership in multiple categories.
 To categorise each usage of function using the scheme, the authors started by independently reading a paper's title and abstract.
 Next they used a list of definitions to assign at least one meaning of function to the example, which were supplemented by a few general coding rules to guide application of the definitions.
-One of the most striking fundings from this study was the difficulty of obtaining agreement between the different raters: in only 12\% of cases did all four raters independently assign an example the same category!
+One of the most striking fundings from this study was the difficulty of obtaining agreement between the different raters: in only 12\% of cases did all four raters independently assign an example the same category!\footnote{In addition, the authors used 17 of the 20 abstracts to develop their classification scheme, meaning that their reported level of agreement---which was based on all 20 abstracts---is almost certainly higher than they would achieve on never-before-seen set of abstracts on de novo gene function (in the parlance of statistics and machine learning, their reported result is ``overfit'' on account of them using the same data for training and testing).}
 After conferring with one another and employing a consensus-based approach, the raters were still only able to assign 62\% of cases to a single category.
-Despite having a comprehensive and well-reasoned classification scheme in hand, these authors were not able to consistently categorise real-world usages of function into a single category.\footnote{We had a simlar experience in the course of developing our scheme. Early-on, we used an approach similar to Keeling et. al. (2019) in which we would individually rate sentences, and if there was a disagreement, we would try to categorise the example using a consensus-based approach. (The purpose of this was to identify a set of gold-standard examples that we could use to test the performance of our scheme on.) We frequently disagreed about how to classify certain examples, both independently and through trying to establish consensus.}
+Despite having a comprehensive and well-reasoned classification scheme in hand, these authors were not able to consistently categorise real-world usages of function into a single category.
 This is clearly an immensely difficult problem to solve, and there are likely a number of factors that contributed to the difficulty in unambiguously assigning usages of function to a single concept.
 We suggest, however, that a crucial factor lies in the different ways that individual investigators analyse natural language in order to extract meaning.
 Without a detailed and standardised framework, the semantic mapping from natural language to a definition of function is bound to inconsistent among different investigators.
@@ -320,7 +320,7 @@ We answer yes, given the clause ``as they evolved'', which gives a classificatio
 \begin{figure}[ht]
   \centering
   \includegraphics[width=\linewidth]{combined_seleff_towork_effunsp.png}
-  \caption[]{\textbf{Dependency grammar analysis of Selected Effect (A), To Work (B), and Effect Unspecified (C).}}
+  \caption[]{\textbf{Dependency grammar analysis of Selected Effect (A), To Work (B), and Description Incomplete: Effect Unspecified (C).}}
   \label{seleff_towork_effunsp}
 \end{figure}
 
@@ -355,35 +355,56 @@ There are no more dependencies to explore, and as we are unable to identify the 
 We can substitute ``it is functional'' with ``it works'' to obtain ``The transcript shows evidence of purifying selection, suggesting that it works.''
 This modification alters the meaning of the original sentence---here ``functional'' indicates that the \emph{ITEM} has a function not that the \emph{ITEM} works (performs its function) as expected ---which means we classify this instance as Description Incomplete: \emph{EFFECT} Unspecified.
 
-This is a useful example to highlight the difference of our more formal analysis over an intuitive one.
-At first glance, this statement seems to be a clear-cut example of Selected Effect.\footnote{This is a simplified version of a sentence analysed by Keeling et. al. (2019). The original sentence was ``In general, these transcripts show little evidence of purifying selection, suggesting that many of them are not functional'' from \cite{Ruiz-Orera_PlosGenetics_2015} and it was one of the few instances unanimously identified as Evolutionary Implications.}
+This is a useful example to highlight the difference between utilising syntactic relations over using intuition alone.
+At first glance, this statement seems to be a clear-cut example of Selected Effect.\footnote{This is a simplified version of a sentence analysed by Keeling et. al. (2019). The original sentence was ``In general, these transcripts show little evidence of purifying selection, suggesting that many of them are not functional'' from \cite{Ruiz-Orera_PlosGenetics_2015} and it was one of the few unanimously identified instances (as Evolutionary Implications).}
 Our analysis indicates, however, that it is missing an \emph{EFFECT} and is thus an incomplete (Selected Effect) description, analogous to if the sentence in Figure \ref{seleff_towork_effunsp}A were the truncated statement ``Zebra stripes are functional as [because] they evolved''.
 
-\section{Limitations and further considerations}
-\label{sec:limitations}
-
-
-
-- very difficult to make nlp component completely robust to all cases (i.e. still a work in progress)
-- for simplicity ignored functions above the level of the individual (e.g. ecological functions)
-- limit it to the sentence or to elsewhere in the document? First will make it easier to automate but latter might be more in-line with philosophical practices.
-- even once you accurately categorise sentences, there's still the issue of how to classify documents. The distinction between ``this usage of function is of type x'' and ``these authors use function in manner y in this document''.
-
 \section{Conclusion}
-\label{sec:conclusion-1}
+\label{sec:conclusion}
 
-finish by tying it back to philosophy of medicine
+We have presented a classification scheme for analysing natural language about biological function.
+There are two different components to our classification scheme: (i) a decision flowchart and a set of categories for senses of function; and (ii) natural language analysis guidelines to aid in identifying the variables that determine the classification of a use of function (\emph{ITEM}, \emph{EFFECT}, etc.).
+The decision flowchart and function categories are part of a framework that can used as is or modify it for more specific purposes (see below for how one might extend it to ecological functions).
+The natural analysis software and guidelines can be used as tools to help one analyse biological function.
+In some instances, the natural language analysis may be inadequate---for example, where the software incorrectly parses parts of speech or dependency relations, or where our guidelines are not suitable for some complex syntactic constructions---and should be used to supplement the intuition and expertise of an investigator rather than applied blindly.
 
+Our approach is centered around the analysis of individual sentences containing a use of biological function.
+Since we focused on syntactic dependencies and short-range semantic relations, this approach makes sense, but there are also drawbacks.
+As the syntactic analysis is limited to sentences, our approach cannot directly leverage information in other parts of a document for the purposes of identifying the unpacked variables (\emph{ITEM}, \emph{EFFECT}, etc.).
+Nevertheless an investigator can, of course, use a less structured method to identify the variables elsewhere in a manuscript.
+The instance in Figure \ref{seleff_towork_effunsp}C, which we classified as Description Incomplete: \emph{EFFECT} Unspecified, could be classified as Selected Effect if one could infer the transcript's \emph{EFFECT} from elsewhere in the manuscript.
 
-% \section{advice for best practices (probably delete)}
-% \label{sec:advice-best-pract}
+Our focus on classifying individual usages of biological function highlights another consideration: the difference between how function is used in a single instance and how function is used in a document overall.
+Scientific manuscripts containing usages of biological function typically have multiple instances of use.
+If one wants to make a claim about how an author uses function in a document as a whole, then one will either have to use an alternative approach to analyse the document as a whole or will have to develop a (mathematical) function that maps from the number of individual usages of different function senses to a measure of overall document meaning.
 
-% should also mention that the elife paper has poor inter-observer agreement even though it overfits its definitions by testing on the ``train set''.
+For simplicity, we have ignored functions about the level of a Darwinian individual (ecological functions).
+We encountered a number of these uses during the development of our classification scheme (e.g. ``ecological functioning'', function of biodiversity, and so on), but ultimately we decided to focus on biological functions of individuals given that this issue focuses on philosophy of medicine.
+Ecological functions could be added an as extension to our scheme by (i) widening the definition of an \emph{ITEM} (expanding beyond systems of Darwinian individuals to systems of ecosystems); and (ii) expanding the definition of \emph{SYSTEM} to include ecosystems; and (iii) including an additional decision point that considers the level of the \emph{ITEM} and \emph{SYSTEM}.
+For example, an ecological counterpart of Biological Role could be unpacked to ``The function of \emph{ITEM} is \emph{EFFECT} in \emph{SYSTEM}'' where \emph{ITEM} is a Darwinian individual (or group of Darwinian individuals) and \emph{SYSTEM} is an ecosystem containing \emph{ITEM}.
 
-% add some stuff on automation here and how some steps are better suited to statistical inference rather than rules (e.g. for selected effects and biological advantage it might be easier to label a bunch of examples and train a transformer model using supervision to classify the examples than it would be to provide bullet-proof rules)
+Our classification scheme could potentially be extended to take advantage of high-throughput automation of function uses.
+This is a well-studied (but extremely difficult) problem in natural language processing (NLP) known as word-sense disambiguation.
+Some of the steps in the flowchart could be automated by rule-based programming that leverages our natural language analysis pipeline (e.g. identifying \emph{ITEM}).
+Other steps, however, would be very difficult to automate using rules.
+Consider the decision points for Selected Effect and Biological Advantage.
+There are countless specific ways that an author might indicate that an \emph{ITEM} has been under selection or that an \emph{ITEM}'s \emph{EFFECT} benefits a \emph{SYSTEM}, and a pure rule-based system is bound to perform poorly in these cases.
+But these steps might still be automated by using a statistical, rather than a rule-based, approach.
+For example, recent deep learning NLP models based on the Transformer architecture can be ``pre-trained'' on a huge corpus, allowing them to ``learn'' how to represent relationships in natural language from unlabelled data.
+Where a rule-based system would need a list of all the words and phrases associated with ``benefitting'' a \emph{SYSTEM} in order to automate the Biological Advantage decision point (``improve'', ``augment'', and so on), a deep learning NLP model has a high-dimensional representation of language that can reflect the similarities between these words without having necessarily seen a similar sentence before.
+Some Transformer models have been trained on a corpus of scientific manuscripts, allowing them to efficiency represent the particularities of academic language and style.
+(For example, the software we use to generate the dependency grammar analysis uses an NLP Transformer architecture called SciBert (cite). NLP models trained on more general-purpose text (e.g. Wikipedia) did much worse at representing grammar relations for our examples.)
+The downside is that training these models for specific downstream tasks (e.g. training an NLP model for the decision point between Biological Role and Biological Advantage) is a supervised learning problem, which requires labelled data (manually categorised sentences).
+Depending on the difficulty of the problem, it can require a substantial amount of labelled data (possibly thousands of manually categorised sentences), making this a serious undertaking.
 
-% Actually this section is probably unnecessary, likely too technical
-
+One of the main differences between our set of function categories and that of Wouters (2003) is the introduction of a category for To Work.
+With its focus on whether token traits are ``working as expected'', this sense of function is the most relevant for philosophy of medicine and the naturalistic account of health and disease.
+To Work statements require a normative basis to ground why one should expect a trait to work in a certain way (i.e. perform its function).
+Some normative bases will be explicit and well-justified; others might implicitly appeal to vague, indefinable notions of why a trait should work in a certain way.
+Here we have made no distinction between various normative bases behind function in the sense of To Work.
+Adding these distinctions could be a fruitful way to extend our framework.
+With such an extended framework in hand, one could tackle some interesting questions in philosophy of medicine.
+One of many such possibilities would be to analyse uses of To Work function in medical journals to help understand the frequency with which physicians and medical researchers use different normative bases as a foundation for dysfunction and disease.
 
 \end{document}
 %%% Local Variables:
