@@ -70,7 +70,7 @@ For example, to be classified as Biological Role (see section ``Senses of functi
 By simplifying natural language into simple, common forms, our approach avoids obfuscation of meaning due to variation in syntactic construction and helps standardise the technique for extracting meaning.
 Moreover, we provide detailed instructions for how to use the dependency grammar framework and modern natural language processing techniques as aids in identifying the variables in the common forms.
 
-\section{Classification scheme}\footnote{Paul: hoping you can give some comments about expectations in philosophy when describing a process like this that is iterative and not straightforward to describe (since the approach is a bit undirected and circular compared to an experiment). Just want the minimum acceptible description of the general method for this section since ultimately the only thing that really matters is whether the scheme works.}
+\section{Classification scheme}
 \label{sec:class-scheme}
 
 Our approach was to analyse real-world uses of biological function extracted from scientific papers.
@@ -79,11 +79,21 @@ Specifically, we used the Australian Research Council FoR (Field of Research) co
 We matched these subfields to fields from Clarivate Analytic’s Web of Science database.\footnote{hoping Zach or Stefan can find these}.
 For each subfield, we used Clarivate Analytic’s Journal Impact Factor to get a ranking of journals, and we chose one paper from each of the top five journals by JIF, giving us 1316 usages of function that we used to develop our scheme.
 
-To begin with, three of the authors (JRC, ZW, SG) independently analysed a subset of the sentences (using definitions and a simple set of classification guidelines, much like Keeling et. al. (2019)).
+Developing a classification scheme is a difficult proposition, as the process unavoidably involves circularity: in order to create a scheme that can classify examples, we first need a set of classified examples that we can use to test and iteratively develop the scheme.
+How can we confidently classify examples before we have a scheme to classify examples?
+We used two main methods to obtain a set of ``gold-standard'' examples that we could use to help develop our scheme.
+In the first method, three of the authors (JRC, ZW, SG) independently analysed a subset of the sentences using definitions and a simple set of classification guidelines (much like the approach taken in Keeling et. al. (2019)).
 We then compared our responses, and if our classifications differed, we used a consensus-based approach to categorise examples.
-From these examples, we developed a set of ``gold-standard'' examples that we agreed upon, which we were able to use for the purposes of testing our flowchart.
-Through an iterative process, we altered our classification scheme each time that we encountered common occurences or general patterns that our method was unable to adequately categorise (e.g. altering the flowchart or adding new categories).
-We first developed the classification scheme (flowchart and categories), and then we developed the pipeline for the analysis of natural language.
+Those examples that all of us were confident about formed a set of ``gold-standard'' examples.
+A disadvantage of using a consensus-based approach is that we can never be sure of the author's intentions, even in examples that we confidently and unanimously categorised.
+
+The second method we used was to simplify real sentences that we encountered, using these examples as a base from which to write (and rewrite) our own sentences.
+Say we have a sentence that we decide (through consensus) is used in the sense of Biological Role.
+We can simplify the sentence and rewrite it using different syntactic structures (but retaining the sense of Biological Role).
+Moreover, we can change the sentence such that it now instead expresses Biological Advantage (and again rewrite it multiple times using different syntactic structures).
+This approach has two main benefits over the consensus-based approach: (i) with these examples we know with certainty the author's intentions, having purposefully written them ourselves to fit a specific category; and (ii) by exploring different syntactic structures, we help ensure that our classification scheme is robust to alternate phrasings.
+In addition to obtaining these ``gold-standard'' examples, we also set aside interesting cases that were problematic to classify.
+We iteratively modified our classification scheme so as to handle these problematic cases and other generally problematic patterns that arose repeatedly (altering the flowchart, adding new categories, modifying the natural language analysis, etc.).
 
 \subsection{Senses of function}
 \label{sec:senses-function}
