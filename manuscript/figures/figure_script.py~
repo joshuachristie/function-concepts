@@ -1,0 +1,46 @@
+import spacy
+from spacy import displacy, Path
+import scispacy
+from process_sentence import visualise
+nlp = spacy.load("en_core_sci_scibert")
+
+
+
+eff = nlp("The transcript functions to regulate expression.")
+role=nlp("The transcript functions to regulate expression in metabolism.")
+adv=nlp("The transcript functions to regulate expression in metabolism by improving glycogen storage.")
+
+eff_img = displacy.render(eff, style="dep", jupyter=False, options={"compact": True, "distance": 120})
+role_img = displacy.render(role, style="dep", jupyter=False, options={"compact": True, "distance": 100})
+adv_img = displacy.render(adv, style="dep", jupyter=False, options={"compact": True, "distance": 75})
+out_eff = Path("./eff.svg")
+out_role = Path("./role.svg")
+out_adv = Path("./adv.svg")
+out_eff.open("w", encoding="utf-8").write(eff_img)
+out_role.open("w", encoding="utf-8").write(role_img)
+out_adv.open("w", encoding="utf-8").write(adv_img)
+
+sel_eff = nlp("Zebra stripes are functional as they evolved to reduce insect bites.")
+from spacy import displacy, Path
+sel_eff_img = displacy.render(sel_eff, style="dep", jupyter=False, options={"compact": True, "distance": 65})
+out_sel_eff = Path("./sel_eff.svg")
+out_sel_eff.open("w", encoding="utf-8").write(sel_eff_img)
+
+to_work = nlp("Liver function benefits human health.")
+to_work_adv = nlp("Liver function benefits human health by aiding metabolism.")
+
+from spacy import displacy, Path
+
+to_work_img = displacy.render(to_work, style="dep", jupyter=False, options={"compact": True, "distance": 120})
+out_to_work = Path("./to_work.svg")
+out_to_work.open("w", encoding="utf-8").write(to_work_img)
+
+to_work_adv_img = displacy.render(to_work_adv, style="dep", jupyter=False, options={"compact": True, "distance": 100})
+out_to_work_adv = Path("./to_work_adv.svg")
+out_to_work_adv.open("w", encoding="utf-8").write(to_work_adv_img)
+
+eff_unsp=nlp("The transcript shows evidence of purifying selection, suggesting that it is functional.")
+from spacy import displacy, Path
+eff_unsp_img = displacy.render(eff_unsp, style="dep", jupyter=False, options={"compact": True, "distance": 70})
+out_eff_unsp = Path("./eff_unsp.svg")
+out_eff_unsp.open("w", encoding="utf-8").write(eff_unsp_img)

@@ -1,0 +1,11 @@
+docs/
+notes/
+manuscript/*.aux
+manuscript/*.aux
+manuscript/*.docx
+manuscript/*.out
+manuscript/*.log
+manuscript/auto/
+.ipynb_checkpoints/
+__pycache__/
+*~
