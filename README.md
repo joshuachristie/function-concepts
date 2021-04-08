@@ -10,7 +10,7 @@ We have used the natural language analysis to analyes the 42 examples from [Keel
 
 # Running the natural language analysis software
 
-You can also run the code used the generate the handbook and examples (or to analyse your own sentences).
+You can also run the code used to generate the handbook and examples (or to analyse your own sentences).
 
 The first step is to clone the repository.
 You then have two options to set up the environment for running the natural language software.
