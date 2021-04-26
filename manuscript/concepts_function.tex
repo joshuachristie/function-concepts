@@ -75,16 +75,19 @@ Moreover, we provide detailed instructions for how to use the dependency grammar
 
 Our approach was to analyse real-world uses of biological function extracted from scientific papers.
 Since our focus was on how function is used in biology, we used examples from a wide variety of biological subfields.
-Specifically, we used the Australian Research Council FoR (Field of Research) codes to identify the following biological subfields: biochemistry and cell biology, ecology, evolutionary biology, genetics, microbiology, physiology, plant biology, and zoology.
-We matched these subfields to fields from Clarivate Analytic’s Web of Science database.\footnote{hoping Zach or Stefan can find these}.
-For each subfield, we used Clarivate Analytic’s Journal Impact Factor to get a ranking of journals, and we chose one paper from each of the top five journals by JIF, giving us 1316 usages of function that we used to develop our scheme.
+We used the Australian Research Council Field of Research codes to identify the following biological subfields: biochemistry and cell biology, ecology, evolutionary biology, genetics, microbiology, physiology, plant biology, and zoology.
+We matched these subfields to the following fields from Clarivate Analytic’s Web of Science database: biochemistry and molecular biology, ecology, evolutionary biology, genetics and heredity, microbiology, physiology, plant sciences, and zoology.
+In addition, we considered the general biology category and the general science category.
+We used Clarivate Analytic’s Journal Impact Factor (JIF) to get a ranking of journals, and for each category, we chose the top five journals by JIF (\href{https://github.com/joshuachristie/function-concepts/blob/master/supplementary_material/list_of_journals.txt}{\underline{supplementary material: journal list}}).
+We searched within Web of Science using the search string ``function*'' for journals from the biological subfield categories and ``biolog* AND function*'' for journals from the general biology and general science categories.
+We chose the first listed paper from each journal, and we extracted all sentences involving a use of function from the full texts (ignoring abstracts), giving us 1316 usages of function that we used to develop our scheme.
 
 Developing a classification scheme is a difficult proposition, as the process unavoidably involves circularity: in order to create a scheme that can classify examples, we first need a set of classified examples that we can use to test and iteratively develop the scheme.
 How can we confidently classify examples before we have a scheme to classify examples?
 We used two main methods to obtain a set of ``gold-standard'' examples that we could use to help develop our scheme.
 In the first method, three of the authors (JRC, ZW, SG) independently analysed a subset of the sentences using definitions and a simple set of classification guidelines (much like the approach taken in Keeling et. al. (2019)).
 We then compared our responses, and if our classifications differed, we used a consensus-based approach to categorise examples.
-Those examples that all of us were confident about formed a set of ``gold-standard'' examples.
+Those examples that all of us were confident about formed a set of gold-standard examples.
 A disadvantage of using a consensus-based approach is that we can never be sure of the author's intentions, even in examples that we confidently and unanimously categorised.
 
 The second method we used was to simplify real sentences that we encountered, using these examples as a base from which to write (and rewrite) our own sentences.
@@ -92,8 +95,8 @@ Say we have a sentence that we decide (through consensus) is used in the sense o
 We can simplify the sentence and rewrite it using different syntactic structures (but retaining the sense of Biological Role).
 Moreover, we can change the sentence such that it now instead expresses Biological Advantage (and again rewrite it multiple times using different syntactic structures).
 This approach has two main benefits over the consensus-based approach: (i) with these examples we know with certainty the author's intentions, having purposefully written them ourselves to fit a specific category; and (ii) by exploring different syntactic structures, we help ensure that our classification scheme is robust to alternate phrasings.
-In addition to obtaining these ``gold-standard'' examples, we also set aside interesting cases that were problematic to classify.
-We iteratively modified our classification scheme so as to handle these problematic cases and other generally problematic patterns that arose repeatedly (altering the flowchart, adding new categories, modifying the natural language analysis, etc.).
+In addition to obtaining these gold-standard examples, we also set aside interesting cases that were problematic to classify.
+We iteratively modified our classification scheme so as to handle these problematic cases and other generally problematic patterns that arose repeatedly (altering the flowchart, adding new categories, modifying the natural language analysis, and so on).
 
 \subsection{Senses of function}
 \label{sec:senses-function}
@@ -130,7 +133,6 @@ The classification scheme flowchart is shown in Figure \ref{flowchart} and descr
     Technical use? & Compound phrases such as ``functional ecology'', ``functional biology'', ``functional connectivity'', and so on. These phrases will be familiar to practitioners within a field. Their meanings are multi-faceted and influenced by a field's development and cannot be meaningfully unpacked using a flowchart.  These phrases will often appear multiple times in a manuscript. \\
     \hline
     Identify \emph{ITEM} &  An \emph{ITEM} is something that can be a character or trait (or produced by one) of a Darwinian individual. Obvious candidates are concrete nouns, which refer to a physical item (e.g. heart), but it also includes abstract nouns if they refer to a concrete concept (e.g. ``gene'' as used in population genetics, ``boldness'' as a behavioural phenotype, etc.). Importantly, there must be a dependency between function and the \emph{ITEM}---it is not sufficient that a suitable \emph{ITEM} simply appear in the sentence (e.g. ``protein'' is the \emph{ITEM} in  ``protein function aids muscle development'' but ``muscle'' is the \emph{ITEM} in ``protein aids in muscle function''). \\
-%    For example, ``gene'' can refer to the concept of an atomic unit of DNA with a well-defined phenotype. This is sufficiently concrete to qualify as a character despite not necessarily mapping onto a physical piece of DNA. 
     \hline
     Identify \emph{ITEM}'s \emph{EFFECT} & \emph{EFFECT} is what the \emph{ITEM} does (or, less commonly, has done to it). \emph{EFFECT} is a verb or verb phrase, or it is a word or phrase that can be converted into a verb (e.g. ``contribute to transcription'' could be converted to the verb ``transcribe''). \emph{EFFECT} must be a concrete action or effect of the \emph{ITEM} (e.g. if \emph{ITEM} is ``gene'' then ``is transcribed'' is acceptable but ``benefits health'' is not). \\
     \hline
@@ -210,7 +212,7 @@ Usages of organisational theories explicitly mentioning the benefits of self-mai
 \label{sec:funct-as-perf}
 
 We identify another common use of function, namely that of To Work.
-This use of function can only arise when the \emph{EFFECT} of an \emph{ITEM} is not specified.
+In our flowchart, this use of function can only arise when the \emph{EFFECT} of an \emph{ITEM} is not specified (Figure \ref{flowchart}).
 This use has an analog in one of the colloquial senses of function, namely ``to work as expected''.
 Function as To Work is primarily concerned with how an item has developed in individuals, and whether it is deemed to be functional (in the sense of working as expected) or dysfunctional (not working as expected).
 This use of function differs from Biological Activity, Role, Advantage, and Selected Effect, which are all ``type'' level designations (dealing with lineages of characters or traits).
@@ -231,6 +233,8 @@ There might be an explicit set of criteria behind this definition---as in the EN
 In the statement above, the author may simply have a vague sense that any gene that does something is functional, perhaps as a complement to the notion that a non-functional gene is one that does nothing.
 Few scientific papers that use ``function'' explicitly define it, making it difficult to infer a normative basis in short pieces of natural language.
 For the To Work category, we focus on whether a normative basis is expressed by the author's language.
+The function use itself may indicate the normative basis, as with ``dysfunction'', ``malfunction'', ``loss of function'', and so on.
+But oftentimes the appeal to normativity will be more subtle.
 For practical reasons, we choose to be agnostic as to how the normative basis is constructed.
 
 \section{Analysis of natural language}
@@ -263,7 +267,6 @@ Our goal is to use syntactic dependencies (starting from function or its derivat
 
 In this section, we work through six examples using our classification scheme and natural language analysis.
 We use the natural language processing software \texttt{spaCy} to label parts of speech (noun, verb, and so on) and to generate the dependency grammar representation \cite{spacy}.
-\texttt{spaCy} implements a dependency grammar framework called \href{https://universaldependencies.org/#language-en}{Universal Dependencies}.
 We focus on short toy sentences to illustrate the framework, giving a general overview of the natural language analysis without providing the explicit rules.
 To download the software, explore some more detailed examples, or to read a handbook detailing the rules governing the natural language analysis, see
 \newline
@@ -415,6 +418,7 @@ Here we have made no distinction between various normative bases behind function
 Adding these distinctions could be a fruitful way to extend our framework.
 With such an extended framework in hand, one could tackle some interesting questions in philosophy of medicine.
 One of many such possibilities would be to analyse uses of To Work function in medical journals to help understand the extent to which physicians and medical researchers use different normative bases as a foundation for dysfunction and disease.
+More generally, the methodology we have outlined can serve as a framework that may be extended by experimental philosophers to analyse references to other concepts in academic literature.
 
 \section{Acknowledgements}
 \label{sec:acknowledgements}
