@@ -29,19 +29,26 @@
 \section{Abstract}
 \label{sec:abstract}
 
-Several philosophical accounts of disease are constructed at least partly around the idea that disease is a failure of physiological parts or processes to perform their biological function or an ``impairment of normal functioning''. Determining whether a phenotype—such as obesity—is a disease or determining the level of functioning at which some aspect of physiology—such as response to insulin—becomes pathological throws considerable weight on the concept of biological function. However, there are a number of philosophical theories of biological function, each of which defines function differently. It is not clear which theory—or combination of theories—we should use to explicate the medical conception of function. One reason for this is that we have no systematic way to determine how biologists and medical practitioners conceive of, or write about, function in their respective disciplines. To further complicate matters, natural language is replete with ambiguities, and scientific manuscripts often use technical terms imprecisely. Without a descriptive understanding of how different conceptions of function are used in biology and medicine, we have little hope of bringing insights about biological function to bear on disputes about function and malfunction in medicine. Here we develop a systematic method for analysing references to function by outlining a classification scheme that combines syntactic and semantic analysis in a dependency-grammar framework.
+Several philosophical accounts of disease are constructed around the idea that disease is a failure of physiological parts or processes to perform their biological function.
+Determining whether a phenotype---such as obesity---is a disease or determining the level of functioning at which some aspect of physiology---such as response to insulin---becomes pathological throws considerable weight on the concept of biological function.
+However, there are a number of philosophical theories of biological function, each of which defines function differently.
+It is not clear which theory, or combination of theories, we should use to explicate the medical conception of function.
+We have no systematic way to determine how biologists and medical practitioners conceive of, or write about, function in their respective disciplines.
+To further complicate matters, natural language is replete with ambiguities, and scientific manuscripts often use terms imprecisely.
+Without a descriptive understanding of how different conceptions of function are used in biology and medicine, we have little hope of bringing insights about biological function to bear on disputes about function and malfunction in medicine.
+Here we develop a systematic method for analysing references to function by outlining a classification scheme that combines syntactic and semantic analysis in a dependency-grammar framework.
 
 \section{Introduction}
 \label{sec:introduction}
 
 Much of philosophy of medicine is concerned with issues surrounding the concept of disease.
-Philosophical approaches to categorising disease can be broadly divided into two camps: a normativist view that prioritises social value judgements and a naturalist view that prioritises biological theory.\footnote{There are also hybrid views, such as Wakefield's harmful dysfunction account \cite{wakefield1992}. }
+Philosophical approaches to categorising disease can be broadly divided into two camps: a normativist view that prioritises social value judgements and a naturalist view that prioritises biological theory.\footnote{There are also hybrid views, such as Wakefield's harmful dysfunction account \cite{wakefield1992}.}
 The former contends that judgements about disease should be primarily based on whether society disvalues the condition in question, whereas the latter holds that our categorisation of disease should be primarily based on whether ``something has gone wrong'' in a biological system \cite{matthewson2017} .
 But what does it mean for ``something to go wrong'' with a biological system according to the naturalist view?
 
 Before determining what it means for ``something to go wrong'', one requires a normative framework that can be used to determine what a biological component (trait) ought to do  .
 To ground normative claims in biology, many naturalist accounts defer to the notion of function.
-If a trait's function is what the trait ought to do, then a dysfunctional trait no longer does what the trait ought to do \cite{neander1995} .
+If a trait's function is what the trait ought to do, then a dysfunctional trait no longer does what the trait ought to do \cite{neander1995}.
 But herein lies several problems.
 Function is a word with multiple senses in both its colloquial and discipline-specific uses.
 Within the discipline of philosophy, there are many theories of biological function, each differing in their claims to normativity (and some with arguably no normative claims whatsoever).
@@ -49,7 +56,7 @@ In more applied disciplines, such as biology, medical research, and clinical med
 
 Experimental philosophy relies, in large part, on extracting meaning from natural language.
 If we hope to use experimental philosophy to understand a naturalistic account of disease and dysfunction, we must first clarify how the concept of function (and dysfunction) is used in natural language.
-One must solve two broad problems in order to consistently disambiguate real-world usage of biological function (or any word that refers to multiple concepts).
+One must solve two broad problems in order to consistently disambiguate real-world usage of biological function.
 First, one must develop a classification scheme comprising a set of categories, each of which defines a sense (or concept) of function.
 The categories within the set should be exhaustive, covering all possible real-world uses of function.
 Furthermore, the categories should either be exclusive (i.e. each use of function has one and only one sense) or there should be explicit rules for how one is to deal with membership in overlapping categories (e.g. a hierarchy of definitions or allowing of multiple senses for a single usage). 
@@ -61,14 +68,14 @@ For one, this will not necessarily generate a set of function concepts that are 
 Moreover, real-world usage of function does not always align with philosophical concepts of function.
 A classification scheme for experimental philosophy will thus necessarily be an amalgamation of philosophical conceptual analysis and discipline-specific usage \cite{wouters2003} .
 
-A study has recently attempted this for biological function in the context of de novo gene emergence \cite{keeling2019} .
+A study by Keeling et. al. has recently attempted this for biological function in the context of de novo gene emergence \cite{keeling2019} .
 The authors chose six categories for their classification scheme: Evolutionary Implications, Physiological Implications, Interactions, Capacities, Expression, and Vague.
 The authors started broadly with the two most well-known philosophical concepts of function: causal role and selected effects.
-From this base, they iterated through a small dataset of 42 examples (from 20 abstracts), adding categories and refining the scheme as they encountered new usages that did not fit into the existing scheme.
+From this base, they iterated through a small dataset of 42 instances (from 20 abstracts), adding categories and refining the scheme as they encountered new usages that did not fit into the existing scheme.
 They achieve an exhaustive scheme by implementing a catch-all category of Vague for usage unable to be categorised in one of the other five categories.
 They did not require that these categories be mutually exclusive, instead allowing a single usage to have membership in multiple categories.
 To categorise each usage of function using the scheme, the authors started by independently reading a paper's title and abstract.
-Next they used a list of definitions to assign at least one meaning of function to the example, which were supplemented by a few general coding rules to guide application of the definitions.
+Next they used a list of definitions to assign at least one meaning of function to the example, which was supplemented by a few general coding rules to guide application of the definitions.
 One of the most striking findings from this study was the difficulty of obtaining agreement between the different raters: in only 12\% of cases did all four raters independently assign an example to the same category!\footnote{In addition, the authors used 17 of the 20 abstracts to develop their classification scheme, meaning that their reported level of agreement---which was based on all 20 abstracts---is almost certainly higher than they would achieve on a novel set of abstracts about de novo gene function (in the parlance of statistics and machine learning, their reported result is ``overfit'' on account of them using the same data for ``training'' and ``testing'').}
 After conferring with one another and employing a consensus-based approach, the raters were still only able to assign 62\% of cases to a single category \cite{keeling2019} .
 Despite having a comprehensive and well-reasoned classification scheme in hand, these authors were not able to consistently categorise real-world usages of function into a single category.
@@ -77,13 +84,13 @@ We suggest, however, that a crucial factor lies in the different ways that indiv
 Without a detailed and standardised framework, the semantic mapping from natural language to a definition of function is bound to be inconsistent among different investigators.
 
 In this manuscript, we ask a similar question to Keeling et. al. \cite{keeling2019} but adopt a different methodology.
-Our categories are more closely aligned to philosophical categories than those of Keeling et. al. \cite{keeling2019} who intentionally developed more specific categories for de novo gene function.
+Our categories are more closely aligned to philosophical concepts of function than those of Keeling et. al. \cite{keeling2019} who intentionally developed more specific categories for de novo gene function.
 Our classification scheme also does not try to semantically map directly from natural language to definitions of function.
-To assign an example to a definition, one instead follows a step-by-step flowchart, answering questions and identifying important features related to function that are contained within a piece of natural language.
+To assign an example to a definition, one instead follows a step-by-step flowchart, answering questions and identifying important features related to function that are contained within natural language that references function.
 We unpack each piece of natural language into one of several common forms.
-For example, to be classified as Biological Role (see section ``Senses of function''), an investigator must be able to identify each variable in the unpacked form of ``The function of \emph{ITEM} is \emph{EFFECT} in \emph{SYSTEM}'' (e.g. \emph{ITEM} could be ``The heart'', \emph{EFFECT} could be ``to pump blood through'', and \emph{SYSTEM} could be ``the circulatory system'').
+For example, to be classified as Biological Role (see section \ref{sec:senses-function}), an investigator must be able to identify each variable in the unpacked form of ``The function of \emph{ITEM} is \emph{EFFECT} in \emph{SYSTEM}'' (e.g. \emph{ITEM} could be ``The heart'', \emph{EFFECT} could be ``to pump blood through'', and \emph{SYSTEM} could be ``the circulatory system'').
 By simplifying natural language into simple, common forms, our approach avoids obfuscation of meaning due to variation in syntactic construction and helps standardise the technique for extracting meaning.
-Moreover, we provide detailed instructions for how to use the dependency grammar framework and modern natural language processing techniques as aids in identifying the variables in the common forms.
+Moreover, we provide detailed instructions for how to use the dependency grammar framework and modern natural language processing techniques as aids in identifying the variables in the unpacked forms.
 
 \section{Classification scheme}
 \label{sec:class-scheme}
@@ -143,11 +150,11 @@ The classification scheme flowchart is shown in Figure \ref{flowchart} and descr
     \hline
     Decision point & Description \\
     \hline
-    Biological context? & Are we dealing with a case of biological function or colloquial use (see \href{http://wordnetweb.princeton.edu/perl/webwn?s=function&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=}{WordNet 3.1} for colloquial definitions)? These examples are rare if one restricts the corpus to scientific papers in biology. Notable exceptions are mathematical functions and programming functions, which we place within Colloquial to simplify the flowchart. \\
+    Biological context? & Are we dealing with a case of biological function or colloquial use (see \href{http://wordnetweb.princeton.edu/perl/webwn?s=function&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=}{WordNet 3.1} for colloquial definitions)? Colloquial examples are rare if one restricts the corpus to scientific papers in biology. Notable exceptions are mathematical functions and programming functions, which we place within Colloquial to simplify the flowchart. \\
     \hline
     Technical use? & Compound phrases such as ``functional ecology'', ``functional biology'', ``functional connectivity'', and so on. These phrases will be familiar to practitioners within a field. Their meanings are multi-faceted and influenced by a field's development and cannot be meaningfully unpacked using a flowchart.  These phrases will often appear multiple times in a manuscript. \\
     \hline
-    Identify \emph{ITEM} &  An \emph{ITEM} is something that can be a character or trait (or produced by one) of a Darwinian individual. Obvious candidates are concrete nouns, which refer to a physical item (e.g. heart), but it also includes abstract nouns if they refer to a concrete concept (e.g. ``gene'' as used in population genetics, ``boldness'' as a behavioural phenotype, etc.). Importantly, there must be a dependency between function and the \emph{ITEM}---it is not sufficient that a suitable \emph{ITEM} simply appear in the sentence (e.g. ``protein'' is the \emph{ITEM} in  ``protein function aids muscle development'' but ``muscle'' is the \emph{ITEM} in ``protein aids in muscle function''). \\
+    Identify \emph{ITEM} &  An \emph{ITEM} is something that can be a character or trait (or produced by one) of a Darwinian individual. Obvious candidates are concrete nouns, which refer to a physical item (e.g. heart), but it also includes abstract nouns if they refer to a concrete concept (e.g. ``gene'' as used in population genetics, ``boldness'' as a behavioural phenotype, etc.). Importantly, there must be a grammatical dependency between function and the \emph{ITEM}---it is not sufficient that a suitable \emph{ITEM} simply appear in the sentence (e.g. ``protein'' is the \emph{ITEM} in  ``protein function aids muscle development'' but ``muscle'' is the \emph{ITEM} in ``protein aids in muscle function''). \\
     \hline
     Identify \emph{ITEM}'s \emph{EFFECT} & \emph{EFFECT} is what the \emph{ITEM} does (or, less commonly, has done to it). \emph{EFFECT} is a verb or verb phrase, or it is a word or phrase that can be converted into a verb (e.g. ``contribute to transcription'' could be converted to the verb ``transcribe''). \emph{EFFECT} must be a mechanistic action or effect of the \emph{ITEM} (e.g. if \emph{ITEM} is ``gene'' then ``is transcribed'' is acceptable but ``benefits health'' is not). \\
     \hline
@@ -189,7 +196,7 @@ It deals with biological characters (e.g. a biological item, feature, or behavio
 It has received relatively little philosophical attention, likely because a statement of Biological Activity leaves out important information about how the character is used or why it exists.
 Indeed, Biological Activity is often ignored or subsumed under Biological Role, with the resulting category typically being termed ``causal role'' function \cite{cummins1975} .
 We have chosen to keep this distinction for two main reasons.
-We believe that Biological Activity does reflect some actual biological use \cite{wouters2003}, notably in the ENCODE study whose goal was to map functionality across the human genome (\cite{encode2012}).\footnote{It is often stated that ENCODE used a causal role definition (e.g. \cite{graur2013}), but we believe this to be a conflation of Biological Activity and Biological Role. ENCODE focused on correlates of biological activity (encoding protein or non-coding RNA, or displaying a biological signature such as protein binding or a specific chromatin structure) without trying to establish how this activity is used to generate a complex capacity in the wider system.}
+We believe that Biological Activity does reflect some actual biological use \cite{wouters2003}, notably in the ENCODE study whose goal was to map functionality across the human genome \cite{encode2012}.\footnote{It is often stated that ENCODE used a causal role definition (e.g. \cite{graur2013}), but we believe this to be a conflation of Biological Activity and Biological Role. ENCODE focused on correlates of biological activity (encoding protein or non-coding RNA, or displaying a biological signature such as protein binding or a specific chromatin structure) without trying to establish how this activity is used to generate a complex capacity in the wider system.}
 Second, keeping the distinction preserves information.
 If an investigator believes that the distinction between Biological Activity and Role is spurious, then they can always combine (labelled examples of) the two categories into a single category during the analysis phase.
 But one cannot separate these categories \emph{post hoc} if they were originally classified as a single category.
@@ -217,9 +224,9 @@ In these sorts of statements, there is an implicit assumption that improved effi
 This approach will thus include false-positives in cases where the benefits identified correlate poorly with fitness.
 In practice, this means that Wouters's characterisation of Biological Advantage is quite permissive, being satisfied if an organism can do \emph{EFFECT} better with \emph{ITEM} than with an alternative trait \cite{bigelow1987} .
 
-Some have argued, in opposition to Wouters, that Biological Advantage need not be contrastive (or be limited to dealing with traits), instead focusing on how it contributes to survival (\cite{garson2016, buller1998}).
+Some have argued, in opposition to Wouters, that Biological Advantage need not be contrastive (or be limited to dealing with traits), instead focusing on how it contributes to survival \cite{garson2016, buller1998}.
 There are obvious parallels between a non-contrastive view of Biological Advantage and organisational theories of function, which focus on how an \emph{ITEM}'s \emph{EFFECT} contributes to self-maintenance [a non-contrastive benefit] of a \emph{SYSTEM}.
-With this in mind, we take a very general view of Biological Advantage, adopting Wouters's permissive interpretation of biological advantage as improving a biological role's efficiency without requiring that the characterisation be contrastive.
+With this in mind, we take a very general view of Biological Advantage, adopting Wouters's permissive interpretation of biological advantage as improving a biological role's efficiency, but making it even more permissive by not requiring that the characterisation be contrastive.
 For our purposes, any explicit mention of a benefit to a system of a Darwinian individual is sufficient for an example to be categorised as Biological Advantage instead of Biological Role.
 Usages of organisational theories explicitly mentioning the benefits of self-maintenance will thus fall under Biological Advantage (as mentioned previously, those usages of organisational theories that omit explicit references to the benefits of self-maintenance will likely fall under Biological Role).
 
@@ -240,7 +247,7 @@ Here function does not refer to a function of the liver (e.g. ``the liver functi
 We could, for example, express the same meaning in the revised phrase ``a liver that works as expected is important for an individual's health''.
 An item that ``works as expected'' is one that aligns with the naturalist view of ``healthy'' or ``absence of disease''.
 It implies that there exists a normative basis for believing how the item ought to function.
-The normative basis might derive from a philosophical theory, such as selected effects or the organisational theory, but it might have another basis entirely.
+The normative basis might derive from a philosophical theory, such as selected effects or an organisational theory, but it might have another basis entirely.
 Consider a statement such as ``The gene is transcribed and thus is functional''.
 What is the normative basis behind this statement?
 It appears to adopt some form of a Biological Activity definition, namely that for function it is sufficient that a gene (item) is transcribed (effect) without regard for how it is used within a system.
@@ -248,7 +255,7 @@ There might be an explicit set of criteria behind this definition---as in the EN
 In the statement above, the author may simply have a vague sense that any gene that does something is functional, perhaps as a complement to the notion that a non-functional gene is one that does nothing.
 Few scientific papers that use ``function'' explicitly define it, making it difficult to infer a normative basis in short pieces of natural language.
 For the To Work category, we focus on whether a normative basis is expressed by the author's language.
-The function use itself may indicate the normative basis, as with ``dysfunction'', ``malfunction'', ``loss of function'', and so on.
+The reference to function may itself indicate the normative basis, as with ``dysfunction'', ``malfunction'', ``loss of function'', and so on.
 But oftentimes the appeal to normativity will be more subtle.
 For practical reasons, we choose to be agnostic as to how the normative basis is constructed.
 
@@ -260,13 +267,13 @@ If we focus just on the forms of function when used as a noun, we have the singu
 Grammatical relations also vary.
 In ``the function of the heart'' and ``the functionality of the heart'', function is the subject, whereas for ``the heart has many functions'', function is the direct object.
 Aside from its use as a noun, ``functions'' (and ``function'') can also be used as a verb (``the heart functions to pump blood'').
-We also encounter cases such as the gerund form ``functioning'', which is the -ing form of the verb ``function'' that acts as a noun (``functioning is important for hearts'')!
-And to complicate matters even further, ``functioning'' might be a present participle instead of a gerund, in which case it either acts as an adjective (``the functioning heart'') or to form verb tense (``the heart was functioning''). Suffice it to say, when dealing with real-world sentences, the sheer variety of syntactical forms present a challenge for semantic interpretation of function.
+We also encounter cases such as the gerund form ``functioning'', which is the -ing form of the verb ``function'' that acts as a noun (``functioning is important for hearts'').
+To further complicate matters, ``functioning'' might be a present participle instead of a gerund, in which case it either acts as an adjective (``the functioning heart'') or to form verb tense (``the heart was functioning''). Suffice it to say, when dealing with real-world sentences, the sheer variety of syntactical forms present a challenge for semantic interpretation of function.
 A central component of our approach is to simplify these diverse syntactic constructions into the common forms highlighted in Figure \ref{flowchart} and Table \ref{tab:flowchart}.
  
 To simplify comparison of syntactically-diverse constructions, we use word conversion to convert from derivations of function (e.g. functional) to its morpheme form ``function''.
 We will use morphological derivation to convert between parts of speech (e.g. adjective to noun) and inflection to convert between number, tense, and aspect (e.g. the plural ``functions'' to ``function'').
-During conversion, it is crucial that we retain the syntactic dependencies between the function use and other parts of speech, as these form the basis for identifying the variables in the unpacked form (\emph{ITEM}, \emph{EFFECT}, etc.).
+During conversion, it is crucial that we retain the syntactic dependencies between the reference to function and other parts of speech, as these form the basis for identifying the variables in the unpacked form (\emph{ITEM}, \emph{EFFECT}, etc.).
 We use a grammatical framework called dependency grammar, which structures grammatical relations as directed links between words \cite{demarneffe2019}.
 Effectively, these syntactic dependencies constrain the parts of a sentence that can be chosen as \emph{ITEM}, \emph{EFFECT}, and so on.
 To see why this is necessary, consider a statement such as ``Protein function aids muscle development''.
@@ -283,7 +290,7 @@ Our goal is to use syntactic dependencies (starting from function or its derivat
 In this section, we work through six examples using our classification scheme and natural language analysis.
 We use the natural language processing software \texttt{spaCy} to label parts of speech (noun, verb, and so on) and to generate the dependency grammar representation \cite{spacy}.
 We focus on short toy sentences to illustrate the framework, giving a general overview of the natural language analysis without providing the explicit rules.
-To download the software, explore our working-out of the instances from Keeling et. al. \cite{keeling2019}, or to read the handbook detailing the rules governing the natural language analysis, see
+To download the software, to read the handbook detailing the rules governing the natural language analysis, or to explore some detailed worked-out examples, see
 \newline
 \href{https://github.com/joshuachristie/function-concepts}{https://github.com/joshuachristie/function-concepts}.
 
@@ -379,8 +386,7 @@ We can thus ask whether ``suggesting that it is functional'' is a mechanistic ac
 (We obtain ``suggesting that it is functional'' from the fact that ``suggesting'' has a dependency relation with ``functional'', the latter of which has dependency relations of its own with ``that'', ``it'', and ``is''.)
 There are no more dependencies to explore, and as we are unable to identify the \emph{EFFECT}, the next question we ask is whether function is used in the sense of To Work.
 We can substitute ``it is functional'' with ``it works'' to obtain ``The transcript shows evidence of purifying selection, suggesting that it works.''
-This modification alters the meaning of the original sentence.
-In the original sentence, ``functional'' indicates that the \emph{ITEM} has a function not that the \emph{ITEM} works (performs its function) as expected.
+This modification alters the meaning of the original sentence: in the original sentence, ``functional'' indicates that the \emph{ITEM} has a function not that the \emph{ITEM} works (performs its function) as expected.
 We thus classify this instance as Description Incomplete: \emph{EFFECT} Unspecified.
 
 This is a useful example to highlight the difference between utilising syntactic relations over using intuition alone.
@@ -392,26 +398,26 @@ Our analysis indicates, however, that it is missing an \emph{EFFECT} and is thus
 
 We have presented a classification scheme for analysing natural language about biological function.
 There are two different components to our classification scheme: (i) a decision flowchart and a set of categories for senses of function; and (ii) natural language analysis guidelines to aid in identifying the variables that determine the classification of a use of function (\emph{ITEM}, \emph{EFFECT}, etc.).
-The decision flowchart and function categories are part of a framework that can used as is or be modified for more specific purposes (see below for how one might extend it to ecological functions).
-The natural analysis software and guidelines can be used as tools to help one analyse biological function.
-In some instances, the natural language analysis may be inadequate---for example, where the software incorrectly parses parts of speech or dependency relations, or where our guidelines are not suitable for some complex syntactic constructions---and should be used to supplement the intuition and expertise of an investigator rather than applied blindly.
+The decision flowchart and function categories are part of a framework that can used as is or it can be modified for more specific purposes (see below for how one might extend it to ecological functions).
+The natural analysis software and guidelines are tools to help one analyse biological function.
+In some instances, the natural language analysis may be inadequate---for example, where the software incorrectly parses parts of speech or dependency relations, or where ambiguity arises in complex syntactic constructions---and should be used to supplement the intuition and expertise of an investigator rather than applied blindly.
 
 Our approach is centered around the analysis of individual sentences containing a use of biological function.
 Since we focused on syntactic dependencies and short-range semantic relations, this approach makes sense, but there are also drawbacks.
 As the syntactic analysis is limited to sentences, our approach cannot directly leverage information in other parts of a document for the purposes of identifying the unpacked variables (\emph{ITEM}, \emph{EFFECT}, etc.).
-Nevertheless an investigator can, of course, use a less structured method to identify the variables elsewhere in a manuscript.
-The instance in Figure \ref{seleff_towork_effunsp}C, which we classified as Description Incomplete: \emph{EFFECT} Unspecified, could be classified as Selected Effect if one could infer the transcript's \emph{EFFECT} from elsewhere in the manuscript.
+Nevertheless an investigator can use our method to analyse multiple sentences independently or can use a less structured method to identify the variables elsewhere in a manuscript.
+For example, the instance in Figure \ref{seleff_towork_effunsp}C, which we classified as Description Incomplete: \emph{EFFECT} Unspecified, could be classified as Selected Effect if one could infer the transcript's \emph{EFFECT} from elsewhere in the manuscript.
 
 Our focus on classifying individual usages of biological function highlights another consideration: the difference between how function is used in a single instance and how function is used in a document overall.
-Scientific manuscripts containing usages of biological function typically have multiple instances of use.
+Scientific manuscripts referencing biological function typically have multiple instances of use.
 If one wants to make a claim about how an author uses function in a document as a whole, then one will either have to use an alternative approach to analyse the document as a whole or will have to develop a (mathematical) function that maps from the number of individual usages of different function senses to a measure of overall document meaning.
 
 For simplicity, we have ignored functions above the level of a Darwinian individual (ecological functions).
-We encountered a number of these uses during the development of our classification scheme (e.g. ``ecological functioning'', function of biodiversity, and so on), but ultimately we decided to focus on biological functions of individuals given that this issue focuses on philosophy of medicine.
+We encountered a number of these uses during the development of our classification scheme (e.g. ``ecological functioning'', ``function of biodiversity'', and so on), but ultimately we decided to focus on biological functions of individuals given the focus on philosophy of medicine.
 Ecological functions could be added an as extension to our scheme by (i) widening the definition of an \emph{ITEM} (expanding beyond systems of Darwinian individuals to systems of ecosystems); (ii) expanding the definition of \emph{SYSTEM} to include ecosystems; and (iii) including an additional decision point that considers the level of the \emph{ITEM} and \emph{SYSTEM}.
 For example, an ecological counterpart of Biological Role could be unpacked to ``The function of \emph{ITEM} is \emph{EFFECT} in \emph{SYSTEM}'' where \emph{ITEM} is a Darwinian individual (or group of Darwinian individuals) and \emph{SYSTEM} is an ecosystem containing \emph{ITEM}.
 
-Our classification scheme could potentially be extended to take advantage of high-throughput automation of function uses.
+Our classification scheme could potentially be extended to take advantage of high-throughput automation of references to function.
 This is a well-studied (but extremely difficult) problem in natural language processing (NLP) known as word-sense disambiguation.
 Some of the steps in the flowchart could be automated by rule-based programming that leverages our natural language analysis pipeline (e.g. identifying \emph{ITEM}).
 Other steps, however, would be very difficult to automate using rules.
