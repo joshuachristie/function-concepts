@@ -12,7 +12,7 @@ We have used the natural language analysis to analyes the 42 examples from [Keel
 
 You can also run the code used to generate the handbook and examples (or to analyse your own sentences).
 
-The first step is to clone the repository.
+The first step is to fork or clone this git repository.
 You then have two options to set up the environment for running the natural language software.
 
 ## Docker
@@ -23,11 +23,17 @@ To download the image, use `docker image pull joshuarchristie/function-concepts`
 
 To run the juptyer notebooks, make sure your terminal working directory is in the local git respository folder `function-concepts/natural_language_analysis/`.
 
-Run a container using the following command:
+Run a container using the following command for mac/linux:
 
-`docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/work <image_id>` (replace `<image_id>` with the ID of the docker image).
+`docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/work joshuarchristie/function-concepts`.
 
-This will save progress on the notebooks (as you'll be working directly on the ipynb in your local git repository) and automatically remove the container after shutdown.
+If you're using docker in windows (using powershell), use the following command:
+
+`docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v ${pwd}:/home/jovyan/work joshuarchristie/function-concepts`.
+
+To access the notebooks, click on the `work/` directory in jupyter lab.
+
+(If you have issues with permission, try using `sudo` before the commands.)
 
 ## Using a python environment manager ([conda](https://docs.conda.io/en/latest/), etc.)
 
