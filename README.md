@@ -2,7 +2,7 @@
 
 This repository contains all the data for the paper "Concepts of function in biology and biomedicine".
 
-The manuscript can be found [here](https://github.com/joshuachristie/function-concepts/raw/master/manuscript/concepts_function.pdf) or at [http://philsci-archive.pitt.edu/id/eprint/18955](philsci-archive).
+The manuscript can be found [here](https://github.com/joshuachristie/function-concepts/raw/master/manuscript/concepts_function.pdf) or at [philsci-archive](http://philsci-archive.pitt.edu/id/eprint/18955).
 
 The instruction handbook for the natural language analysis can be found [here](https://joshuachristie.github.io/function-concepts/function-concepts-handbook.html).
 
