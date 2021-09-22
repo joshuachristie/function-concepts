@@ -8,9 +8,11 @@ The instruction handbook for the natural language analysis can be found [here](h
 
 We have used the natural language analysis to analyes the 42 examples from [Keeling et. al. (2019)](https://elifesciences.org/articles/47014), which can be found [here](https://joshuachristie.github.io/function-concepts/examples_Keeling_et_al_2019.html).
 
+If you want to try out a (simpler) dependency parser for your own scientific sentences, you can use the web app at this [repository](https://github.com/joshuachristie/scispacy-webapp).
+
 # Running the natural language analysis software
 
-You can also run the code used to generate the handbook and examples (or to analyse your own sentences).
+You can also run the code used to generate the handbook and examples (or to analyse your own sentences) by installing the software on your own machine.
 
 The first step is to fork or clone this git repository.
 You then have two options to set up the environment for running the natural language software.
