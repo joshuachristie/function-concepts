@@ -37,7 +37,8 @@ It is not clear which theory, or combination of theories, we should use to expli
 We have no systematic way to determine how biologists and medical practitioners conceive of, or write about, function in their respective disciplines.
 To further complicate matters, natural language is replete with ambiguities, and scientific manuscripts often use terms imprecisely.
 Without a descriptive understanding of how different conceptions of function are used in biology and medicine, we have little hope of bringing insights about biological function to bear on disputes about function and malfunction in medicine.
-Here we develop a systematic method for analysing references to function by outlining a classification scheme that combines syntactic and semantic analysis in a dependency-grammar framework.
+\textcolor{red}{Here we explore how one can extract semantics about function by focusing on analysing grammatical constructions.
+Specifically}, we develop a systematic method for analysing references to function by outlining a classification scheme that combines syntactic and semantic analysis in a dependency-grammar framework.
 
 \section{Introduction}
 \label{sec:introduction}
@@ -66,8 +67,10 @@ Second, one must develop a system that can consistently assign a piece of natura
 The problem of developing a set of categories will typically employ some form of conceptual analysis (and/or leverage earlier conceptual analysis).
 We cannot, however, simply paste together existing concepts of biological function.
 For one, this will not necessarily generate a set of function concepts that are exhaustive or exclusive.\footnote{For an example with respect to exclusivity, consider the two partially overlapping concepts of the causal role \cite{cummins1975} and organisational theories \cite{mossio2009} of function. We must make some hard decisions when deciding how to incorporate these concepts into a coherent classification scheme. We could choose one category and remove the other, allow both but give one hierarchical precedence over the other when ambiguities arise, allow a single usage to be assigned to both categories, create one category that encompasses both concepts, or create more general categories that do not align perfectly with one or more of the philosophical concepts. (Here we have chosen the latter, as references to organisational theories may be split over Biological Role and Biological Advantage.)}
-Moreover, real-world usage of function does not always align with philosophical concepts of function.
-A classification scheme for experimental philosophy will thus necessarily be an amalgamation of philosophical conceptual analysis and discipline-specific usage \cite{wouters2003} .
+Moreover, the specific usage of function in scientific papers does not always align with philosophical concepts of function.
+\textcolor{red}{While conceptual analysis enables broad context---for example, a biologist might implicitly invoke teleological concepts despite not writing it explicitly---it is neither scalable nor does it necessarily lead to consistent viewpoints between investigators.
+A classification scheme for experimental philosophy will thus necessarily be an amalgamation of philosophical conceptual analysis and discipline-specific usage \cite{wouters2003}.
+Here we focus on developing a method that is both scalable (i.e. fast) and able to be applied in a consistent manner between investigators.}
 
 A study by Keeling et. al. has recently attempted this for biological function in the context of de novo gene emergence \cite{keeling2019} .
 The authors chose six categories for their classification scheme: Evolutionary Implications, Physiological Implications, Interactions, Capacities, Expression, and Vague.
@@ -91,7 +94,9 @@ To assign an example to a definition, one instead follows a step-by-step flowcha
 We unpack each piece of natural language into one of several common forms.
 For example, to be classified as Biological Role (see section \ref{sec:senses-function}), an investigator must be able to identify each variable in the unpacked form of ``The function of \emph{ITEM} is \emph{EFFECT} in \emph{SYSTEM}'' (e.g. \emph{ITEM} could be ``The heart'', \emph{EFFECT} could be ``to pump blood through'', and \emph{SYSTEM} could be ``the circulatory system'').
 By simplifying natural language into simple, common forms, our approach avoids obfuscation of meaning due to variation in syntactic construction and helps standardise the technique for extracting meaning.
-Moreover, we provide detailed instructions for how to use the dependency grammar framework and modern natural language processing techniques as aids in identifying the variables in the unpacked forms.
+\textcolor{red}{Our approach is not a drop-in replacement for conceptual analysis, but rather the beginnings of a standardised method for quickly and consistently inferring the use of function from individual sentences.}
+We provide detailed instructions for how to use the dependency grammar framework and modern natural language processing techniques as aids in identifying the variables in the unpacked forms.
+
 
 \section{Classification scheme}
 \label{sec:class-scheme}
@@ -137,7 +142,7 @@ The classification scheme flowchart is shown in Figure \ref{flowchart} and descr
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\linewidth]{figures/GeneralFlowchart.pdf}
+  \includegraphics[width=0.7\linewidth]{figures/GeneralFlowchart.pdf}
   \caption[]{\textbf{Decision flowchart for identifying sense of function.} Red arrows with label ``N'' indicate that the question is answered ``no''; green arrows with label ``Y'' indicate that the question is answered ``yes''. See Table \ref{tab:flowchart} for a description of each decision point.}
   \label{flowchart}
 \end{figure}
@@ -408,17 +413,18 @@ Since we focused on syntactic dependencies and short-range semantic relations, t
 As the syntactic analysis is limited to sentences, our approach cannot directly leverage information in other parts of a document for the purposes of identifying the unpacked variables (\emph{ITEM}, \emph{EFFECT}, etc.).
 Nevertheless an investigator can use our method to analyse multiple sentences independently or can use a less structured method to identify the variables elsewhere in a manuscript.
 For example, the instance in Figure \ref{seleff_towork_effunsp}C, which we classified as Description Incomplete: \emph{EFFECT} Unspecified, could be classified as Selected Effect if one could infer the transcript's \emph{EFFECT} from elsewhere in the manuscript.
-
-Our focus on classifying individual usages of biological function highlights another consideration: the difference between how function is used in a single instance and how function is used in a document overall.
+\textcolor{red}{It is also important to make a distinction between how function is used in a single instance and how function is used in a document overall.}
 Scientific manuscripts referencing biological function typically have multiple instances of use.
 If one wants to make a claim about how an author uses function in a document as a whole, then one will either have to use an alternative approach to analyse the document as a whole or will have to develop a (mathematical) function that maps from the number of individual usages of different function senses to a measure of overall document meaning.
+\textcolor{red}{These drawbacks hint at the general difference between our approach and traditional conceptional analysis.
+  Our method is designed to be a quick and repeatable way to assign meaning to individual usages of function, and as such, it cannot account for broad context (e.g. sentences in non-adjacent parts of the document, an author's positions in other manuscripts, the history of the field, and so on).}
 
 For simplicity, we have ignored functions above the level of a Darwinian individual (ecological functions).
 We encountered a number of these uses during the development of our classification scheme (e.g. ``ecological functioning'', ``function of biodiversity'', and so on), but ultimately we decided to focus on biological functions of individuals given the focus on philosophy of medicine.
 Ecological functions could be added an as extension to our scheme by (i) widening the definition of an \emph{ITEM} (expanding beyond systems of Darwinian individuals to systems of ecosystems); (ii) expanding the definition of \emph{SYSTEM} to include ecosystems; and (iii) including an additional decision point that considers the level of the \emph{ITEM} and \emph{SYSTEM}.
 For example, an ecological counterpart of Biological Role could be unpacked to ``The function of \emph{ITEM} is \emph{EFFECT} in \emph{SYSTEM}'' where \emph{ITEM} is a Darwinian individual (or group of Darwinian individuals) and \emph{SYSTEM} is an ecosystem containing \emph{ITEM}.
 
-Our classification scheme could potentially be extended to take advantage of high-throughput automation of references to function.
+\textcolor{red}{Our classification scheme is well-suited to taking advantage of high-throughput automation of references to function.}
 This is a well-studied (but extremely difficult) problem in natural language processing (NLP) known as word-sense disambiguation.
 Some of the steps in the flowchart could be automated by rule-based programming that leverages our natural language analysis pipeline (e.g. identifying \emph{ITEM}).
 Other steps, however, would be very difficult to automate using rules.
@@ -428,7 +434,7 @@ But these steps might still be automated by using a statistical, rather than a r
 For example, recent deep learning NLP models based on the Transformer architecture can be ``pre-trained'' on a huge corpus, allowing them to ``learn'' how to represent relationships in natural language from unlabelled data \cite{devlin2019} .
 Where a rule-based system would need a list of all the words and phrases associated with ``benefitting'' a \emph{SYSTEM} in order to automate the Biological Advantage decision point (``improve'', ``augment'', and so on), a deep learning NLP model has a high-dimensional representation of language that can reflect the similarities between these words without having necessarily seen a similar sentence before.
 Some Transformer models have been trained on a corpus of scientific manuscripts, allowing them to efficiently represent the particularities of academic language and style.
-(For example, the software we use to generate the dependency grammar analysis uses an NLP Transformer architecture called SciBert \cite{scispacy} . NLP models trained on more general-purpose text (e.g. Wikipedia) did much worse at representing grammar relations for our examples.)
+(For example, the software we use to generate the dependency grammar analysis uses an NLP Transformer architecture called SciBert \cite{scispacy}. NLP models trained on more general-purpose text (e.g. Wikipedia) did much worse at representing grammar relations for our examples.)
 The downside is that training these models for specific downstream tasks (e.g. training an NLP model for the decision point between Biological Role and Biological Advantage) is a supervised learning problem, which requires labelled data (manually categorised sentences).
 Depending on the difficulty of the problem, it can require a substantial amount of labelled data (possibly thousands of manually categorised sentences), making this a serious undertaking.
 
@@ -436,11 +442,10 @@ One of the main differences between our set of function categories and that of W
 With its focus on whether token traits are ``working as expected'', this sense of function is the most relevant for philosophy of medicine and the naturalistic account of health and disease.
 To Work statements require a normative basis to ground why one should expect a trait to work in a certain way (i.e. perform its function).
 Some normative bases will be explicit and well-justified; others might implicitly appeal to vague, indefinable notions of why a trait should work in a certain way.
-Here we have made no distinction between various normative bases behind function in the sense of To Work.
-Adding these distinctions could be a fruitful way to extend our framework.
-With such an extended framework in hand, one could tackle some interesting questions in philosophy of medicine.
-One of many such possibilities would be to analyse uses of To Work function in medical journals to help understand the extent to which physicians and medical researchers use different normative bases as a foundation for dysfunction and disease.
-More generally, the methodology we have outlined can serve as a framework that may be extended by experimental philosophers to analyse references to other concepts in academic literature.
+Here we have made no distinction between various normative bases behind function in the sense of To Work, but adding these distinctions could be a fruitful way to extend our framework \textcolor{blue}{to tackle interesting questions in the philosophy of medicine.
+  For example, one could use a schema for dysfunction to subdivide To Work usages based on their normative grounding (an example of such a schema is the ``four ways of going wrong'' of Matthewson and Griffiths \cite{matthewson2017}).
+  One could then develop a flowchart to classify these different notions of normativity, which in turn could be used to identify the normative basis of a given usage of To Work.}
+\textcolor{blue}{A possible application of such an extension} would be to analyse uses of To Work function in medical journals to help understand the extent to which physicians and medical researchers use different normative bases as a foundation for dysfunction and disease.
 
 \section{Acknowledgements}
 \label{sec:acknowledgements}
